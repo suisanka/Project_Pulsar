@@ -1,0 +1,203 @@
+{
+  "inspection_date": "2026-10-21",
+  "blend_sha256": "4fda3a8b0fc2bb88e91337a3087a56b2e915b97ea58036e5f5c39998d8e3ca52",
+  "lock_type": 1,
+  "units": "mm",
+  "measurement_basis": "Flat source template axes: Y length, Z width. The active lock and cutter were mapped back with a rigid transform fitted to five matching circular feature centers. These are CAD mounting references, not a verified commercial latch specification.",
+  "source_template_dimensions": {
+    "小锁结构源": [
+      22.941830568015575,
+      69.06849145889282,
+      36.54793277382851
+    ],
+    "小锁布尔源": [
+      19.678154960274696,
+      59.145987033843994,
+      30.660968273878098
+    ]
+  },
+  "active_geometry_aligned": {
+    "小锁结构": {
+      "bounds_in_template_axes_mm": [
+        [
+          -14.076542557642911,
+          -24.611826565950906,
+          -18.37789044993272
+        ],
+        [
+          8.865317932067903,
+          44.49234057428764,
+          18.170083481092778
+        ]
+      ],
+      "dimensions_in_template_axes_mm": [
+        22.941860489710812,
+        69.10416714023854,
+        36.547973931025496
+      ]
+    },
+    "小锁布尔": {
+      "bounds_in_template_axes_mm": [
+        [
+          -14.08062211923881,
+          -21.873468337814582,
+          -15.429223469403794
+        ],
+        [
+          5.609541394054751,
+          37.3756826023719,
+          15.337088832570485
+        ]
+      ],
+      "dimensions_in_template_axes_mm": [
+        19.690163513293562,
+        59.24915094018648,
+        30.76631230197428
+      ]
+    }
+  },
+  "flat_seat": {
+    "face": 4,
+    "bounds_in_template_axes_mm": [
+      [
+        5.597520442231435,
+        -21.873468337814582,
+        -15.429223469403794
+      ],
+      [
+        5.609541394054751,
+        23.910246871272868,
+        15.336188823448
+      ]
+    ],
+    "dimensions_in_template_axes_mm": [
+      0.012020951823315862,
+      45.78371520908745,
+      30.765412292851792
+    ]
+  },
+  "matching_features_max_residual_mm": 1.4715741832135936e-05,
+  "front_pair_center_distance_mm": 20.014431062491347,
+  "rear_pair_center_distance_mm": 20.714436362326005,
+  "pair_row_length_offset_mm": 19.420757748623515,
+  "post_shaft_diameter_approx_mm": 2.81,
+  "post_tip_diameter_range_mm": [
+    1.8917696391457972,
+    1.8917775460698387
+  ],
+  "source_post_centers_mm": {
+    "front": [
+      [
+        0.7948665879666805,
+        3.6911805121504275,
+        -9.986470033907393
+      ],
+      [
+        0.7948665879666805,
+        3.702067460780896,
+        10.027958067578995
+      ]
+    ],
+    "rear": [
+      [
+        0.7948665879666805,
+        -15.729576186502891,
+        -10.321642781237353
+      ],
+      [
+        0.7948665879666805,
+        -15.71869133781282,
+        10.39279072124885
+      ]
+    ]
+  },
+  "active_post_features": [
+    {
+      "face": 51,
+      "vertices": 64,
+      "center_mm": [
+        -116.55762607957436,
+        -77.25799119067597,
+        -98.92308444577951
+      ],
+      "diameter_mm": 1.891774537876364,
+      "max_radial_error_mm": 0.009608926241305604
+    },
+    {
+      "face": 76,
+      "vertices": 64,
+      "center_mm": [
+        -114.19579477896201,
+        -71.82956608539548,
+        -126.43694697526789
+      ],
+      "diameter_mm": 1.8917733446787244,
+      "max_radial_error_mm": 0.009604520830830299
+    },
+    {
+      "face": 81,
+      "vertices": 64,
+      "center_mm": [
+        -114.5335430986685,
+        -88.38219332672186,
+        -116.27945264496154
+      ],
+      "diameter_mm": 1.8917775460698387,
+      "max_radial_error_mm": 0.009612068041995436
+    },
+    {
+      "face": 307,
+      "vertices": 64,
+      "center_mm": [
+        -116.15147112558284,
+        -61.080969811512745,
+        -109.66729199874928
+      ],
+      "diameter_mm": 1.8917696391457972,
+      "max_radial_error_mm": 0.00959992653556141
+    }
+  ],
+  "limitations": [
+    "Cutting-volume depth is not usable recess depth; the head surface clips the installation structure.",
+    "Final hardware thickness, hole geometry, moving envelope and printed fit are not verified."
+  ],
+  "user_product_image_comparison": {
+    "source": "User-supplied dimension images; no exact commercial model or physical fit confirmed.",
+    "image_sha256": [
+      "00a224e63e0ba54b0032b7399741309822497f1c496e2154c498fdfaf9cee2ec",
+      "b9f7c4585ba552a45a40e188a8cdd1c530d0352a805c9dc360630feebb573edf"
+    ],
+    "large_image_1": {
+      "length_mm": 48,
+      "width_mm": 31,
+      "height_mm": 10,
+      "row_pitch_mm": 26,
+      "within_row_pitch_mm": 23.5,
+      "hole_diameter_mm": 3.5
+    },
+    "small_image_2": {
+      "length_mm": 40,
+      "width_mm": 27,
+      "height_mm": 8.5,
+      "row_pitch_mm": 22,
+      "within_row_pitch_mm": 20.5,
+      "hole_diameter_mm": 3.2
+    },
+    "conclusion": "The newly supplied 40 x 27 mm locking latch with 20 x 20 mm hole pattern is the closest of the three candidates. The model uses solid posts, not screw holes. Current post pitches remain slightly different, and hardware thickness, underside fit, fastening and physical fit are unverified.",
+    "small_locking_image_3": {
+      "image_sha256": "4a6c8c9670792c1c786613275e425a691e903ad1e01d4ae99f8fdfddd42ef97f",
+      "length_mm": 40,
+      "width_mm": 27,
+      "height_mm": 12.5,
+      "row_pitch_mm": 20,
+      "within_row_pitch_mm": 20,
+      "hole_diameter_mm": 3.5,
+      "plate_thickness_mm": 0.5
+    }
+  },
+  "fastening": {
+    "current_geometry": "four solid tapered/rounded posts; approximately 2.81 mm shaft diameter, not threaded holes",
+    "heat_staking": "Possible mechanism inferred from boss geometry; original author intent and PLA joint strength not verified. A plastic post passes through the metal hole and is formed into a retaining head.",
+    "removable_alternative": "Redesign to the actual 20 x 20 mm mounting pattern with suitable through screws, backing washers/nuts and reinforced seats; not implemented."
+  }
+}
