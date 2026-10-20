@@ -1,0 +1,92 @@
+{
+  "blender": "5.2.2 LTS",
+  "before_sha256": "d15d93877b926a93eada142db0a800959d4ba6c1678edbd98bfb9521097d4da2",
+  "after_sha256": "49e7b4f89c6c5d5b1f181e9d17817ae688401ca28f5d2327b7b051fadc46f508",
+  "method": "All evaluated mesh vertices to the nearest triangle on the opposite surface, in world millimetres. Vertex sampling is not a continuous Hausdorff bound. Before vertices include deleted wire vertices and invalid fragments.",
+  "comparisons": {
+    "default/前壳配置": {
+      "old_vertices_to_new_surface": {
+        "vertices_tested": 261715,
+        "max_mm": 0.03425667091505602,
+        "p99_mm": 0.0,
+        "over_0.1mm": 0,
+        "over_0.2mm": 0,
+        "max_position_mm": [
+          104.25569152832031,
+          18.92855453491211,
+          -30.678064346313477
+        ],
+        "seconds": 0.7933409214019775
+      },
+      "new_vertices_to_old_surface": {
+        "vertices_tested": 261710,
+        "max_mm": 0.0,
+        "p99_mm": 0.0,
+        "over_0.1mm": 0,
+        "over_0.2mm": 0,
+        "max_position_mm": [
+          -81.67507934570312,
+          -18.67353630065918,
+          -76.4246597290039
+        ],
+        "seconds": 0.8013269901275635
+      }
+    },
+    "default/后壳配置": {
+      "old_vertices_to_new_surface": {
+        "vertices_tested": 68796,
+        "max_mm": 0.6000042194500566,
+        "p99_mm": 0.0,
+        "over_0.1mm": 1,
+        "over_0.2mm": 1,
+        "max_position_mm": [
+          98.89946746826172,
+          -29.28557777404785,
+          29.527605056762695
+        ],
+        "seconds": 0.16411304473876953
+      },
+      "new_vertices_to_old_surface": {
+        "vertices_tested": 68791,
+        "max_mm": 0.0,
+        "p99_mm": 0.0,
+        "over_0.1mm": 0,
+        "over_0.2mm": 0,
+        "max_position_mm": [
+          -61.55493927001953,
+          -73.26326751708984,
+          -66.98927307128906
+        ],
+        "seconds": 0.1619710922241211
+      }
+    },
+    "round0.1/后壳配置": {
+      "old_vertices_to_new_surface": {
+        "vertices_tested": 53203,
+        "max_mm": 1.5271800803020597,
+        "p99_mm": 0.09712939208839089,
+        "over_0.1mm": 466,
+        "over_0.2mm": 88,
+        "max_position_mm": [
+          -96.14920806884766,
+          -57.767967224121094,
+          -17.971187591552734
+        ],
+        "seconds": 0.3008601665496826
+      },
+      "new_vertices_to_old_surface": {
+        "vertices_tested": 913957,
+        "max_mm": 0.10512828157516196,
+        "p99_mm": 0.042589774238877,
+        "over_0.1mm": 7,
+        "over_0.2mm": 0,
+        "max_position_mm": [
+          10.550000190734863,
+          11.36059856414795,
+          154.5304412841797
+        ],
+        "seconds": 1.955122947692871
+      }
+    }
+  }
+}
