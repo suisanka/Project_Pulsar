@@ -115,6 +115,22 @@
 
 这种较大圆角可能启用自动重建，计算量和输出面数会增加。等待更新完成后，再检查结构和导出。界面没有给圆角设置有限上限，本轮验证范围只覆盖到 0.1。
 
+### 4.3 锁扣与独立插销
+
+当前 `锁类型=1` 使用小锁结构。打印文件的分工如下：
+
+| 部件 | 所在输出 | 导出方式 |
+|---|---|---|
+| 前壳锁座及对应配合结构 | `ProjectPulsar_Front.stl` | 已与前壳布尔并集，一起打印 |
+| 后壳锁座、侧边插扣的底座和舌片 | `ProjectPulsar_Rear.stl` | 已与后壳布尔并集，一起打印 |
+| 独立 `r插销` | `ProjectPulsar_R_Pin.stl` | 单独打印；未包含在两壳中 |
+
+`小锁结构`、`小锁布尔`、`插扣` 等隐藏源对象用于生成、定位和裁剪壳体附件，不应直接把这些未经最终裁剪的源网格当作装配零件导出。独立 `r插销` 没有被节点实例化到装配位置；导入切片软件后需居中、落到平台，并根据实际材料选择方向。
+
+![独立 r 插销检查视图](images/r-pin.png)
+
+本次补充导出的插销约 **5.17 × 9.06 × 23.28 mm**，1,026 个三角面。清理了重合顶点和退化面并明确三角化，保留唯一顶点的位置及尺寸；前后壳几何保持不变。保存后重新打开的插销及三份 STL 验证结果见[插销验证记录](lock-pin-validation-2026-10-21.json)。这些结果不代表卡扣弹性、装配松紧或使用寿命已经实物确认，先试打配合部位。
+
 ## 5. 生成视孔
 
 1. 在「实体」集合中选中 `视孔`。
@@ -245,12 +261,23 @@ STL 不携带可靠的长度单位约定。本工程内部按米计算，界面�
 
 - `exports/2026-10-21/ProjectPulsar_Front.stl`：523,424 个三角面，26,171,284 字节。
 - `exports/2026-10-21/ProjectPulsar_Rear.stl`：137,838 个三角面，6,891,984 字节。
+- `exports/2026-10-21/ProjectPulsar_R_Pin.stl`：独立插销，1,026 个三角面，51,384 字节。
 - [导出清单](stl-export-manifest-2026-10-21.json)：文件 SHA-256、尺寸及拓扑结果。
 - [保存后当前配置检查](print-export-validation-2026-10-21.json)：重新打开 Base 后求值、导出、回读的结果。
 
 两份导出都通过开放边、多面共边、绕序、重复面和退化面检查。前壳仍记录 1 个面积约 `9e-9 mm²` 的近零面积三角形，高于脚本 `1e-12 mm²` 的退化判定阈值。隐藏操作没有改变两壳的几何；本次 STL 的三角形载荷与此前完整回归的默认导出逐字节一致。
 
 STL 为可重新生成的本地产物，未纳入 Git。需要重新生成时运行第 8 节命令，把输入文件改为 `ProjectPulsar_Base.blend`；默认输出文件名为 `current_前壳配置.stl` 和 `current_后壳配置.stl`，可按交付名称重命名。
+
+插销需要单独选中 `r插销`，按第 7.1 节相同的毫米设置导出；它不属于 `--current` 的壳体检查集合。要重放插销修复及导出，可运行下面的命令。它将结果保存为工作副本，不覆盖输入 Base：
+
+```sh
+"/Applications/Blender.app/Contents/MacOS/Blender" \
+  --background --factory-startup --disable-autoexec --python-exit-code 1 \
+  ProjectPulsar_Base.blend --python tools/repair_lock_pin.py -- \
+  --output ProjectPulsar_Dev.blend \
+  --receipt /tmp/pulsar-pin.json --stl /tmp/ProjectPulsar_R_Pin.stl
+```
 
 ## 8. 检查自己的当前配置
 
@@ -306,5 +333,6 @@ STL 为可重新生成的本地产物，未纳入 Git。需要重新生成时运
 - [曲面距离记录](surface-comparison-2026-10-21.json)：默认和大圆角修复前后的逐顶点距离检查。
 - [睫毛形变检查](eyelash-validation-2026-10-21.json)：三种样式的初始姿态与睁眼随动结果。
 - [打印导出清单](stl-export-manifest-2026-10-21.json)：已隐藏黑色睫毛／眼线的当前交付文件。
+- [独立插销验证](lock-pin-validation-2026-10-21.json)：补充插销的修复、导出及保存后检查，同时确认两壳保持不变。
 
 参数名称、默认值和对象映射来自本工程。Blender 操作说明参考官方 [Geometry Nodes Modifier](https://docs.blender.org/manual/en/5.2/modeling/modifiers/geometry_nodes.html) 和 [STL 导入导出文档](https://docs.blender.org/manual/en/5.2/files/import_export/stl.html)。模型与字体的许可信息见仓库 [README](../README.md#许可) 和 [LICENSE](../LICENSE)。

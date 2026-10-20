@@ -1,0 +1,139 @@
+{
+  "blender": "5.2.2 LTS",
+  "source_sha256": "6657f43f66fde17170de09abb4aa3e967c2a6605811c55dbbdff84570f44192b",
+  "object": "r插销",
+  "shells_before": {
+    "前壳配置": "b4e91939c863a362560ef90b358ccc7a3ef696c6efc0549cf49596bb20ed7f93",
+    "后壳配置": "2de22a0dab1455f0a6eae7dc4d4af15de401a9260b60e3324821be842574794a"
+  },
+  "before": {
+    "vertices": 515,
+    "triangles": 1028,
+    "boundary_edges": 2,
+    "multi_face_edges": 1,
+    "inconsistent_edges": 0,
+    "duplicate_triangles": 0,
+    "degenerate_triangles": 2,
+    "near_zero_triangles": 2,
+    "min_triangle_area_mm2": 0.0,
+    "dimensions_mm": [
+      5.167025089263916,
+      9.062232971191406,
+      23.278915405273438
+    ],
+    "signed_volume_cm3": 0.617901596319972,
+    "wire_edges": 0,
+    "loose_vertices": 0,
+    "sdf_rebuilt": false
+  },
+  "after": {
+    "vertices": 515,
+    "triangles": 1026,
+    "boundary_edges": 0,
+    "multi_face_edges": 0,
+    "inconsistent_edges": 0,
+    "duplicate_triangles": 0,
+    "degenerate_triangles": 0,
+    "near_zero_triangles": 0,
+    "min_triangle_area_mm2": 0.027185476621436448,
+    "dimensions_mm": [
+      5.167025089263916,
+      9.062232971191406,
+      23.278915405273438
+    ],
+    "signed_volume_cm3": 0.6179309538704261,
+    "wire_edges": 0,
+    "loose_vertices": 0,
+    "sdf_rebuilt": false
+  },
+  "unique_vertex_positions_unchanged": true,
+  "shells_after": {
+    "前壳配置": "b4e91939c863a362560ef90b358ccc7a3ef696c6efc0549cf49596bb20ed7f93",
+    "后壳配置": "2de22a0dab1455f0a6eae7dc4d4af15de401a9260b60e3324821be842574794a"
+  },
+  "stl_metrics": {
+    "vertices": 515,
+    "triangles": 1026,
+    "boundary_edges": 0,
+    "multi_face_edges": 0,
+    "inconsistent_edges": 0,
+    "duplicate_triangles": 0,
+    "degenerate_triangles": 0,
+    "near_zero_triangles": 0,
+    "min_triangle_area_mm2": 0.027185476621436448,
+    "dimensions_mm": [
+      5.167025089263916,
+      9.062232971191406,
+      23.278915405273438
+    ],
+    "signed_volume_cm3": 0.6179309538704261
+  },
+  "saved_sha256": "4fda3a8b0fc2bb88e91337a3087a56b2e915b97ea58036e5f5c39998d8e3ca52",
+  "stl": "exports/2026-10-21/ProjectPulsar_R_Pin.stl",
+  "stl_sha256": "eff9378fc662d150c34bd3b3f9d99380dec871d367fef97b17ee4a305ece8f65",
+  "stl_bytes": 51384,
+  "passed": true,
+  "reopened_and_verified": true,
+  "reopened_exports": {
+    "前壳配置": {
+      "matches_delivered_stl_payload": true,
+      "metrics": {
+        "vertices": 261710,
+        "triangles": 523424,
+        "boundary_edges": 0,
+        "multi_face_edges": 0,
+        "inconsistent_edges": 0,
+        "duplicate_triangles": 0,
+        "degenerate_triangles": 0,
+        "near_zero_triangles": 1,
+        "min_triangle_area_mm2": 9.003709490354569e-09,
+        "dimensions_mm": [
+          252.9455108642578,
+          162.16473388671875,
+          270.85498046875
+        ],
+        "signed_volume_cm3": 267.8423557544636
+      }
+    },
+    "后壳配置": {
+      "matches_delivered_stl_payload": true,
+      "metrics": {
+        "vertices": 68791,
+        "triangles": 137838,
+        "boundary_edges": 0,
+        "multi_face_edges": 0,
+        "inconsistent_edges": 0,
+        "duplicate_triangles": 0,
+        "degenerate_triangles": 0,
+        "near_zero_triangles": 0,
+        "min_triangle_area_mm2": 7.888204752812392e-07,
+        "dimensions_mm": [
+          236.55226135253906,
+          177.40069580078125,
+          248.5341033935547
+        ],
+        "signed_volume_cm3": 232.10877194624766
+      }
+    },
+    "r插销": {
+      "matches_delivered_stl_payload": true,
+      "metrics": {
+        "vertices": 515,
+        "triangles": 1026,
+        "boundary_edges": 0,
+        "multi_face_edges": 0,
+        "inconsistent_edges": 0,
+        "duplicate_triangles": 0,
+        "degenerate_triangles": 0,
+        "near_zero_triangles": 0,
+        "min_triangle_area_mm2": 0.027185476621436448,
+        "dimensions_mm": [
+          5.167025089263916,
+          9.062232971191406,
+          23.278915405273438
+        ],
+        "signed_volume_cm3": 0.6179309538704261
+      }
+    }
+  }
+}
