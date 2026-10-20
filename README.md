@@ -30,7 +30,7 @@
 - Base 已隐藏黑色 `睫毛` 和 `眼线配置`，眉形开孔保留；隐藏状态不改变壳体几何。
 - 回归检查验证的是数字网格和导出文件，不代替打印材料、支撑、切片、铰链装配和佩戴适配验证。
 
-2026-10-21 的本地交付文件为 `exports/2026-10-21/ProjectPulsar_Front.stl` 和 `ProjectPulsar_Rear.stl`，均为毫米坐标、独立壳体，不包含睫毛、眼线或辅助对象。STL 是可重新生成的本地产物，未纳入 Git；文件哈希、尺寸和检查结果见 [导出清单](docs/stl-export-manifest-2026-10-21.json)。打印设备尚未指定，先按[手册的打印优化步骤](docs/USER_GUIDE.zh-CN.md#74-为-3d-打印优化)选择摆放、支撑和试片。
+2026-10-21 的本地交付文件为 `exports/2026-10-21/ProjectPulsar_Front.stl` 和 `ProjectPulsar_Rear.stl`，均为毫米坐标、独立壳体，不包含睫毛、眼线或辅助对象。STL 是可重新生成的本地产物，未纳入 Git；文件哈希、尺寸和检查结果见 [导出清单](docs/stl-export-manifest-2026-10-21.json)。打印方案已确定为 **拓竹 H2S、0.4 mm 喷嘴、PLA**，当前两壳各自可按原尺寸放入其成型空间；[手册的打印优化步骤](docs/USER_GUIDE.zh-CN.md#74-为-3d-打印优化)给出这套设备的候选配置和试打顺序。
 
 锁座和侧边插扣已包含在两份壳体中；独立 `r插销` 另导出为 `exports/2026-10-21/ProjectPulsar_R_Pin.stl`。该零件经清理后为 1,026 个三角面，尺寸约 5.17 × 9.06 × 23.28 mm，详见[锁扣零件说明](docs/USER_GUIDE.zh-CN.md#43-锁扣与独立插销)及[插销验证记录](docs/lock-pin-validation-2026-10-21.json)。插销修复未改变两壳几何；重新打开最新工程导出的三个 STL 均与交付文件的三角形载荷一致。
 

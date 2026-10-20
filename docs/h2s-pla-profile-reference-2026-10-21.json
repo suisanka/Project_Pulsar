@@ -1,0 +1,265 @@
+{
+  "checked_on": "2026-10-21",
+  "upstream_repository": "https://github.com/bambulab/BambuStudio",
+  "upstream_commit": "79df7ae309be398ed30c9f397c13c9911c2edc57",
+  "purpose": "Official preset inspection and bounding-box fit only; not a sliced or physically tested print profile.",
+  "official_presets": [
+    {
+      "kind": "machine",
+      "source": "https://github.com/bambulab/BambuStudio/blob/79df7ae309be398ed30c9f397c13c9911c2edc57/resources/profiles/BBL/machine/Bambu%20Lab%20H2S%200.4%20nozzle.json",
+      "settings": {
+        "name": "Bambu Lab H2S 0.4 nozzle",
+        "inherits": "fdm_bbl_3dp_001_common",
+        "printable_area": [
+          "0x0",
+          "340x0",
+          "340x320",
+          "0x320"
+        ],
+        "printable_height": "340",
+        "nozzle_diameter": [
+          "0.4"
+        ]
+      }
+    },
+    {
+      "kind": "filament",
+      "source": "https://github.com/bambulab/BambuStudio/blob/79df7ae309be398ed30c9f397c13c9911c2edc57/resources/profiles/BBL/filament/Generic%20PLA%20%40BBL%20H2S.json",
+      "settings": {
+        "name": "Generic PLA @BBL H2S",
+        "inherits": "Generic PLA @base",
+        "nozzle_temperature": [
+          "220",
+          "220",
+          "220"
+        ],
+        "nozzle_temperature_initial_layer": [
+          "220",
+          "220",
+          "220"
+        ],
+        "hot_plate_temp": [
+          "55"
+        ],
+        "hot_plate_temp_initial_layer": [
+          "55"
+        ],
+        "textured_plate_temp": [
+          "55"
+        ],
+        "textured_plate_temp_initial_layer": [
+          "55"
+        ],
+        "filament_max_volumetric_speed": [
+          "12",
+          "12",
+          "12"
+        ],
+        "chamber_temperatures": [
+          "0"
+        ],
+        "fan_min_speed": [
+          "100"
+        ],
+        "fan_max_speed": [
+          "100"
+        ],
+        "overhang_fan_speed": [
+          "100"
+        ],
+        "additional_cooling_fan_speed": [
+          "75"
+        ],
+        "during_print_exhaust_fan_speed": [
+          "70"
+        ],
+        "complete_print_exhaust_fan_speed": [
+          "70"
+        ],
+        "slow_down_layer_time": [
+          "8"
+        ],
+        "close_fan_the_first_x_layers": [
+          "1"
+        ],
+        "filament_density": [
+          "1.24"
+        ]
+      }
+    },
+    {
+      "kind": "filament",
+      "source": "https://github.com/bambulab/BambuStudio/blob/79df7ae309be398ed30c9f397c13c9911c2edc57/resources/profiles/BBL/filament/Bambu%20PLA%20Basic%20%40BBL%20H2S.json",
+      "settings": {
+        "name": "Bambu PLA Basic @BBL H2S",
+        "inherits": "Bambu PLA Basic @base",
+        "nozzle_temperature": [
+          "220",
+          "220",
+          "220"
+        ],
+        "nozzle_temperature_initial_layer": [
+          "220",
+          "220",
+          "220"
+        ],
+        "hot_plate_temp": [
+          "55"
+        ],
+        "hot_plate_temp_initial_layer": [
+          "55"
+        ],
+        "textured_plate_temp": [
+          "55"
+        ],
+        "textured_plate_temp_initial_layer": [
+          "55"
+        ],
+        "filament_max_volumetric_speed": [
+          "25",
+          "40",
+          "25"
+        ],
+        "chamber_temperatures": [
+          "0"
+        ],
+        "fan_min_speed": [
+          "80"
+        ],
+        "fan_max_speed": [
+          "100"
+        ],
+        "overhang_fan_speed": [
+          "100"
+        ],
+        "additional_cooling_fan_speed": [
+          "75"
+        ],
+        "during_print_exhaust_fan_speed": [
+          "70"
+        ],
+        "complete_print_exhaust_fan_speed": [
+          "70"
+        ],
+        "slow_down_layer_time": [
+          "4"
+        ],
+        "close_fan_the_first_x_layers": [
+          "1"
+        ],
+        "filament_density": [
+          "1.26"
+        ]
+      }
+    },
+    {
+      "kind": "process",
+      "source": "https://github.com/bambulab/BambuStudio/blob/79df7ae309be398ed30c9f397c13c9911c2edc57/resources/profiles/BBL/process/0.16mm%20High%20Quality%20%40BBL%20H2S.json",
+      "settings": {
+        "name": "0.16mm High Quality @BBL H2S",
+        "inherits": "fdm_process_single_0.16",
+        "layer_height": "0.16",
+        "initial_layer_print_height": "0.2",
+        "wall_loops": "2",
+        "sparse_infill_density": "15%",
+        "outer_wall_speed": [
+          "60",
+          "60",
+          "60"
+        ],
+        "inner_wall_speed": [
+          "150",
+          "150",
+          "150"
+        ],
+        "top_shell_layers": "6",
+        "bottom_shell_layers": "4",
+        "top_shell_thickness": "1.0",
+        "bottom_shell_thickness": "0",
+        "support_top_z_distance": "0.16",
+        "support_bottom_z_distance": "0.16",
+        "support_type": "tree(auto)",
+        "support_style": "default",
+        "support_interface_top_layers": "2",
+        "support_object_xy_distance": "0.35"
+      }
+    },
+    {
+      "kind": "process",
+      "source": "https://github.com/bambulab/BambuStudio/blob/79df7ae309be398ed30c9f397c13c9911c2edc57/resources/profiles/BBL/process/0.20mm%20Standard%20%40BBL%20H2S.json",
+      "settings": {
+        "name": "0.20mm Standard @BBL H2S",
+        "inherits": "fdm_process_single_0.20",
+        "layer_height": "0.2",
+        "initial_layer_print_height": "0.2",
+        "wall_loops": "2",
+        "sparse_infill_density": "15%",
+        "outer_wall_speed": [
+          "200",
+          "500",
+          "500"
+        ],
+        "inner_wall_speed": [
+          "300",
+          "600",
+          "600"
+        ],
+        "top_shell_layers": "5",
+        "bottom_shell_layers": "3",
+        "top_shell_thickness": "1.0",
+        "bottom_shell_thickness": "0",
+        "support_top_z_distance": "0.2",
+        "support_bottom_z_distance": "0.2",
+        "support_type": "tree(auto)",
+        "support_style": "default",
+        "support_interface_top_layers": "2",
+        "support_object_xy_distance": "0.35"
+      }
+    }
+  ],
+  "build_volume_mm": [
+    340,
+    320,
+    340
+  ],
+  "shell_fit": [
+    {
+      "object": "前壳配置",
+      "source_dimensions_mm": [
+        252.9455108642578,
+        162.16473388671875,
+        270.85498046875
+      ],
+      "brim_allowance_each_side_mm": 8,
+      "envelope_mm": [
+        268.9455108642578,
+        178.16473388671875,
+        270.85498046875
+      ],
+      "fits_rectangular_build_volume": true
+    },
+    {
+      "object": "后壳配置",
+      "source_dimensions_mm": [
+        236.55226135253906,
+        177.40069580078125,
+        248.5341033935547
+      ],
+      "brim_allowance_each_side_mm": 8,
+      "envelope_mm": [
+        252.55226135253906,
+        193.40069580078125,
+        248.5341033935547
+      ],
+      "fits_rectangular_build_volume": true
+    }
+  ],
+  "pin_flat_dimensions_mm": [
+    23.278915405273438,
+    9.062232971191406,
+    5.167025089263916
+  ],
+  "blend_sha256": "4fda3a8b0fc2bb88e91337a3087a56b2e915b97ea58036e5f5c39998d8e3ca52",
+  "shell_manifest": "docs/stl-export-manifest-2026-10-21.json",
+  "pin_validation": "docs/lock-pin-validation-2026-10-21.json"
+}
