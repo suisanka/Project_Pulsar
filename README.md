@@ -4,9 +4,12 @@
 
 具体修改内容见 [Fix_History.md](Fix_History.md)。
 
+日常操作请看 [中文使用手册](docs/USER_GUIDE.zh-CN.md)，包含参数说明、检查视图、STL 导出步骤和常见问题。
+
 ## 文件
 
 - `ProjectPulsar_Base.blend`：修复后的工程文件
+- `docs/USER_GUIDE.zh-CN.md`：中文使用手册及配图
 - `tools/validate_model.py`：在 Blender 中运行的只读几何回归检查
 - `tools/repair_model.py`：第五轮修复的可重放脚本，需要明确指定输出文件
 
