@@ -1,0 +1,96 @@
+{
+  "blend_sha256": "4fda3a8b0fc2bb88e91337a3087a56b2e915b97ea58036e5f5c39998d8e3ca52",
+  "inspection_date": "2026-10-21",
+  "front_hinge_axis_ray_hits": 0,
+  "rear_hinge_axis_ray_hits": 0,
+  "axis_test": {
+    "start_mm": [
+      60,
+      52.80887,
+      137.9162
+    ],
+    "direction": [
+      -1,
+      0,
+      0
+    ]
+  },
+  "fitted_sharp_loops": {
+    "前壳配置": [
+      {
+        "vertices": 116,
+        "center_mm": [
+          -13.720758438110352,
+          52.8088649270456,
+          137.91628859296978
+        ],
+        "normal": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "radius_mm": 2.850720986984853,
+        "max_radial_error_mm": 0.004402739752206841
+      },
+      {
+        "vertices": 124,
+        "center_mm": [
+          13.699613571166992,
+          52.808878964194335,
+          137.91614879381652
+        ],
+        "normal": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "radius_mm": 2.8507962687431814,
+        "max_radial_error_mm": 0.004510105450417523
+      }
+    ],
+    "后壳配置": [
+      {
+        "vertices": 128,
+        "center_mm": [
+          13.261489868164062,
+          52.736072747522556,
+          137.89259886766422
+        ],
+        "normal": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "radius_mm": 3.159210773502055,
+        "max_radial_error_mm": 0.008170571070734933
+      },
+      {
+        "vertices": 128,
+        "center_mm": [
+          -13.28261947631836,
+          52.736072747522556,
+          137.89259886766422
+        ],
+        "normal": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "radius_mm": 3.159210773502054,
+        "max_radial_error_mm": 0.008170571070733601
+      }
+    ]
+  },
+  "confirmed": [
+    "Side lock-seat geometry is fused into the front and rear shells.",
+    "The current shells have no independent articulated side-lock mechanism.",
+    "The r pin is an independent mesh with no node reference, parent or assembly placement.",
+    "A ray along the fitted front hinge axis passes through both shells without an intersection."
+  ],
+  "unverified": [
+    "Exact off-the-shelf side-lock model and installation method.",
+    "Intended mating position, orientation and retention mechanism of r pin.",
+    "Pin insertion path, retention, required quantity and physical elasticity."
+  ],
+  "note": "The exploratory pin pose search did not establish a verified assembly. It is not proof that no fitting pose exists."
+}
