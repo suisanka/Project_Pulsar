@@ -326,20 +326,116 @@ def repair_eyeliner(cleanup):
     output.location = clean.location + Vector((230, 0))
 
 
+def configure_parameter_help():
+    def socket(group_name, socket_name):
+        return next(
+            item for item in bpy.data.node_groups[group_name].interface.items_tree
+            if item.item_type == "SOCKET"
+            and item.in_out == "INPUT"
+            and item.name == socket_name
+        )
+
+    for group_name, socket_name in (
+        ("前壳配置", "锁类型"), ("锁", "锁类型"), ("切换锁类型", "锁类型编号")
+    ):
+        item = socket(group_name, socket_name)
+        item.min_value = 0
+        item.max_value = 2
+        item.description = "0 = 大锁；1 = 小锁；2 = 无锁。"
+    item = socket("睫毛", "睫毛类型")
+    item.min_value = 0
+    item.max_value = 2
+    item.description = "0 = 当前几何数据；1 = 睫毛1；2 = 睫毛2。更换后检查贴合。"
+    socket("视孔", "生成").description = "根据头壳来源面生成视孔，无需更改平滑或平直着色。"
+    socket("视孔", "反向").description = "关闭时使用头壳内侧面；开启时使用外侧面。"
+    socket("视孔", "瞳距").description = "控制左右位置的参数；默认 6.03。生成后核对视线位置。"
+    bpy.context.scene["pulsar_parameter_help_revision"] = 1
+
+
+def repair_eyelash_bindings():
+    """Deform each topology before selecting the eyelash style."""
+    if bpy.context.scene.get("pulsar_eyelash_bindings_revision"):
+        return
+    head = bpy.data.objects["头壳"].modifiers["几何节点"]
+    face_inputs = {"滑移脸型", "睁眼大小", "腮帮子", "张嘴大小"}
+    for item in head.node_group.interface.items_tree:
+        if item.item_type == "SOCKET" and item.in_out == "INPUT" and item.name in face_inputs:
+            value = getattr(head.properties.inputs, item.identifier).value
+            if abs(value) > 1e-7:
+                raise RuntimeError("Bind eyelash variants with all four face inputs at zero")
+    obj = bpy.data.objects["睫毛"]
+    original = obj.modifiers["表面形变"]
+    if not original.is_bound:
+        raise RuntimeError("The default eyelash deformation must already be bound")
+    source_name = "睫毛0_形变源"
+    if source_name in bpy.data.objects:
+        raise RuntimeError(f"Refusing to overwrite existing object: {source_name}")
+    source = obj.copy()
+    source.name = source_name
+    # Share the base mesh: editing style 0's mesh still updates its deform source.
+    obj.users_collection[0].objects.link(source)
+    for modifier in list(source.modifiers):
+        if modifier.type != "SURFACE_DEFORM":
+            source.modifiers.remove(modifier)
+    source.hide_set(True)
+    source.hide_render = True
+    source.hide_select = True
+
+    for name in ("睫毛1", "睫毛2"):
+        variant = bpy.data.objects[name]
+        deform = variant.modifiers.new("表面形变", "SURFACE_DEFORM")
+        deform.target = original.target
+        deform.falloff = original.falloff
+        deform.strength = original.strength
+        variant.modifiers.move(len(variant.modifiers) - 1, 0)
+        hidden = variant.hide_get()
+        variant.hide_set(False)
+        try:
+            bpy.context.view_layer.update()
+            with bpy.context.temp_override(
+                object=variant, active_object=variant,
+                selected_objects=[variant], selected_editable_objects=[variant],
+            ):
+                bpy.ops.object.surfacedeform_bind(modifier=deform.name)
+            if not deform.is_bound:
+                raise RuntimeError(f"Surface Deform binding failed: {name}")
+        finally:
+            variant.hide_set(hidden)
+
+    group = bpy.data.node_groups["睫毛"]
+    info = node(group, "GeometryNodeObjectInfo", "默认睫毛独立形变")
+    info.transform_space = "ORIGINAL"
+    info.inputs["Object"].default_value = source
+    group.links.new(info.outputs["Geometry"], group.nodes["切换.001"].inputs["True"])
+    info.location = group.nodes["切换.001"].location + Vector((-240, 0))
+    obj.modifiers.remove(original)
+    bpy.context.scene["pulsar_eyelash_bindings_revision"] = 1
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument(
+        "--parameter-help-only", action="store_true",
+        help="Update interface ranges/help on an already repaired project",
+    )
     args = parser.parse_args(sys.argv[sys.argv.index("--") + 1 :] if "--" in sys.argv else [])
-    if bpy.context.scene.get("pulsar_repair_revision"):
-        raise RuntimeError("This project is already patched; refusing to duplicate repair nodes")
-    repair_vision()
-    cleanup = make_cleanup()
-    for name in ("前壳配置", "后壳配置"):
-        repair_shell(name, cleanup)
-    repair_eyeliner(cleanup)
-    guard_empty_mouth()
-    bpy.context.scene["pulsar_repair_revision"] = REVISION
-    bpy.context.scene["pulsar_repair_blender"] = bpy.app.version_string
+    if args.parameter_help_only:
+        if not bpy.context.scene.get("pulsar_repair_revision"):
+            raise RuntimeError("Apply the geometry repair before updating parameter help")
+    else:
+        if bpy.context.scene.get("pulsar_repair_revision"):
+            raise RuntimeError("This project is already patched; refusing to duplicate repair nodes")
+        repair_vision()
+        cleanup = make_cleanup()
+        for name in ("前壳配置", "后壳配置"):
+            repair_shell(name, cleanup)
+        repair_eyeliner(cleanup)
+        guard_empty_mouth()
+        repair_eyelash_bindings()
+        bpy.context.scene["pulsar_repair_revision"] = REVISION
+        bpy.context.scene["pulsar_repair_blender"] = bpy.app.version_string
+    configure_parameter_help()
     args.output.parent.mkdir(parents=True, exist_ok=True)
     bpy.ops.wm.save_as_mainfile(filepath=str(args.output.resolve()), compress=True)
 

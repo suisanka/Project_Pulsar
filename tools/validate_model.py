@@ -28,6 +28,7 @@ DEFAULTS = (
     ("视孔", "生成", False),
     ("视孔", "反向", False),
     ("视孔", "瞳距", 6.03),
+    ("睫毛", "睫毛类型", 0),
     ("眼线配置", "是否布尔", False),
     ("眼线配置", "是否刻字", False),
 )
@@ -138,6 +139,19 @@ def evaluated_metrics(name):
         evaluated.to_mesh_clear()
 
 
+def evaluated_positions_mm(name):
+    obj = bpy.data.objects[name]
+    evaluated = obj.evaluated_get(bpy.context.evaluated_depsgraph_get())
+    mesh = evaluated.to_mesh()
+    try:
+        mesh.transform(obj.matrix_world)
+        positions = np.empty(len(mesh.vertices) * 3, dtype=np.float32)
+        mesh.vertices.foreach_get("co", positions)
+        return positions.reshape(-1, 3).astype(np.float64) * 1000
+    finally:
+        evaluated.to_mesh_clear()
+
+
 def read_stl(path):
     data = Path(path).read_bytes()
     count = int.from_bytes(data[80:84], "little")
@@ -210,6 +224,7 @@ def main():
     parser.add_argument("--exports", type=Path, help="Also export/recheck representative STLs")
     parser.add_argument("--case", action="append", help="Run only matching case names (glob)")
     args = parser.parse_args(sys.argv[sys.argv.index("--") + 1 :] if "--" in sys.argv else [])
+    base_inputs = (*DEFAULTS, ("头壳", "睁眼大小", get_input("头壳", "睁眼大小")))
     receipt = {
         "blender": bpy.app.version_string,
         "blend_sha256": hashlib.sha256(Path(bpy.data.filepath).read_bytes()).hexdigest(),
@@ -257,6 +272,18 @@ def main():
             ),
         ]
     )
+    for opening, style in itertools.product((0.0, 0.3), (0, 1, 2)):
+        cases.append(
+            (
+                f"eyelash{style}_eye{opening}",
+                [
+                    ("头壳", "睁眼大小", opening),
+                    ("睫毛", "睫毛类型", style),
+                    ("眼线配置", "是否布尔", True),
+                ],
+                ("睫毛", "眼线配置"),
+            )
+        )
     if args.current:
         for name in SHELLS:
             if not get_input(name, "是否布尔"):
@@ -274,10 +301,11 @@ def main():
         ]
         if not cases:
             raise ValueError("No cases matched --case")
+    rest_eyelashes = {}
     for label, changes, names in cases:
         start = time.perf_counter()
         desired = {} if args.current else {
-            (obj, socket): value for obj, socket, value in (*DEFAULTS, *changes)
+            (obj, socket): value for obj, socket, value in (*base_inputs, *changes)
         }
         for (obj, socket), value in desired.items():
             set_input(obj, socket, value)
@@ -285,7 +313,7 @@ def main():
         case = {"name": label, "inputs": changes, "meshes": {}, "errors": []}
         if args.current:
             case["inputs"] = [
-                (obj, socket, get_input(obj, socket)) for obj, socket, _ in DEFAULTS
+                (obj, socket, get_input(obj, socket)) for obj, socket, _ in base_inputs
             ]
         for name in names:
             metrics = evaluated_metrics(name)
@@ -295,13 +323,36 @@ def main():
                 export = export_stl(name, args.exports / f"{label}_{name}.stl")
                 case.setdefault("exports", {})[name] = export
                 case["errors"].extend(f"STL {name}: {error}" for error in failures(export))
+        if label.startswith("eyelash"):
+            style = get_input("睫毛", "睫毛类型")
+            opening = get_input("头壳", "睁眼大小")
+            positions = evaluated_positions_mm("睫毛")
+            if opening == 0:
+                rest_eyelashes[style] = positions
+            else:
+                if style not in rest_eyelashes:
+                    set_input("头壳", "睁眼大小", 0.0)
+                    bpy.context.view_layer.update()
+                    rest_eyelashes[style] = evaluated_positions_mm("睫毛")
+                    set_input("头壳", "睁眼大小", opening)
+                    bpy.context.view_layer.update()
+                rest = rest_eyelashes[style]
+                if positions.shape != rest.shape:
+                    case["errors"].append("Eyelash topology changed during deformation")
+                elif len(positions) == 0:
+                    case["errors"].append("Empty eyelash deformation output")
+                else:
+                    displacement = float(np.linalg.norm(positions - rest, axis=1).max())
+                    case["deformation_max_displacement_mm"] = displacement
+                    if displacement <= 0.1:
+                        case["errors"].append("Eyelash did not follow the eye opening change")
         case["seconds"] = round(time.perf_counter() - start, 3)
         receipt["cases"].append(case)
         receipt["passed"] = all(not item["errors"] for item in receipt["cases"])
         args.output.write_text(json.dumps(receipt, ensure_ascii=False, indent=2) + "\n")
         print(f"{'FAIL' if case['errors'] else 'PASS'} {label}: {case['errors']}", flush=True)
     if not args.current:
-        for change in DEFAULTS:
+        for change in base_inputs:
             set_input(*change)
     if not receipt["passed"]:
         raise RuntimeError(f"Model validation failed; see {args.output}")

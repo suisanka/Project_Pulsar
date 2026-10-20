@@ -1,0 +1,115 @@
+{
+  "blender": "5.2.2 LTS",
+  "full_matrix_commit": "35a9259",
+  "before_sha256": "49e7b4f89c6c5d5b1f181e9d17817ae688401ca28f5d2327b7b051fadc46f508",
+  "after_sha256": "e4e812c1e4d7ced66b9f811046329f933756a01b05de3869f7ccd50db11f340a",
+  "all_geometry_fingerprints_equal": true,
+  "cases": {
+    "lock0": {
+      "前壳配置": {
+        "vertices": 251640,
+        "triangles": 503300,
+        "geometry_sha256": "0f766208dbda75e7cc1fa1341b07bce98e0c9d886d608a9c6e58a3270c5246a0"
+      },
+      "后壳配置": {
+        "vertices": 64151,
+        "triangles": 128574,
+        "geometry_sha256": "3e51eadc72bfd1669484bace0590d05715e4798624070e931ea15fcc4cbcf9fe"
+      }
+    },
+    "lock1": {
+      "前壳配置": {
+        "vertices": 261710,
+        "triangles": 523424,
+        "geometry_sha256": "b4e91939c863a362560ef90b358ccc7a3ef696c6efc0549cf49596bb20ed7f93"
+      },
+      "后壳配置": {
+        "vertices": 68791,
+        "triangles": 137838,
+        "geometry_sha256": "2de22a0dab1455f0a6eae7dc4d4af15de401a9260b60e3324821be842574794a"
+      }
+    },
+    "lock2": {
+      "前壳配置": {
+        "vertices": 251408,
+        "triangles": 502820,
+        "geometry_sha256": "74f9675afb17ab892d820cfb6347ccce4f4a969164ded965806b49f1232628b9"
+      },
+      "后壳配置": {
+        "vertices": 64115,
+        "triangles": 128486,
+        "geometry_sha256": "a7cc4567aa46ae87c0373994b6ad104997ed4b6aac3f087f64814b79076a13bd"
+      }
+    },
+    "eyelash0": {
+      "睫毛": {
+        "vertices": 49412,
+        "triangles": 98816,
+        "geometry_sha256": "46e9cd743e79a249dec71d2113eb2c812d38976f0bef05ae9d181ef86ddf7e51"
+      },
+      "眼线配置": {
+        "vertices": 49412,
+        "triangles": 98816,
+        "geometry_sha256": "f24bc49b82a656a10829435718f8bd97be1044dd41e888a51fae43a737a2d227"
+      }
+    },
+    "eyelash1": {
+      "睫毛": {
+        "vertices": 38660,
+        "triangles": 77312,
+        "geometry_sha256": "8d88eac6f560d145a41364688db3669bf1d39a231cc70fa8d83053cfe734998e"
+      },
+      "眼线配置": {
+        "vertices": 38660,
+        "triangles": 77312,
+        "geometry_sha256": "c136c41634955a899f8d3b088ab414324b562417a9bdc6515ae939054ffcf202"
+      }
+    },
+    "eyelash2": {
+      "睫毛": {
+        "vertices": 43780,
+        "triangles": 87552,
+        "geometry_sha256": "fd4696abb20a4bad23a98e58ba63713683a7f955aacef541ba8ea5f78a1d26ea"
+      },
+      "眼线配置": {
+        "vertices": 43780,
+        "triangles": 87552,
+        "geometry_sha256": "ab0e7ec0e48679ec57db79b0a37084f006ad78e9b84968b700d1f4ec13393dd0"
+      }
+    },
+    "vision_reverseFalse": {
+      "视孔": {
+        "vertices": 433164,
+        "triangles": 866320,
+        "geometry_sha256": "b3b7969e258c4146f0aadfc6b85740c1ae4dc789c8580f87caae49f8ce19135e"
+      },
+      "前壳配置": {
+        "vertices": 278247,
+        "triangles": 556498,
+        "geometry_sha256": "d7fa90579e02b5c56271b948639121e9f9ea9b6d137f52bc6d191bf24f546066"
+      }
+    },
+    "vision_reverseTrue": {
+      "视孔": {
+        "vertices": 447508,
+        "triangles": 895008,
+        "geometry_sha256": "252cf9b51fb24b5309d7117a864f702b0e496975e1c03e045c77eea82ad0aaf8"
+      },
+      "前壳配置": {
+        "vertices": 321156,
+        "triangles": 642316,
+        "geometry_sha256": "8bf199f2d74875ec050a984374b907feaded182417c790eb43be8d761cdaf738"
+      }
+    }
+  },
+  "external_libraries": [
+    "D:/游戏/steamapps/common/Blender/5.1/datafiles/assets/nodes/geometry_nodes_essentials.blend",
+    "D:/游戏/steamapps/common/Blender/5.1/datafiles/assets/nodes/geometry_nodes_essentials.blend"
+  ],
+  "fonts": [
+    {
+      "name": "HarmonyOS Sans SC Bold",
+      "packed": true
+    }
+  ]
+}

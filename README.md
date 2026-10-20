@@ -27,7 +27,7 @@
 
 ## 几何回归检查
 
-在仓库根目录运行。以下命令使用 macOS 的 Blender 路径，其他平台替换可执行文件路径即可：
+在仓库根目录运行。以下命令使用 macOS 的 Blender 路径；其他平台需替换可执行文件路径，Windows 还需调整换行方式和 `/tmp` 输出目录：
 
 ```sh
 "/Applications/Blender.app/Contents/MacOS/Blender" \
@@ -36,9 +36,9 @@
   --matrix --output /tmp/pulsar-validation.json --exports /tmp/pulsar-stl
 ```
 
-完整检查包括 45 组锁类型、前后基准值、圆角位置组合，以及默认导出、视孔正反向的三组瞳距、眼线布尔和刻字，共 55 个场景。去掉 `--matrix` 可运行 10 个重点场景。检查不会保存或改写工程。
+完整检查包括 45 组锁类型、前后基准值、圆角位置组合，以及默认导出、视孔正反向的三组瞳距、眼线布尔和刻字，再加上三种睫毛在两种睁眼状态下的检查，共 61 个场景。去掉 `--matrix` 可运行 16 个重点场景。检查不会保存或改写工程。
 
-2026-10-21 在 Blender 5.2.2 LTS 上实测 **55/55 通过**。完整记录见 [验证结果](docs/validation-2026-10-21.json)，修复前后精度记录见 [曲面距离检查](docs/surface-comparison-2026-10-21.json)；记录内包含被检文件的 SHA-256。
+2026-10-21 在 Blender 5.2.2 LTS 上实测 **61/61 通过**。完整记录见 [验证结果](docs/validation-2026-10-21.json)，修复前后精度记录见 [曲面距离检查](docs/surface-comparison-2026-10-21.json)；记录内包含被检文件的 SHA-256。
 
 检查自己保存的参数时，用 `--current` 替换 `--matrix`，并把输入文件换成自己的 `.blend`。此模式不重置参数，要求前后壳的「是否布尔」均已开启；`--exports` 会导出当前前后壳和已开启的视孔／眼线对象。
 

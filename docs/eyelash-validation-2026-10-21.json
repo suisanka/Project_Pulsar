@@ -1,0 +1,322 @@
+{
+  "blender": "5.2.2 LTS",
+  "before_sha256": "e4e812c1e4d7ced66b9f811046329f933756a01b05de3869f7ccd50db11f340a",
+  "after_sha256": "6920fe5d8c0b6d2e0874bdbb8a4ee391df7e2d157e39335cd1c084d6ee62ce1d",
+  "default_style_vertices_bitwise_equal": true,
+  "rest_pose_max_difference_limit_mm": 0.001,
+  "bindings": {
+    "睫毛": [],
+    "睫毛0_形变源": [
+      {
+        "modifier": "表面形变",
+        "bound": true,
+        "target": "睫毛形变"
+      }
+    ],
+    "睫毛1": [
+      {
+        "modifier": "表面形变",
+        "bound": true,
+        "target": "睫毛形变"
+      }
+    ],
+    "睫毛2": [
+      {
+        "modifier": "表面形变",
+        "bound": true,
+        "target": "睫毛形变"
+      }
+    ]
+  },
+  "passed": true,
+  "cases": [
+    {
+      "eye_open": 0,
+      "style": 0,
+      "meshes": {
+        "睫毛": {
+          "vertices": 49412,
+          "triangles": 98816,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 0.0013230154453081032,
+          "dimensions_mm": [
+            175.7799835205078,
+            33.947364807128906,
+            33.44448471069336
+          ],
+          "signed_volume_cm3": 11.15998538112496,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "眼线配置": {
+          "vertices": 25397,
+          "triangles": 50786,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 1.6995859475732634e-06,
+          "dimensions_mm": [
+            175.2564697265625,
+            31.263595581054688,
+            33.153785705566406
+          ],
+          "signed_volume_cm3": 4.730725598949816,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "max_displacement_mm": 0.0
+    },
+    {
+      "eye_open": 0,
+      "style": 1,
+      "meshes": {
+        "睫毛": {
+          "vertices": 38660,
+          "triangles": 77312,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 0.0011231492569724623,
+          "dimensions_mm": [
+            158.08871459960938,
+            32.52928161621094,
+            23.611392974853516
+          ],
+          "signed_volume_cm3": 9.526432698534984,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "眼线配置": {
+          "vertices": 20044,
+          "triangles": 40080,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 7.610792347880091e-07,
+          "dimensions_mm": [
+            158.06710815429688,
+            27.212318420410156,
+            23.002460479736328
+          ],
+          "signed_volume_cm3": 3.9023437304623596,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "max_displacement_mm": 0.0
+    },
+    {
+      "eye_open": 0,
+      "style": 2,
+      "meshes": {
+        "睫毛": {
+          "vertices": 43780,
+          "triangles": 87552,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 0.0013230154453081032,
+          "dimensions_mm": [
+            175.7799835205078,
+            33.747764587402344,
+            33.44448471069336
+          ],
+          "signed_volume_cm3": 10.872903473009654,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "眼线配置": {
+          "vertices": 22932,
+          "triangles": 45856,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 8.776964134869346e-07,
+          "dimensions_mm": [
+            175.2564697265625,
+            31.063995361328125,
+            33.14961242675781
+          ],
+          "signed_volume_cm3": 4.681313280692602,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "max_displacement_mm": 0.0
+    },
+    {
+      "eye_open": 0.3,
+      "style": 0,
+      "meshes": {
+        "睫毛": {
+          "vertices": 49412,
+          "triangles": 98816,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 0.0011069329437676152,
+          "dimensions_mm": [
+            171.28553771972656,
+            32.853004455566406,
+            27.597644805908203
+          ],
+          "signed_volume_cm3": 9.262603611892409,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "眼线配置": {
+          "vertices": 26008,
+          "triangles": 52008,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 1.7313148791801656e-05,
+          "dimensions_mm": [
+            171.04586791992188,
+            30.10265350341797,
+            26.32193374633789
+          ],
+          "signed_volume_cm3": 4.196755280149804,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "max_displacement_mm": 7.071550497939684
+    },
+    {
+      "eye_open": 0.3,
+      "style": 1,
+      "meshes": {
+        "睫毛": {
+          "vertices": 38660,
+          "triangles": 77312,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 0.0009533000924341362,
+          "dimensions_mm": [
+            154.66970825195312,
+            31.537399291992188,
+            20.291654586791992
+          ],
+          "signed_volume_cm3": 7.958160642125622,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "眼线配置": {
+          "vertices": 20514,
+          "triangles": 41020,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 5.538374671236485e-06,
+          "dimensions_mm": [
+            154.66970825195312,
+            26.222824096679688,
+            19.392578125
+          ],
+          "signed_volume_cm3": 3.5194509687598026,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "max_displacement_mm": 7.115179341960851
+    },
+    {
+      "eye_open": 0.3,
+      "style": 2,
+      "meshes": {
+        "睫毛": {
+          "vertices": 43780,
+          "triangles": 87552,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 0.0011069329437676152,
+          "dimensions_mm": [
+            171.28553771972656,
+            32.316429138183594,
+            27.597644805908203
+          ],
+          "signed_volume_cm3": 9.032241064218649,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "眼线配置": {
+          "vertices": 23390,
+          "triangles": 46772,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 5.390636210062727e-06,
+          "dimensions_mm": [
+            171.04586791992188,
+            29.566085815429688,
+            26.321426391601562
+          ],
+          "signed_volume_cm3": 4.1307146204361285,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "max_displacement_mm": 7.08167825844236
+    }
+  ]
+}
