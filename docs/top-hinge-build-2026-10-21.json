@@ -1,0 +1,160 @@
+{
+  "source_sha256": "4fda3a8b0fc2bb88e91337a3087a56b2e915b97ea58036e5f5c39998d8e3ca52",
+  "specification": {
+    "revision": 2,
+    "axis_world_mm": [
+      -0.010565,
+      52.80887,
+      137.9162
+    ],
+    "axis_direction": [
+      1,
+      0,
+      0
+    ],
+    "opening_rotation": "rear shell about X, negative degrees",
+    "working_angle_deg": 75.0,
+    "verification_limit_deg": 80.0,
+    "bore_diameter_mm": 6.6,
+    "front_inner_faces_from_axis_mm": [
+      -14.0,
+      14.0
+    ],
+    "axle": {
+      "quantity": 1,
+      "example": "Ganter ISO 7379-6-M5-55",
+      "shoulder_diameter_mm": 6.0,
+      "shoulder_length_mm": 55.0,
+      "thread": "M5 x 0.8",
+      "thread_length_mm": 9.5,
+      "head_diameter_mm": 10.0,
+      "head_height_mm": 4.5,
+      "hex_key_mm": 3.0,
+      "shoulder_x_from_axis_mm": [
+        -27.6,
+        27.4
+      ],
+      "note": "Order explicit D6, not the D6.5 ISO-sheet variant. Purchased metal part."
+    },
+    "washer_left": {
+      "quantity": 1,
+      "id_mm": 6.4,
+      "od_mm": 12.0,
+      "thickness_mm": 1.6
+    },
+    "spacer_right": {
+      "quantity": 1,
+      "id_mm": 6.6,
+      "od_mm": 10.0,
+      "thickness_mm": 1.4
+    },
+    "washer_right": {
+      "quantity": 1,
+      "id_mm": 5.3,
+      "od_mm": 10.0,
+      "thickness_mm": 1.0
+    },
+    "locknut": {
+      "quantity": 1,
+      "thread": "M5 x 0.8",
+      "standard": "DIN 985",
+      "af_mm": 8.0,
+      "height_mm": 5.0
+    },
+    "sources": [
+      "https://live-katalog.ganternorm.com/pdf/ganter/EN/7379.pdf",
+      "https://www.obo.de/de-de/produkte/unterlegscheibe-12-6-4-1-6-m6-3402061.html"
+    ]
+  },
+  "before": {
+    "前壳配置": {
+      "vertices": 261710,
+      "triangles": 523424,
+      "boundary_edges": 0,
+      "multi_face_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_triangles": 0,
+      "degenerate_triangles": 0,
+      "near_zero_triangles": 1,
+      "min_triangle_area_mm2": 9.003709490354569e-09,
+      "dimensions_mm": [
+        252.9455108642578,
+        162.16473388671875,
+        270.85498046875
+      ],
+      "signed_volume_cm3": 267.8423557544636,
+      "wire_edges": 0,
+      "loose_vertices": 0,
+      "sdf_rebuilt": false
+    },
+    "后壳配置": {
+      "vertices": 68791,
+      "triangles": 137838,
+      "boundary_edges": 0,
+      "multi_face_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_triangles": 0,
+      "degenerate_triangles": 0,
+      "near_zero_triangles": 0,
+      "min_triangle_area_mm2": 7.888204752812392e-07,
+      "dimensions_mm": [
+        236.55226135253906,
+        177.40069580078125,
+        248.5341033935547
+      ],
+      "signed_volume_cm3": 232.10877194624766,
+      "wire_edges": 0,
+      "loose_vertices": 0,
+      "sdf_rebuilt": false
+    }
+  },
+  "disconnected_rigid_tongue_nodes": [
+    "插扣并集",
+    "插扣镜像_翻转"
+  ],
+  "after": {
+    "前壳配置": {
+      "vertices": 261115,
+      "triangles": 522234,
+      "boundary_edges": 0,
+      "multi_face_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_triangles": 0,
+      "degenerate_triangles": 0,
+      "near_zero_triangles": 0,
+      "min_triangle_area_mm2": 1.8128490374582417e-07,
+      "dimensions_mm": [
+        252.9455108642578,
+        162.16473388671875,
+        270.85498046875
+      ],
+      "signed_volume_cm3": 267.55786377893884,
+      "wire_edges": 0,
+      "loose_vertices": 0,
+      "sdf_rebuilt": false
+    },
+    "后壳配置": {
+      "vertices": 66871,
+      "triangles": 133998,
+      "boundary_edges": 0,
+      "multi_face_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_triangles": 0,
+      "degenerate_triangles": 0,
+      "near_zero_triangles": 0,
+      "min_triangle_area_mm2": 2.7473869567158604e-06,
+      "dimensions_mm": [
+        236.55226135253906,
+        177.40069580078125,
+        248.5341033935547
+      ],
+      "signed_volume_cm3": 226.53712864937137,
+      "wire_edges": 0,
+      "loose_vertices": 0,
+      "sdf_rebuilt": false
+    }
+  },
+  "saved_sha256": "f9ff2d067c5da83d2f92f2014e775c04a4dbc0e517879beedd5b42ba257b8af6",
+  "geometry_passed": true,
+  "assembly_validation": "Run validate_top_hinge.py on the saved file separately."
+}

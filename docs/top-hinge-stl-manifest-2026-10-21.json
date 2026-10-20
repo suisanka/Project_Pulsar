@@ -1,0 +1,384 @@
+{
+  "blend_sha256": "da73224dc28a9ff95df5f7a943420aeea5048c778f3ad02641783f41f5e9abf2",
+  "units": "mm",
+  "assembly_validation_sha256": "bb34f638cfc10f04c112f45c7c733706f66b645a7b0c5662cbef72c32df3d0ec",
+  "files": [
+    {
+      "path": "exports/2026-10-21-closure-v3/ProjectPulsar_Front_Closure_v3.stl",
+      "role": "front shell",
+      "sha256": "eb1161e46fa1351cf024a13d17e4b844e31fcdf54c029265340d61349e2d7df6",
+      "bytes": 26114684,
+      "source_metrics": {
+        "vertices": 261132,
+        "triangles": 522292,
+        "boundary_edges": 0,
+        "multi_face_edges": 0,
+        "inconsistent_edges": 0,
+        "duplicate_triangles": 0,
+        "degenerate_triangles": 0,
+        "near_zero_triangles": 0,
+        "min_triangle_area_mm2": 4.517883607163621e-08,
+        "dimensions_mm": [
+          252.9455108642578,
+          162.16473388671875,
+          270.85498046875
+        ],
+        "signed_volume_cm3": 265.53349584978633,
+        "wire_edges": 0,
+        "loose_vertices": 0,
+        "sdf_rebuilt": false
+      },
+      "stl_metrics": {
+        "vertices": 261132,
+        "triangles": 522292,
+        "boundary_edges": 0,
+        "multi_face_edges": 0,
+        "inconsistent_edges": 0,
+        "duplicate_triangles": 0,
+        "degenerate_triangles": 0,
+        "near_zero_triangles": 0,
+        "min_triangle_area_mm2": 4.517883607163621e-08,
+        "dimensions_mm": [
+          252.9455108642578,
+          162.16473388671875,
+          270.85498046875
+        ],
+        "signed_volume_cm3": 265.53349584978633
+      },
+      "export_transform": null
+    },
+    {
+      "path": "exports/2026-10-21-closure-v3/ProjectPulsar_Rear_Closure_v3.stl",
+      "role": "rear shell",
+      "sha256": "88598b2897b22873fee2db0d99f0890a0e3facb5be5984167ff03d0a42779339",
+      "bytes": 6725084,
+      "source_metrics": {
+        "vertices": 67114,
+        "triangles": 134500,
+        "boundary_edges": 0,
+        "multi_face_edges": 0,
+        "inconsistent_edges": 0,
+        "duplicate_triangles": 0,
+        "degenerate_triangles": 0,
+        "near_zero_triangles": 0,
+        "min_triangle_area_mm2": 5.031227719250761e-08,
+        "dimensions_mm": [
+          236.55226135253906,
+          177.40069580078125,
+          248.5341033935547
+        ],
+        "signed_volume_cm3": 225.58894572665542,
+        "wire_edges": 0,
+        "loose_vertices": 0,
+        "sdf_rebuilt": false
+      },
+      "stl_metrics": {
+        "vertices": 67114,
+        "triangles": 134500,
+        "boundary_edges": 0,
+        "multi_face_edges": 0,
+        "inconsistent_edges": 0,
+        "duplicate_triangles": 0,
+        "degenerate_triangles": 0,
+        "near_zero_triangles": 0,
+        "min_triangle_area_mm2": 5.031227719250761e-08,
+        "dimensions_mm": [
+          236.55226135253906,
+          177.40069580078125,
+          248.5341033935547
+        ],
+        "signed_volume_cm3": 225.58894572665542
+      },
+      "export_transform": null
+    },
+    {
+      "path": "exports/2026-10-21-closure-v3/ProjectPulsar_Hinge_Spacer_1p4.stl",
+      "role": "print one; flat on bed",
+      "sha256": "812851148ba079cee390325511c4fe144671a10951e26b1b7241f5487b8f4010",
+      "bytes": 51284,
+      "source_metrics": {
+        "vertices": 512,
+        "triangles": 1024,
+        "boundary_edges": 0,
+        "multi_face_edges": 0,
+        "inconsistent_edges": 0,
+        "duplicate_triangles": 0,
+        "degenerate_triangles": 0,
+        "near_zero_triangles": 0,
+        "min_triangle_area_mm2": 0.11337362653669546,
+        "dimensions_mm": [
+          9.999998092651367,
+          9.999990463256836,
+          1.3999994993209839
+        ],
+        "signed_volume_cm3": 0.06203410936288636,
+        "wire_edges": 0,
+        "loose_vertices": 0,
+        "sdf_rebuilt": false
+      },
+      "stl_metrics": {
+        "vertices": 512,
+        "triangles": 1024,
+        "boundary_edges": 0,
+        "multi_face_edges": 0,
+        "inconsistent_edges": 0,
+        "duplicate_triangles": 0,
+        "degenerate_triangles": 0,
+        "near_zero_triangles": 0,
+        "min_triangle_area_mm2": 0.11337362653669546,
+        "dimensions_mm": [
+          9.999998092651367,
+          9.999990463256836,
+          1.3999994993209839
+        ],
+        "signed_volume_cm3": 0.06203410936288636
+      },
+      "export_transform": {
+        "axis_mapping": "assembly (Y,Z,X) -> print (X,Y,Z); bottom Z=0"
+      }
+    },
+    {
+      "path": "exports/2026-10-21-closure-v3/ProjectPulsar_Hinge_Test_Front.stl",
+      "role": "local fit coupon; not the full shell",
+      "sha256": "14f2e7274afdd7bb40c6a5ff474c469fcfcbfa8cf9eb59d0bad46bbe789a63d3",
+      "bytes": 221584,
+      "source_metrics": {
+        "vertices": 2213,
+        "triangles": 4430,
+        "boundary_edges": 0,
+        "multi_face_edges": 0,
+        "inconsistent_edges": 0,
+        "duplicate_triangles": 0,
+        "degenerate_triangles": 0,
+        "near_zero_triangles": 1,
+        "min_triangle_area_mm2": 3.54702933691442e-11,
+        "dimensions_mm": [
+          76.0,
+          36.06574630737305,
+          18.73944664001465
+        ],
+        "signed_volume_cm3": 16.354474122332924,
+        "wire_edges": 0,
+        "loose_vertices": 0,
+        "sdf_rebuilt": false
+      },
+      "stl_metrics": {
+        "vertices": 2213,
+        "triangles": 4430,
+        "boundary_edges": 0,
+        "multi_face_edges": 0,
+        "inconsistent_edges": 0,
+        "duplicate_triangles": 0,
+        "degenerate_triangles": 0,
+        "near_zero_triangles": 1,
+        "min_triangle_area_mm2": 3.54702933691442e-11,
+        "dimensions_mm": [
+          76.0,
+          36.06574630737305,
+          18.73944664001465
+        ],
+        "signed_volume_cm3": 16.354474122332924
+      },
+      "export_transform": {
+        "clip_min_world_mm": [
+          -36.0,
+          30.0,
+          126.0
+        ],
+        "clip_max_world_mm": [
+          40.0,
+          82.0,
+          165.0
+        ],
+        "translation_mm": [
+          -2.0,
+          -56.0,
+          -126.0
+        ]
+      }
+    },
+    {
+      "path": "exports/2026-10-21-closure-v3/ProjectPulsar_Hinge_Test_Rear.stl",
+      "role": "local fit coupon; not the full shell",
+      "sha256": "53697f67db3ec7fe9fd4d7f5551128a145d05f651b072c3bd38a29525695a5fb",
+      "bytes": 238484,
+      "source_metrics": {
+        "vertices": 2382,
+        "triangles": 4768,
+        "boundary_edges": 0,
+        "multi_face_edges": 0,
+        "inconsistent_edges": 0,
+        "duplicate_triangles": 0,
+        "degenerate_triangles": 0,
+        "near_zero_triangles": 0,
+        "min_triangle_area_mm2": 3.532477421686053e-08,
+        "dimensions_mm": [
+          76.0,
+          30.04985809326172,
+          24.61461639404297
+        ],
+        "signed_volume_cm3": 11.957003894567368,
+        "wire_edges": 0,
+        "loose_vertices": 0,
+        "sdf_rebuilt": false
+      },
+      "stl_metrics": {
+        "vertices": 2382,
+        "triangles": 4768,
+        "boundary_edges": 0,
+        "multi_face_edges": 0,
+        "inconsistent_edges": 0,
+        "duplicate_triangles": 0,
+        "degenerate_triangles": 0,
+        "near_zero_triangles": 0,
+        "min_triangle_area_mm2": 3.532477421686053e-08,
+        "dimensions_mm": [
+          76.0,
+          30.04985809326172,
+          24.61461639404297
+        ],
+        "signed_volume_cm3": 11.957003894567368
+      },
+      "export_transform": {
+        "clip_min_world_mm": [
+          -36.0,
+          30.0,
+          126.0
+        ],
+        "clip_max_world_mm": [
+          40.0,
+          82.0,
+          165.0
+        ],
+        "translation_mm": [
+          -2.0,
+          -56.0,
+          -126.0
+        ]
+      }
+    },
+    {
+      "path": "exports/2026-10-21-closure-v3/ProjectPulsar_SideLatch_Test_Front_L.stl",
+      "role": "left-side latch fit coupon; both sides use the same mirrored 20x20 pattern",
+      "sha256": "f4be3db6c06b05bc013263e1fc61afbcf39f4517175d555e062aac8c6a5848d0",
+      "bytes": 580484,
+      "source_metrics": {
+        "vertices": 5800,
+        "triangles": 11608,
+        "boundary_edges": 0,
+        "multi_face_edges": 0,
+        "inconsistent_edges": 0,
+        "duplicate_triangles": 0,
+        "degenerate_triangles": 0,
+        "near_zero_triangles": 0,
+        "min_triangle_area_mm2": 1.3601948012365028e-08,
+        "dimensions_mm": [
+          24.45982551574707,
+          47.572017669677734,
+          60.0
+        ],
+        "signed_volume_cm3": 8.393249165178787,
+        "wire_edges": 0,
+        "loose_vertices": 0,
+        "sdf_rebuilt": false
+      },
+      "stl_metrics": {
+        "vertices": 5800,
+        "triangles": 11608,
+        "boundary_edges": 0,
+        "multi_face_edges": 0,
+        "inconsistent_edges": 0,
+        "duplicate_triangles": 0,
+        "degenerate_triangles": 0,
+        "near_zero_triangles": 0,
+        "min_triangle_area_mm2": 1.3601948012365028e-08,
+        "dimensions_mm": [
+          24.45982551574707,
+          47.572017669677734,
+          60.0
+        ],
+        "signed_volume_cm3": 8.393249165178787
+      },
+      "export_transform": {
+        "clip_min_world_mm": [
+          -125.0,
+          -50.0,
+          5.0
+        ],
+        "clip_max_world_mm": [
+          -80.0,
+          20.0,
+          65.0
+        ],
+        "translation_mm": [
+          102.5,
+          15.0,
+          -5.0
+        ]
+      }
+    },
+    {
+      "path": "exports/2026-10-21-closure-v3/ProjectPulsar_SideLatch_Test_Rear_L.stl",
+      "role": "left-side latch fit coupon; both sides use the same mirrored 20x20 pattern",
+      "sha256": "bb2f43b6772c35883a3a12671dc993de4acefe7a595e1fd49cc073d1f6e3d2d2",
+      "bytes": 384484,
+      "source_metrics": {
+        "vertices": 3842,
+        "triangles": 7688,
+        "boundary_edges": 0,
+        "multi_face_edges": 0,
+        "inconsistent_edges": 0,
+        "duplicate_triangles": 0,
+        "degenerate_triangles": 0,
+        "near_zero_triangles": 0,
+        "min_triangle_area_mm2": 3.119839675491676e-08,
+        "dimensions_mm": [
+          24.06475067138672,
+          58.96433639526367,
+          60.0
+        ],
+        "signed_volume_cm3": 9.972761761134324,
+        "wire_edges": 0,
+        "loose_vertices": 0,
+        "sdf_rebuilt": false
+      },
+      "stl_metrics": {
+        "vertices": 3842,
+        "triangles": 7688,
+        "boundary_edges": 0,
+        "multi_face_edges": 0,
+        "inconsistent_edges": 0,
+        "duplicate_triangles": 0,
+        "degenerate_triangles": 0,
+        "near_zero_triangles": 0,
+        "min_triangle_area_mm2": 3.119839675491676e-08,
+        "dimensions_mm": [
+          24.06475067138672,
+          58.96433639526367,
+          60.0
+        ],
+        "signed_volume_cm3": 9.972761761134324
+      },
+      "export_transform": {
+        "clip_min_world_mm": [
+          -125.0,
+          -50.0,
+          5.0
+        ],
+        "clip_max_world_mm": [
+          -80.0,
+          20.0,
+          65.0
+        ],
+        "translation_mm": [
+          102.5,
+          15.0,
+          -5.0
+        ]
+      }
+    }
+  ],
+  "excluded": "Purchased shoulder axle, washers, nut, helper cutters and unused legacy R pin.",
+  "side_validation_sha256": "f3d14dd71c9a414917c4254b9a3eac9dd8d2558fc23b6116cd577acf07ee8c0b",
+  "passed": true
+}

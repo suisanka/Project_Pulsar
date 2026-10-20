@@ -1,0 +1,2476 @@
+{
+  "blender": "5.2.2 LTS",
+  "blend_sha256": "da73224dc28a9ff95df5f7a943420aeea5048c778f3ad02641783f41f5e9abf2",
+  "specification": {
+    "revision": 2,
+    "axis_world_mm": [
+      -0.010565,
+      52.80887,
+      137.9162
+    ],
+    "axis_direction": [
+      1,
+      0,
+      0
+    ],
+    "opening_rotation": "rear shell about X, negative degrees",
+    "working_angle_deg": 75.0,
+    "verification_limit_deg": 80.0,
+    "bore_diameter_mm": 6.6,
+    "front_inner_faces_from_axis_mm": [
+      -14.0,
+      14.0
+    ],
+    "axle": {
+      "quantity": 1,
+      "example": "Ganter ISO 7379-6-M5-55",
+      "shoulder_diameter_mm": 6.0,
+      "shoulder_length_mm": 55.0,
+      "thread": "M5 x 0.8",
+      "thread_length_mm": 9.5,
+      "head_diameter_mm": 10.0,
+      "head_height_mm": 4.5,
+      "hex_key_mm": 3.0,
+      "shoulder_x_from_axis_mm": [
+        -27.6,
+        27.4
+      ],
+      "note": "Order explicit D6, not the D6.5 ISO-sheet variant. Purchased metal part."
+    },
+    "washer_left": {
+      "quantity": 1,
+      "id_mm": 6.4,
+      "od_mm": 12.0,
+      "thickness_mm": 1.6
+    },
+    "spacer_right": {
+      "quantity": 1,
+      "id_mm": 6.6,
+      "od_mm": 10.0,
+      "thickness_mm": 1.4
+    },
+    "washer_right": {
+      "quantity": 1,
+      "id_mm": 5.3,
+      "od_mm": 10.0,
+      "thickness_mm": 1.0
+    },
+    "locknut": {
+      "quantity": 1,
+      "thread": "M5 x 0.8",
+      "standard": "DIN 985",
+      "af_mm": 8.0,
+      "height_mm": 5.0
+    },
+    "sources": [
+      "https://live-katalog.ganternorm.com/pdf/ganter/EN/7379.pdf",
+      "https://www.obo.de/de-de/produkte/unterlegscheibe-12-6-4-1-6-m6-3402061.html"
+    ]
+  },
+  "errors": [],
+  "method": "Full evaluated triangle meshes, BVH surface overlap plus connected-component parity containment; independent Manifold solid intersections at four angles.",
+  "limits": [
+    "Discrete rigid geometry only; not a continuous collision proof.",
+    "No purchased hardware measurement, slicing, print, elasticity, wear, fatigue or load test.",
+    "Side latch fasteners are included; the purchased latch moving covers/internal mechanism are not supplied as CAD and are not motion-validated."
+  ],
+  "mesh_checks": {
+    "前壳配置": {
+      "vertices": 261132,
+      "triangles": 522292,
+      "boundary_edges": 0,
+      "multi_face_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_triangles": 0,
+      "degenerate_triangles": 0,
+      "near_zero_triangles": 0,
+      "min_triangle_area_mm2": 4.517883607163621e-08,
+      "dimensions_mm": [
+        252.9455108642578,
+        162.16473388671875,
+        270.85498046875
+      ],
+      "signed_volume_cm3": 265.53349584978633,
+      "wire_edges": 0,
+      "loose_vertices": 0,
+      "sdf_rebuilt": false
+    },
+    "后壳配置": {
+      "vertices": 67114,
+      "triangles": 134500,
+      "boundary_edges": 0,
+      "multi_face_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_triangles": 0,
+      "degenerate_triangles": 0,
+      "near_zero_triangles": 0,
+      "min_triangle_area_mm2": 5.031227719250761e-08,
+      "dimensions_mm": [
+        236.55226135253906,
+        177.40069580078125,
+        248.5341033935547
+      ],
+      "signed_volume_cm3": 225.58894572665542,
+      "wire_edges": 0,
+      "loose_vertices": 0,
+      "sdf_rebuilt": false
+    },
+    "Hinge_Axle_D6_L55_M5_REFERENCE": {
+      "vertices": 768,
+      "triangles": 1532,
+      "boundary_edges": 0,
+      "multi_face_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_triangles": 0,
+      "degenerate_triangles": 0,
+      "near_zero_triangles": 0,
+      "min_triangle_area_mm2": 0.00036832797923125327,
+      "dimensions_mm": [
+        69.0,
+        9.999996185302734,
+        9.999984741210938
+      ],
+      "signed_volume_cm3": 2.0942095913111265,
+      "wire_edges": 0,
+      "loose_vertices": 0,
+      "sdf_rebuilt": false
+    },
+    "Hinge_Washer_M6_REFERENCE": {
+      "vertices": 512,
+      "triangles": 1024,
+      "boundary_edges": 0,
+      "multi_face_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_triangles": 0,
+      "degenerate_triangles": 0,
+      "near_zero_triangles": 0,
+      "min_triangle_area_mm2": 0.12564134088464027,
+      "dimensions_mm": [
+        1.6000003814697266,
+        12.000003814697266,
+        11.999984741210938
+      ],
+      "signed_volume_cm3": 0.1294318677509206,
+      "wire_edges": 0,
+      "loose_vertices": 0,
+      "sdf_rebuilt": false
+    },
+    "Hinge_Spacer_1p4_PRINT": {
+      "vertices": 512,
+      "triangles": 1024,
+      "boundary_edges": 0,
+      "multi_face_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_triangles": 0,
+      "degenerate_triangles": 0,
+      "near_zero_triangles": 0,
+      "min_triangle_area_mm2": 0.1133685578984873,
+      "dimensions_mm": [
+        1.3999996185302734,
+        9.999996185302734,
+        9.999984741210938
+      ],
+      "signed_volume_cm3": 0.06203410854663218,
+      "wire_edges": 0,
+      "loose_vertices": 0,
+      "sdf_rebuilt": false
+    },
+    "Hinge_Washer_M5_REFERENCE": {
+      "vertices": 512,
+      "triangles": 1024,
+      "boundary_edges": 0,
+      "multi_face_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_triangles": 0,
+      "degenerate_triangles": 0,
+      "near_zero_triangles": 0,
+      "min_triangle_area_mm2": 0.06502714630676511,
+      "dimensions_mm": [
+        1.0,
+        9.999996185302734,
+        9.999984741210938
+      ],
+      "signed_volume_cm3": 0.05645531927101547,
+      "wire_edges": 0,
+      "loose_vertices": 0,
+      "sdf_rebuilt": false
+    },
+    "Hinge_Nut_M5_REFERENCE": {
+      "vertices": 512,
+      "triangles": 1024,
+      "boundary_edges": 0,
+      "multi_face_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_triangles": 0,
+      "degenerate_triangles": 0,
+      "near_zero_triangles": 0,
+      "min_triangle_area_mm2": 0.12993661148357205,
+      "dimensions_mm": [
+        5.0,
+        9.237602233886719,
+        9.237625122070312
+      ],
+      "signed_volume_cm3": 0.23683325693767984,
+      "wire_edges": 0,
+      "loose_vertices": 0,
+      "sdf_rebuilt": false
+    },
+    "SideLatch_L_0_Head": {
+      "vertices": 256,
+      "triangles": 508,
+      "boundary_edges": 0,
+      "multi_face_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_triangles": 0,
+      "degenerate_triangles": 0,
+      "near_zero_triangles": 0,
+      "min_triangle_area_mm2": 0.00047942961751360494,
+      "dimensions_mm": [
+        2.2093353271484375,
+        5.755067825317383,
+        5.827322006225586
+      ],
+      "signed_volume_cm3": 0.04208712355404207,
+      "wire_edges": 0,
+      "loose_vertices": 0,
+      "sdf_rebuilt": false
+    },
+    "SideLatch_L_0_Nut": {
+      "vertices": 512,
+      "triangles": 1024,
+      "boundary_edges": 0,
+      "multi_face_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_triangles": 0,
+      "degenerate_triangles": 0,
+      "near_zero_triangles": 0,
+      "min_triangle_area_mm2": 0.061654178672979155,
+      "dimensions_mm": [
+        4.612464904785156,
+        6.491184234619141,
+        6.692922592163086
+      ],
+      "signed_volume_cm3": 0.09839707122922867,
+      "wire_edges": 0,
+      "loose_vertices": 0,
+      "sdf_rebuilt": false
+    },
+    "SideLatch_L_0_Shaft": {
+      "vertices": 256,
+      "triangles": 508,
+      "boundary_edges": 0,
+      "multi_face_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_triangles": 0,
+      "degenerate_triangles": 0,
+      "near_zero_triangles": 0,
+      "min_triangle_area_mm2": 0.00013274336141524593,
+      "dimensions_mm": [
+        10.249008178710938,
+        3.3626041412353516,
+        3.9128055572509766
+      ],
+      "signed_volume_cm3": 0.07065745943098393,
+      "wire_edges": 0,
+      "loose_vertices": 0,
+      "sdf_rebuilt": false
+    },
+    "SideLatch_L_0_Washer": {
+      "vertices": 512,
+      "triangles": 1024,
+      "boundary_edges": 0,
+      "multi_face_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_triangles": 0,
+      "degenerate_triangles": 0,
+      "near_zero_triangles": 0,
+      "min_triangle_area_mm2": 0.019632053334960223,
+      "dimensions_mm": [
+        1.194488525390625,
+        7.011865615844727,
+        7.014980316162109
+      ],
+      "signed_volume_cm3": 0.015214886626749965,
+      "wire_edges": 0,
+      "loose_vertices": 0,
+      "sdf_rebuilt": false
+    },
+    "SideLatch_L_1_Head": {
+      "vertices": 256,
+      "triangles": 508,
+      "boundary_edges": 0,
+      "multi_face_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_triangles": 0,
+      "degenerate_triangles": 0,
+      "near_zero_triangles": 0,
+      "min_triangle_area_mm2": 0.0004796651156391762,
+      "dimensions_mm": [
+        2.2093353271484375,
+        5.755067825317383,
+        5.827320098876953
+      ],
+      "signed_volume_cm3": 0.04208711228554942,
+      "wire_edges": 0,
+      "loose_vertices": 0,
+      "sdf_rebuilt": false
+    },
+    "SideLatch_L_1_Nut": {
+      "vertices": 512,
+      "triangles": 1024,
+      "boundary_edges": 0,
+      "multi_face_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_triangles": 0,
+      "degenerate_triangles": 0,
+      "near_zero_triangles": 0,
+      "min_triangle_area_mm2": 0.06165348039032719,
+      "dimensions_mm": [
+        4.612457275390625,
+        6.491185188293457,
+        6.692924499511719
+      ],
+      "signed_volume_cm3": 0.09839705423938702,
+      "wire_edges": 0,
+      "loose_vertices": 0,
+      "sdf_rebuilt": false
+    },
+    "SideLatch_L_1_Shaft": {
+      "vertices": 256,
+      "triangles": 508,
+      "boundary_edges": 0,
+      "multi_face_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_triangles": 0,
+      "degenerate_triangles": 0,
+      "near_zero_triangles": 0,
+      "min_triangle_area_mm2": 0.000132678556812954,
+      "dimensions_mm": [
+        10.249015808105469,
+        3.3626041412353516,
+        3.9128074645996094
+      ],
+      "signed_volume_cm3": 0.07065745780465467,
+      "wire_edges": 0,
+      "loose_vertices": 0,
+      "sdf_rebuilt": false
+    },
+    "SideLatch_L_1_Washer": {
+      "vertices": 512,
+      "triangles": 1024,
+      "boundary_edges": 0,
+      "multi_face_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_triangles": 0,
+      "degenerate_triangles": 0,
+      "near_zero_triangles": 0,
+      "min_triangle_area_mm2": 0.019631761555457834,
+      "dimensions_mm": [
+        1.1944961547851562,
+        7.011865615844727,
+        7.014984130859375
+      ],
+      "signed_volume_cm3": 0.01521488981701309,
+      "wire_edges": 0,
+      "loose_vertices": 0,
+      "sdf_rebuilt": false
+    },
+    "SideLatch_L_2_Head": {
+      "vertices": 256,
+      "triangles": 508,
+      "boundary_edges": 0,
+      "multi_face_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_triangles": 0,
+      "degenerate_triangles": 0,
+      "near_zero_triangles": 0,
+      "min_triangle_area_mm2": 0.00047969440379199053,
+      "dimensions_mm": [
+        2.2093353271484375,
+        5.755068778991699,
+        5.82731819152832
+      ],
+      "signed_volume_cm3": 0.04208704460147709,
+      "wire_edges": 0,
+      "loose_vertices": 0,
+      "sdf_rebuilt": false
+    },
+    "SideLatch_L_2_Nut": {
+      "vertices": 512,
+      "triangles": 1024,
+      "boundary_edges": 0,
+      "multi_face_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_triangles": 0,
+      "degenerate_triangles": 0,
+      "near_zero_triangles": 0,
+      "min_triangle_area_mm2": 0.06165494511918424,
+      "dimensions_mm": [
+        4.612464904785156,
+        6.491182327270508,
+        6.692923545837402
+      ],
+      "signed_volume_cm3": 0.0983970611266279,
+      "wire_edges": 0,
+      "loose_vertices": 0,
+      "sdf_rebuilt": false
+    },
+    "SideLatch_L_2_Shaft": {
+      "vertices": 256,
+      "triangles": 508,
+      "boundary_edges": 0,
+      "multi_face_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_triangles": 0,
+      "degenerate_triangles": 0,
+      "near_zero_triangles": 0,
+      "min_triangle_area_mm2": 0.00013284820284360723,
+      "dimensions_mm": [
+        10.249008178710938,
+        3.362605094909668,
+        3.9128036499023438
+      ],
+      "signed_volume_cm3": 0.0706574472552406,
+      "wire_edges": 0,
+      "loose_vertices": 0,
+      "sdf_rebuilt": false
+    },
+    "SideLatch_L_2_Washer": {
+      "vertices": 512,
+      "triangles": 1024,
+      "boundary_edges": 0,
+      "multi_face_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_triangles": 0,
+      "degenerate_triangles": 0,
+      "near_zero_triangles": 0,
+      "min_triangle_area_mm2": 0.019632204061055005,
+      "dimensions_mm": [
+        1.194488525390625,
+        7.011863708496094,
+        7.014983177185059
+      ],
+      "signed_volume_cm3": 0.015214894213290642,
+      "wire_edges": 0,
+      "loose_vertices": 0,
+      "sdf_rebuilt": false
+    },
+    "SideLatch_L_3_Head": {
+      "vertices": 256,
+      "triangles": 508,
+      "boundary_edges": 0,
+      "multi_face_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_triangles": 0,
+      "degenerate_triangles": 0,
+      "near_zero_triangles": 0,
+      "min_triangle_area_mm2": 0.0004797041656427696,
+      "dimensions_mm": [
+        2.2093353271484375,
+        5.755068302154541,
+        5.82731819152832
+      ],
+      "signed_volume_cm3": 0.042087058105706225,
+      "wire_edges": 0,
+      "loose_vertices": 0,
+      "sdf_rebuilt": false
+    },
+    "SideLatch_L_3_Nut": {
+      "vertices": 512,
+      "triangles": 1024,
+      "boundary_edges": 0,
+      "multi_face_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_triangles": 0,
+      "degenerate_triangles": 0,
+      "near_zero_triangles": 0,
+      "min_triangle_area_mm2": 0.061652935805468365,
+      "dimensions_mm": [
+        4.6124725341796875,
+        6.491182804107666,
+        6.692920684814453
+      ],
+      "signed_volume_cm3": 0.09839706863303799,
+      "wire_edges": 0,
+      "loose_vertices": 0,
+      "sdf_rebuilt": false
+    },
+    "SideLatch_L_3_Shaft": {
+      "vertices": 256,
+      "triangles": 508,
+      "boundary_edges": 0,
+      "multi_face_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_triangles": 0,
+      "degenerate_triangles": 0,
+      "near_zero_triangles": 0,
+      "min_triangle_area_mm2": 0.00013274971095470698,
+      "dimensions_mm": [
+        10.249008178710938,
+        3.3626046180725098,
+        3.9128036499023438
+      ],
+      "signed_volume_cm3": 0.07065745239322989,
+      "wire_edges": 0,
+      "loose_vertices": 0,
+      "sdf_rebuilt": false
+    },
+    "SideLatch_L_3_Washer": {
+      "vertices": 512,
+      "triangles": 1024,
+      "boundary_edges": 0,
+      "multi_face_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_triangles": 0,
+      "degenerate_triangles": 0,
+      "near_zero_triangles": 0,
+      "min_triangle_area_mm2": 0.01963140719566801,
+      "dimensions_mm": [
+        1.1944808959960938,
+        7.011863708496094,
+        7.014984130859375
+      ],
+      "signed_volume_cm3": 0.015214878198168936,
+      "wire_edges": 0,
+      "loose_vertices": 0,
+      "sdf_rebuilt": false
+    },
+    "SideLatch_R_0_Head": {
+      "vertices": 256,
+      "triangles": 508,
+      "boundary_edges": 0,
+      "multi_face_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_triangles": 0,
+      "degenerate_triangles": 0,
+      "near_zero_triangles": 0,
+      "min_triangle_area_mm2": 0.0004794716542485231,
+      "dimensions_mm": [
+        2.2093353271484375,
+        5.755067825317383,
+        5.827322006225586
+      ],
+      "signed_volume_cm3": 0.04208718618550202,
+      "wire_edges": 0,
+      "loose_vertices": 0,
+      "sdf_rebuilt": false
+    },
+    "SideLatch_R_0_Nut": {
+      "vertices": 512,
+      "triangles": 1024,
+      "boundary_edges": 0,
+      "multi_face_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_triangles": 0,
+      "degenerate_triangles": 0,
+      "near_zero_triangles": 0,
+      "min_triangle_area_mm2": 0.06165419618662252,
+      "dimensions_mm": [
+        4.612457275390625,
+        6.491184234619141,
+        6.692922592163086
+      ],
+      "signed_volume_cm3": 0.09839704433287819,
+      "wire_edges": 0,
+      "loose_vertices": 0,
+      "sdf_rebuilt": false
+    },
+    "SideLatch_R_0_Shaft": {
+      "vertices": 256,
+      "triangles": 508,
+      "boundary_edges": 0,
+      "multi_face_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_triangles": 0,
+      "degenerate_triangles": 0,
+      "near_zero_triangles": 0,
+      "min_triangle_area_mm2": 0.00013273525869464552,
+      "dimensions_mm": [
+        10.249008178710938,
+        3.3626041412353516,
+        3.9128055572509766
+      ],
+      "signed_volume_cm3": 0.07065743652731385,
+      "wire_edges": 0,
+      "loose_vertices": 0,
+      "sdf_rebuilt": false
+    },
+    "SideLatch_R_0_Washer": {
+      "vertices": 512,
+      "triangles": 1024,
+      "boundary_edges": 0,
+      "multi_face_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_triangles": 0,
+      "degenerate_triangles": 0,
+      "near_zero_triangles": 0,
+      "min_triangle_area_mm2": 0.019632053334960223,
+      "dimensions_mm": [
+        1.194488525390625,
+        7.011865615844727,
+        7.014980316162109
+      ],
+      "signed_volume_cm3": 0.015214885399172281,
+      "wire_edges": 0,
+      "loose_vertices": 0,
+      "sdf_rebuilt": false
+    },
+    "SideLatch_R_1_Head": {
+      "vertices": 256,
+      "triangles": 508,
+      "boundary_edges": 0,
+      "multi_face_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_triangles": 0,
+      "degenerate_triangles": 0,
+      "near_zero_triangles": 0,
+      "min_triangle_area_mm2": 0.00047962543687099355,
+      "dimensions_mm": [
+        2.2093353271484375,
+        5.755067825317383,
+        5.827320098876953
+      ],
+      "signed_volume_cm3": 0.04208701702044431,
+      "wire_edges": 0,
+      "loose_vertices": 0,
+      "sdf_rebuilt": false
+    },
+    "SideLatch_R_1_Nut": {
+      "vertices": 512,
+      "triangles": 1024,
+      "boundary_edges": 0,
+      "multi_face_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_triangles": 0,
+      "degenerate_triangles": 0,
+      "near_zero_triangles": 0,
+      "min_triangle_area_mm2": 0.061653344725011903,
+      "dimensions_mm": [
+        4.6124725341796875,
+        6.491185188293457,
+        6.692924499511719
+      ],
+      "signed_volume_cm3": 0.09839705847251953,
+      "wire_edges": 0,
+      "loose_vertices": 0,
+      "sdf_rebuilt": false
+    },
+    "SideLatch_R_1_Shaft": {
+      "vertices": 256,
+      "triangles": 508,
+      "boundary_edges": 0,
+      "multi_face_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_triangles": 0,
+      "degenerate_triangles": 0,
+      "near_zero_triangles": 0,
+      "min_triangle_area_mm2": 0.00013270537484630544,
+      "dimensions_mm": [
+        10.249008178710938,
+        3.3626041412353516,
+        3.9128074645996094
+      ],
+      "signed_volume_cm3": 0.07065746310086901,
+      "wire_edges": 0,
+      "loose_vertices": 0,
+      "sdf_rebuilt": false
+    },
+    "SideLatch_R_1_Washer": {
+      "vertices": 512,
+      "triangles": 1024,
+      "boundary_edges": 0,
+      "multi_face_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_triangles": 0,
+      "degenerate_triangles": 0,
+      "near_zero_triangles": 0,
+      "min_triangle_area_mm2": 0.01963146348561531,
+      "dimensions_mm": [
+        1.194488525390625,
+        7.011865615844727,
+        7.014984130859375
+      ],
+      "signed_volume_cm3": 0.015214880824986806,
+      "wire_edges": 0,
+      "loose_vertices": 0,
+      "sdf_rebuilt": false
+    },
+    "SideLatch_R_2_Head": {
+      "vertices": 256,
+      "triangles": 508,
+      "boundary_edges": 0,
+      "multi_face_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_triangles": 0,
+      "degenerate_triangles": 0,
+      "near_zero_triangles": 0,
+      "min_triangle_area_mm2": 0.0004796455419170453,
+      "dimensions_mm": [
+        2.2093353271484375,
+        5.755068778991699,
+        5.82731819152832
+      ],
+      "signed_volume_cm3": 0.0420870857920374,
+      "wire_edges": 0,
+      "loose_vertices": 0,
+      "sdf_rebuilt": false
+    },
+    "SideLatch_R_2_Nut": {
+      "vertices": 512,
+      "triangles": 1024,
+      "boundary_edges": 0,
+      "multi_face_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_triangles": 0,
+      "degenerate_triangles": 0,
+      "near_zero_triangles": 0,
+      "min_triangle_area_mm2": 0.06165431533522127,
+      "dimensions_mm": [
+        4.612464904785156,
+        6.491182327270508,
+        6.692923545837402
+      ],
+      "signed_volume_cm3": 0.09839705455067893,
+      "wire_edges": 0,
+      "loose_vertices": 0,
+      "sdf_rebuilt": false
+    },
+    "SideLatch_R_2_Shaft": {
+      "vertices": 256,
+      "triangles": 508,
+      "boundary_edges": 0,
+      "multi_face_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_triangles": 0,
+      "degenerate_triangles": 0,
+      "near_zero_triangles": 0,
+      "min_triangle_area_mm2": 0.00013282324780763876,
+      "dimensions_mm": [
+        10.249015808105469,
+        3.362605094909668,
+        3.9128036499023438
+      ],
+      "signed_volume_cm3": 0.07065744295100299,
+      "wire_edges": 0,
+      "loose_vertices": 0,
+      "sdf_rebuilt": false
+    },
+    "SideLatch_R_2_Washer": {
+      "vertices": 512,
+      "triangles": 1024,
+      "boundary_edges": 0,
+      "multi_face_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_triangles": 0,
+      "degenerate_triangles": 0,
+      "near_zero_triangles": 0,
+      "min_triangle_area_mm2": 0.01963232500544894,
+      "dimensions_mm": [
+        1.1944961547851562,
+        7.011863708496094,
+        7.014983177185059
+      ],
+      "signed_volume_cm3": 0.015214880347591756,
+      "wire_edges": 0,
+      "loose_vertices": 0,
+      "sdf_rebuilt": false
+    },
+    "SideLatch_R_3_Head": {
+      "vertices": 256,
+      "triangles": 508,
+      "boundary_edges": 0,
+      "multi_face_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_triangles": 0,
+      "degenerate_triangles": 0,
+      "near_zero_triangles": 0,
+      "min_triangle_area_mm2": 0.00047972245429446096,
+      "dimensions_mm": [
+        2.2093353271484375,
+        5.755068302154541,
+        5.82731819152832
+      ],
+      "signed_volume_cm3": 0.04208712131892385,
+      "wire_edges": 0,
+      "loose_vertices": 0,
+      "sdf_rebuilt": false
+    },
+    "SideLatch_R_3_Nut": {
+      "vertices": 512,
+      "triangles": 1024,
+      "boundary_edges": 0,
+      "multi_face_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_triangles": 0,
+      "degenerate_triangles": 0,
+      "near_zero_triangles": 0,
+      "min_triangle_area_mm2": 0.06165221696568923,
+      "dimensions_mm": [
+        4.612464904785156,
+        6.491182804107666,
+        6.692920684814453
+      ],
+      "signed_volume_cm3": 0.09839704661142638,
+      "wire_edges": 0,
+      "loose_vertices": 0,
+      "sdf_rebuilt": false
+    },
+    "SideLatch_R_3_Shaft": {
+      "vertices": 256,
+      "triangles": 508,
+      "boundary_edges": 0,
+      "multi_face_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_triangles": 0,
+      "degenerate_triangles": 0,
+      "near_zero_triangles": 0,
+      "min_triangle_area_mm2": 0.00013274971095470698,
+      "dimensions_mm": [
+        10.249008178710938,
+        3.3626046180725098,
+        3.9128036499023438
+      ],
+      "signed_volume_cm3": 0.07065744273836963,
+      "wire_edges": 0,
+      "loose_vertices": 0,
+      "sdf_rebuilt": false
+    },
+    "SideLatch_R_3_Washer": {
+      "vertices": 512,
+      "triangles": 1024,
+      "boundary_edges": 0,
+      "multi_face_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_triangles": 0,
+      "degenerate_triangles": 0,
+      "near_zero_triangles": 0,
+      "min_triangle_area_mm2": 0.019631705265743045,
+      "dimensions_mm": [
+        1.1944808959960938,
+        7.011863708496094,
+        7.014984130859375
+      ],
+      "signed_volume_cm3": 0.01521487369166475,
+      "wire_edges": 0,
+      "loose_vertices": 0,
+      "sdf_rebuilt": false
+    }
+  },
+  "component_counts": {
+    "前壳配置": 5,
+    "后壳配置": 1,
+    "Hinge_Axle_D6_L55_M5_REFERENCE": 1,
+    "Hinge_Washer_M6_REFERENCE": 1,
+    "Hinge_Spacer_1p4_PRINT": 1,
+    "Hinge_Washer_M5_REFERENCE": 1,
+    "Hinge_Nut_M5_REFERENCE": 1,
+    "SideLatch_L_0_Head": 1,
+    "SideLatch_L_0_Nut": 1,
+    "SideLatch_L_0_Shaft": 1,
+    "SideLatch_L_0_Washer": 1,
+    "SideLatch_L_1_Head": 1,
+    "SideLatch_L_1_Nut": 1,
+    "SideLatch_L_1_Shaft": 1,
+    "SideLatch_L_1_Washer": 1,
+    "SideLatch_L_2_Head": 1,
+    "SideLatch_L_2_Nut": 1,
+    "SideLatch_L_2_Shaft": 1,
+    "SideLatch_L_2_Washer": 1,
+    "SideLatch_L_3_Head": 1,
+    "SideLatch_L_3_Nut": 1,
+    "SideLatch_L_3_Shaft": 1,
+    "SideLatch_L_3_Washer": 1,
+    "SideLatch_R_0_Head": 1,
+    "SideLatch_R_0_Nut": 1,
+    "SideLatch_R_0_Shaft": 1,
+    "SideLatch_R_0_Washer": 1,
+    "SideLatch_R_1_Head": 1,
+    "SideLatch_R_1_Nut": 1,
+    "SideLatch_R_1_Shaft": 1,
+    "SideLatch_R_1_Washer": 1,
+    "SideLatch_R_2_Head": 1,
+    "SideLatch_R_2_Nut": 1,
+    "SideLatch_R_2_Shaft": 1,
+    "SideLatch_R_2_Washer": 1,
+    "SideLatch_R_3_Head": 1,
+    "SideLatch_R_3_Nut": 1,
+    "SideLatch_R_3_Shaft": 1,
+    "SideLatch_R_3_Washer": 1
+  },
+  "side_fastener_attachments": {
+    "SideLatch_L_0_Head": "后壳配置",
+    "SideLatch_L_0_Nut": "后壳配置",
+    "SideLatch_L_0_Shaft": "后壳配置",
+    "SideLatch_L_0_Washer": "后壳配置",
+    "SideLatch_L_1_Head": "后壳配置",
+    "SideLatch_L_1_Nut": "后壳配置",
+    "SideLatch_L_1_Shaft": "后壳配置",
+    "SideLatch_L_1_Washer": "后壳配置",
+    "SideLatch_L_2_Head": "前壳配置",
+    "SideLatch_L_2_Nut": "前壳配置",
+    "SideLatch_L_2_Shaft": "前壳配置",
+    "SideLatch_L_2_Washer": "前壳配置",
+    "SideLatch_L_3_Head": "前壳配置",
+    "SideLatch_L_3_Nut": "前壳配置",
+    "SideLatch_L_3_Shaft": "前壳配置",
+    "SideLatch_L_3_Washer": "前壳配置",
+    "SideLatch_R_0_Head": "后壳配置",
+    "SideLatch_R_0_Nut": "后壳配置",
+    "SideLatch_R_0_Shaft": "后壳配置",
+    "SideLatch_R_0_Washer": "后壳配置",
+    "SideLatch_R_1_Head": "后壳配置",
+    "SideLatch_R_1_Nut": "后壳配置",
+    "SideLatch_R_1_Shaft": "后壳配置",
+    "SideLatch_R_1_Washer": "后壳配置",
+    "SideLatch_R_2_Head": "前壳配置",
+    "SideLatch_R_2_Nut": "前壳配置",
+    "SideLatch_R_2_Shaft": "前壳配置",
+    "SideLatch_R_2_Washer": "前壳配置",
+    "SideLatch_R_3_Head": "前壳配置",
+    "SideLatch_R_3_Nut": "前壳配置",
+    "SideLatch_R_3_Shaft": "前壳配置",
+    "SideLatch_R_3_Washer": "前壳配置"
+  },
+  "hardware_closed": {
+    "Hinge_Axle_D6_L55_M5_REFERENCE": {
+      "前壳配置": {
+        "surface_pairs": 0,
+        "a_components_inside_b": 0,
+        "b_components_inside_a": 0
+      },
+      "后壳配置": {
+        "surface_pairs": 0,
+        "a_components_inside_b": 0,
+        "b_components_inside_a": 0
+      }
+    },
+    "Hinge_Washer_M6_REFERENCE": {
+      "前壳配置": {
+        "surface_pairs": 0,
+        "a_components_inside_b": 0,
+        "b_components_inside_a": 0
+      },
+      "后壳配置": {
+        "surface_pairs": 0,
+        "a_components_inside_b": 0,
+        "b_components_inside_a": 0
+      }
+    },
+    "Hinge_Spacer_1p4_PRINT": {
+      "前壳配置": {
+        "surface_pairs": 0,
+        "a_components_inside_b": 0,
+        "b_components_inside_a": 0
+      },
+      "后壳配置": {
+        "surface_pairs": 0,
+        "a_components_inside_b": 0,
+        "b_components_inside_a": 0
+      }
+    },
+    "Hinge_Washer_M5_REFERENCE": {
+      "前壳配置": {
+        "surface_pairs": 0,
+        "a_components_inside_b": 0,
+        "b_components_inside_a": 0
+      },
+      "后壳配置": {
+        "surface_pairs": 0,
+        "a_components_inside_b": 0,
+        "b_components_inside_a": 0
+      }
+    },
+    "Hinge_Nut_M5_REFERENCE": {
+      "前壳配置": {
+        "surface_pairs": 0,
+        "a_components_inside_b": 0,
+        "b_components_inside_a": 0
+      },
+      "后壳配置": {
+        "surface_pairs": 0,
+        "a_components_inside_b": 0,
+        "b_components_inside_a": 0
+      }
+    }
+  },
+  "assembly_access": [
+    {
+      "name": "shaft_insertion",
+      "swept_x_mm": [
+        -100,
+        36.9
+      ],
+      "radius_mm": 3.0,
+      "shells": {
+        "前壳配置": {
+          "surface_pairs": 0,
+          "a_components_inside_b": 0,
+          "b_components_inside_a": 0
+        },
+        "后壳配置": {
+          "surface_pairs": 0,
+          "a_components_inside_b": 0,
+          "b_components_inside_a": 0
+        }
+      }
+    },
+    {
+      "name": "head_and_left_washer_insertion",
+      "swept_x_mm": [
+        -100,
+        -26.0
+      ],
+      "radius_mm": 6.0,
+      "shells": {
+        "前壳配置": {
+          "surface_pairs": 0,
+          "a_components_inside_b": 0,
+          "b_components_inside_a": 0
+        },
+        "后壳配置": {
+          "surface_pairs": 0,
+          "a_components_inside_b": 0,
+          "b_components_inside_a": 0
+        }
+      }
+    },
+    {
+      "name": "right_spacer_and_washer_insertion",
+      "swept_x_mm": [
+        26.0,
+        50.0
+      ],
+      "radius_mm": 5.0,
+      "shells": {
+        "前壳配置": {
+          "surface_pairs": 0,
+          "a_components_inside_b": 0,
+          "b_components_inside_a": 0
+        },
+        "后壳配置": {
+          "surface_pairs": 0,
+          "a_components_inside_b": 0,
+          "b_components_inside_a": 0
+        }
+      }
+    },
+    {
+      "name": "right_nut_driver_OD12_body",
+      "swept_x_mm": [
+        28.4,
+        50.0
+      ],
+      "radius_mm": 6.0,
+      "shells": {
+        "前壳配置": {
+          "surface_pairs": 0,
+          "a_components_inside_b": 0,
+          "b_components_inside_a": 0
+        },
+        "后壳配置": {
+          "surface_pairs": 0,
+          "a_components_inside_b": 0,
+          "b_components_inside_a": 0
+        }
+      }
+    },
+    {
+      "name": "right_driver_extension_OD3",
+      "swept_x_mm": [
+        33.4,
+        100
+      ],
+      "radius_mm": 1.5,
+      "shells": {
+        "前壳配置": {
+          "surface_pairs": 0,
+          "a_components_inside_b": 0,
+          "b_components_inside_a": 0
+        },
+        "后壳配置": {
+          "surface_pairs": 0,
+          "a_components_inside_b": 0,
+          "b_components_inside_a": 0
+        }
+      }
+    },
+    {
+      "name": "left_hex_key_envelope",
+      "swept_x_mm": [
+        -100,
+        -32.1
+      ],
+      "radius_mm": 1.8,
+      "shells": {
+        "前壳配置": {
+          "surface_pairs": 0,
+          "a_components_inside_b": 0,
+          "b_components_inside_a": 0
+        },
+        "后壳配置": {
+          "surface_pairs": 0,
+          "a_components_inside_b": 0,
+          "b_components_inside_a": 0
+        }
+      }
+    }
+  ],
+  "bore_measurements": {
+    "前壳配置": {
+      "rays": 7040,
+      "min_radius_mm": 3.2998130321502686,
+      "max_radius_mm": 8.179908752441406,
+      "min_radial_clearance_to_D6_mm": 0.29981303215026855
+    },
+    "后壳配置": {
+      "rays": 8384,
+      "min_radius_mm": 3.2999467849731445,
+      "max_radius_mm": 3.300055742263794,
+      "min_radial_clearance_to_D6_mm": 0.29994678497314453
+    }
+  },
+  "retention_dimensions": {
+    "front_left_inner_x_mm": -14.000000355420113,
+    "front_right_inner_x_mm": 14.000000508847236,
+    "front_outer_x_mm": [
+      -25.489155126390457,
+      25.489137274247806
+    ],
+    "rear_barrel_x_mm": [
+      -13.272054416713715,
+      13.272054570140838
+    ],
+    "left_axial_gap_mm": 0.727945938706398,
+    "right_axial_gap_mm": 0.727945938706398,
+    "front_outer_span_mm": 50.97829240063827,
+    "retained_axle_endplay_mm": 1.0217075993617328,
+    "M5_washer_overlap_on_D6_shoulder_radial_mm": 0.3500000000000001,
+    "thread_beyond_locknut_mm": 3.5
+  },
+  "retention_escape_controls": [
+    {
+      "translation_mm": 2,
+      "part": "Hinge_Washer_M6_REFERENCE",
+      "surface_pairs": 953
+    },
+    {
+      "translation_mm": -2,
+      "part": "Hinge_Spacer_1p4_PRINT",
+      "surface_pairs": 482
+    }
+  ],
+  "negative_controls": {
+    "oversized_D8_axle_pairs": 1566,
+    "reverse_opening_5deg_pairs": 10469
+  },
+  "motion": [
+    {
+      "angle_deg": 0.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 0.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 0.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 0.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 1.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 1.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 1.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 1.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 2.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 2.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 2.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 2.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 3.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 3.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 3.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 3.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 4.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 4.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 4.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 4.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 5.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 5.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 5.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 5.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 6.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 6.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 6.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 6.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 7.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 7.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 7.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 7.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 8.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 8.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 8.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 8.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 9.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 9.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 9.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 9.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 10.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 10.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 10.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 10.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 11.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 11.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 11.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 11.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 12.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 12.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 12.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 12.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 13.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 13.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 13.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 13.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 14.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 14.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 14.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 14.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 15.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 15.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 15.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 15.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 16.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 16.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 16.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 16.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 17.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 17.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 17.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 17.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 18.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 18.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 18.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 18.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 19.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 19.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 19.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 19.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 20.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 20.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 20.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 20.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 21.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 21.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 21.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 21.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 22.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 22.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 22.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 22.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 23.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 23.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 23.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 23.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 24.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 24.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 24.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 24.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 25.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 25.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 25.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 25.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 26.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 26.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 26.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 26.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 27.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 27.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 27.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 27.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 28.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 28.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 28.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 28.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 29.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 29.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 29.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 29.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 30.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 30.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 30.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 30.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 31.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 31.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 31.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 31.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 32.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 32.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 32.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 32.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 33.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 33.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 33.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 33.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 34.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 34.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 34.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 34.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 35.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 35.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 35.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 35.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 36.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 36.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 36.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 36.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 37.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 37.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 37.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 37.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 38.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 38.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 38.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 38.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 39.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 39.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 39.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 39.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 40.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 40.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 40.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 40.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 41.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 41.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 41.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 41.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 42.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 42.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 42.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 42.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 43.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 43.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 43.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 43.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 44.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 44.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 44.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 44.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 45.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 45.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 45.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 45.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 46.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 46.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 46.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 46.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 47.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 47.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 47.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 47.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 48.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 48.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 48.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 48.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 49.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 49.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 49.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 49.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 50.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 50.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 50.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 50.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 51.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 51.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 51.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 51.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 52.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 52.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 52.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 52.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 53.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 53.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 53.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 53.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 54.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 54.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 54.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 54.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 55.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 55.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 55.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 55.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 56.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 56.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 56.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 56.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 57.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 57.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 57.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 57.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 58.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 58.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 58.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 58.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 59.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 59.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 59.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 59.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 60.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 60.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 60.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 60.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 61.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 61.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 61.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 61.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 62.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 62.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 62.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 62.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 63.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 63.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 63.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 63.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 64.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 64.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 64.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 64.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 65.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 65.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 65.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 65.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 66.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 66.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 66.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 66.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 67.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 67.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 67.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 67.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 68.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 68.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 68.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 68.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 69.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 69.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 69.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 69.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 70.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 70.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 70.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 70.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 71.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 71.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 71.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 71.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 72.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 72.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 72.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 72.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 73.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 73.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 73.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 73.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 74.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 74.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 74.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 74.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 75.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 75.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 75.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 75.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 76.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 76.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 76.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 76.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 77.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 77.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 77.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 77.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 78.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 78.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 78.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 78.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 79.0,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 79.25,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 79.5,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 79.75,
+      "collisions": {}
+    },
+    {
+      "angle_deg": 80.0,
+      "collisions": {}
+    }
+  ],
+  "motion_seconds": 24.837,
+  "solid_intersections": [
+    {
+      "angle_deg": 0,
+      "triangles": 0,
+      "intersection_volume_mm3": 0.0
+    },
+    {
+      "angle_deg": 40,
+      "triangles": 0,
+      "intersection_volume_mm3": 0.0
+    },
+    {
+      "angle_deg": 75,
+      "triangles": 0,
+      "intersection_volume_mm3": 0.0
+    },
+    {
+      "angle_deg": 80,
+      "triangles": 0,
+      "intersection_volume_mm3": 0.0
+    }
+  ],
+  "passed": true
+}

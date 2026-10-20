@@ -1,0 +1,3907 @@
+{
+  "blender": "5.2.2 LTS",
+  "blend_sha256": "da73224dc28a9ff95df5f7a943420aeea5048c778f3ad02641783f41f5e9abf2",
+  "degenerate_area_threshold_mm2": 1e-12,
+  "near_zero_area_reporting_threshold_mm2": 1e-08,
+  "cases": [
+    {
+      "name": "default",
+      "inputs": [],
+      "meshes": {
+        "前壳配置": {
+          "vertices": 261132,
+          "triangles": 522292,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 4.517883607163621e-08,
+          "dimensions_mm": [
+            252.9455108642578,
+            162.16473388671875,
+            270.85498046875
+          ],
+          "signed_volume_cm3": 265.53349584978633,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "后壳配置": {
+          "vertices": 67114,
+          "triangles": 134500,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 5.031227719250761e-08,
+          "dimensions_mm": [
+            236.55226135253906,
+            177.40069580078125,
+            248.5341033935547
+          ],
+          "signed_volume_cm3": 225.58894572665542,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "exports": {
+        "前壳配置": {
+          "vertices": 261132,
+          "triangles": 522292,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 4.517883607163621e-08,
+          "dimensions_mm": [
+            252.9455108642578,
+            162.16473388671875,
+            270.85498046875
+          ],
+          "signed_volume_cm3": 265.53349584978633
+        },
+        "后壳配置": {
+          "vertices": 67114,
+          "triangles": 134500,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 5.031227719250761e-08,
+          "dimensions_mm": [
+            236.55226135253906,
+            177.40069580078125,
+            248.5341033935547
+          ],
+          "signed_volume_cm3": 225.58894572665542
+        }
+      },
+      "seconds": 6.898
+    },
+    {
+      "name": "round_0.1",
+      "inputs": [
+        [
+          "后壳配置",
+          "圆角位置",
+          0.1
+        ]
+      ],
+      "meshes": {
+        "前壳配置": {
+          "vertices": 261132,
+          "triangles": 522292,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 4.517883607163621e-08,
+          "dimensions_mm": [
+            252.9455108642578,
+            162.16473388671875,
+            270.85498046875
+          ],
+          "signed_volume_cm3": 265.53349584978633,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "后壳配置": {
+          "vertices": 873497,
+          "triangles": 1747250,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 6.606860551983118e-07,
+          "dimensions_mm": [
+            236.53585815429688,
+            177.39569091796875,
+            203.06015014648438
+          ],
+          "signed_volume_cm3": 187.39484356039878,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": true
+        }
+      },
+      "errors": [],
+      "exports": {
+        "前壳配置": {
+          "vertices": 261132,
+          "triangles": 522292,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 4.517883607163621e-08,
+          "dimensions_mm": [
+            252.9455108642578,
+            162.16473388671875,
+            270.85498046875
+          ],
+          "signed_volume_cm3": 265.53349584978633
+        },
+        "后壳配置": {
+          "vertices": 873497,
+          "triangles": 1747250,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 6.606860551983118e-07,
+          "dimensions_mm": [
+            236.53585815429688,
+            177.39569091796875,
+            203.06015014648438
+          ],
+          "signed_volume_cm3": 187.39484356039878
+        }
+      },
+      "seconds": 27.236
+    },
+    {
+      "name": "lock0_seam0.0_round0.0",
+      "inputs": [
+        [
+          "前壳配置",
+          "锁类型",
+          0
+        ],
+        [
+          "前壳配置",
+          "前后基准值",
+          0.0
+        ],
+        [
+          "后壳配置",
+          "圆角位置",
+          0.0
+        ]
+      ],
+      "meshes": {
+        "前壳配置": {
+          "vertices": 232338,
+          "triangles": 464712,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 5.607844660482948e-08,
+          "dimensions_mm": [
+            252.9455108642578,
+            141.73898315429688,
+            229.89219665527344
+          ],
+          "signed_volume_cm3": 160.32794536579462,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "后壳配置": {
+          "vertices": 85527,
+          "triangles": 171330,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 5.221368647484034e-07,
+          "dimensions_mm": [
+            236.87078857421875,
+            218.04653930664062,
+            254.61648559570312
+          ],
+          "signed_volume_cm3": 334.1163752352527,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "seconds": 4.329
+    },
+    {
+      "name": "lock0_seam0.0_round0.037",
+      "inputs": [
+        [
+          "前壳配置",
+          "锁类型",
+          0
+        ],
+        [
+          "前壳配置",
+          "前后基准值",
+          0.0
+        ],
+        [
+          "后壳配置",
+          "圆角位置",
+          0.037
+        ]
+      ],
+      "meshes": {
+        "前壳配置": {
+          "vertices": 232338,
+          "triangles": 464712,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 5.607844660482948e-08,
+          "dimensions_mm": [
+            252.9455108642578,
+            141.73898315429688,
+            229.89219665527344
+          ],
+          "signed_volume_cm3": 160.32794536579462,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "后壳配置": {
+          "vertices": 85426,
+          "triangles": 171128,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 2.515084798374114e-06,
+          "dimensions_mm": [
+            236.87078857421875,
+            218.04653930664062,
+            254.47015380859375
+          ],
+          "signed_volume_cm3": 334.10420008628876,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "seconds": 4.152
+    },
+    {
+      "name": "lock0_seam0.0_round0.1",
+      "inputs": [
+        [
+          "前壳配置",
+          "锁类型",
+          0
+        ],
+        [
+          "前壳配置",
+          "前后基准值",
+          0.0
+        ],
+        [
+          "后壳配置",
+          "圆角位置",
+          0.1
+        ]
+      ],
+      "meshes": {
+        "前壳配置": {
+          "vertices": 232338,
+          "triangles": 464712,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 5.607844660482948e-08,
+          "dimensions_mm": [
+            252.9455108642578,
+            141.73898315429688,
+            229.89219665527344
+          ],
+          "signed_volume_cm3": 160.32794536579462,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "后壳配置": {
+          "vertices": 1163995,
+          "triangles": 2328298,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 6.606860551983118e-07,
+          "dimensions_mm": [
+            236.8672332763672,
+            218.0417022705078,
+            244.1065673828125
+          ],
+          "signed_volume_cm3": 317.7871878852554,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": true
+        }
+      },
+      "errors": [],
+      "seconds": 23.361
+    },
+    {
+      "name": "lock0_seam0.3_round0.0",
+      "inputs": [
+        [
+          "前壳配置",
+          "锁类型",
+          0
+        ],
+        [
+          "前壳配置",
+          "前后基准值",
+          0.3
+        ],
+        [
+          "后壳配置",
+          "圆角位置",
+          0.0
+        ]
+      ],
+      "meshes": {
+        "前壳配置": {
+          "vertices": 237752,
+          "triangles": 475532,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 1,
+          "min_triangle_area_mm2": 9.003709490354569e-09,
+          "dimensions_mm": [
+            252.9455108642578,
+            141.73898315429688,
+            249.54808044433594
+          ],
+          "signed_volume_cm3": 195.63938604068818,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "后壳配置": {
+          "vertices": 79875,
+          "triangles": 160030,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 3.6883376080623246e-06,
+          "dimensions_mm": [
+            236.1016845703125,
+            206.64984130859375,
+            253.71461486816406
+          ],
+          "signed_volume_cm3": 300.894844605991,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "seconds": 4.221
+    },
+    {
+      "name": "lock0_seam0.3_round0.037",
+      "inputs": [
+        [
+          "前壳配置",
+          "锁类型",
+          0
+        ],
+        [
+          "前壳配置",
+          "前后基准值",
+          0.3
+        ],
+        [
+          "后壳配置",
+          "圆角位置",
+          0.037
+        ]
+      ],
+      "meshes": {
+        "前壳配置": {
+          "vertices": 237752,
+          "triangles": 475532,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 1,
+          "min_triangle_area_mm2": 9.003709490354569e-09,
+          "dimensions_mm": [
+            252.9455108642578,
+            141.73898315429688,
+            249.54808044433594
+          ],
+          "signed_volume_cm3": 195.63938604068818,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "后壳配置": {
+          "vertices": 79482,
+          "triangles": 159244,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 4.53663991570618e-07,
+          "dimensions_mm": [
+            236.1016845703125,
+            206.64984130859375,
+            252.677490234375
+          ],
+          "signed_volume_cm3": 300.7010573766604,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "seconds": 4.361
+    },
+    {
+      "name": "lock0_seam0.3_round0.1",
+      "inputs": [
+        [
+          "前壳配置",
+          "锁类型",
+          0
+        ],
+        [
+          "前壳配置",
+          "前后基准值",
+          0.3
+        ],
+        [
+          "后壳配置",
+          "圆角位置",
+          0.1
+        ]
+      ],
+      "meshes": {
+        "前壳配置": {
+          "vertices": 237752,
+          "triangles": 475532,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 1,
+          "min_triangle_area_mm2": 9.003709490354569e-09,
+          "dimensions_mm": [
+            252.9455108642578,
+            141.73898315429688,
+            249.54808044433594
+          ],
+          "signed_volume_cm3": 195.63938604068818,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "后壳配置": {
+          "vertices": 1072445,
+          "triangles": 2145170,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 6.606860551983118e-07,
+          "dimensions_mm": [
+            236.08413696289062,
+            206.64495849609375,
+            224.42022705078125
+          ],
+          "signed_volume_cm3": 268.9771332410858,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": true
+        }
+      },
+      "errors": [],
+      "seconds": 21.21
+    },
+    {
+      "name": "lock0_seam0.65_round0.0",
+      "inputs": [
+        [
+          "前壳配置",
+          "锁类型",
+          0
+        ],
+        [
+          "前壳配置",
+          "前后基准值",
+          0.65
+        ],
+        [
+          "后壳配置",
+          "圆角位置",
+          0.0
+        ]
+      ],
+      "meshes": {
+        "前壳配置": {
+          "vertices": 247336,
+          "triangles": 494692,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 4.50488904697711e-08,
+          "dimensions_mm": [
+            252.9455108642578,
+            153.39620971679688,
+            266.3038330078125
+          ],
+          "signed_volume_cm3": 246.1352255421554,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "后壳配置": {
+          "vertices": 70607,
+          "triangles": 141486,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 5.5619582232279756e-06,
+          "dimensions_mm": [
+            235.63101196289062,
+            186.16921997070312,
+            251.29478454589844
+          ],
+          "signed_volume_cm3": 252.43336474796914,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "seconds": 4.282
+    },
+    {
+      "name": "lock0_seam0.65_round0.037",
+      "inputs": [
+        [
+          "前壳配置",
+          "锁类型",
+          0
+        ],
+        [
+          "前壳配置",
+          "前后基准值",
+          0.65
+        ],
+        [
+          "后壳配置",
+          "圆角位置",
+          0.037
+        ]
+      ],
+      "meshes": {
+        "前壳配置": {
+          "vertices": 247336,
+          "triangles": 494692,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 4.50488904697711e-08,
+          "dimensions_mm": [
+            252.9455108642578,
+            153.39620971679688,
+            266.3038330078125
+          ],
+          "signed_volume_cm3": 246.1352255421554,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "后壳配置": {
+          "vertices": 68382,
+          "triangles": 137036,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 4.271759803430999e-07,
+          "dimensions_mm": [
+            235.63101196289062,
+            186.16921997070312,
+            249.60687255859375
+          ],
+          "signed_volume_cm3": 251.1009645533388,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "seconds": 4.151
+    },
+    {
+      "name": "lock0_seam0.65_round0.1",
+      "inputs": [
+        [
+          "前壳配置",
+          "锁类型",
+          0
+        ],
+        [
+          "前壳配置",
+          "前后基准值",
+          0.65
+        ],
+        [
+          "后壳配置",
+          "圆角位置",
+          0.1
+        ]
+      ],
+      "meshes": {
+        "前壳配置": {
+          "vertices": 247336,
+          "triangles": 494692,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 4.50488904697711e-08,
+          "dimensions_mm": [
+            252.9455108642578,
+            153.39620971679688,
+            266.3038330078125
+          ],
+          "signed_volume_cm3": 246.1352255421554,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "后壳配置": {
+          "vertices": 934436,
+          "triangles": 1869136,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 6.585687515325844e-07,
+          "dimensions_mm": [
+            235.6181182861328,
+            186.1630401611328,
+            207.63150024414062
+          ],
+          "signed_volume_cm3": 212.2788224683885,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": true
+        }
+      },
+      "errors": [],
+      "seconds": 18.692
+    },
+    {
+      "name": "lock0_seam0.78_round0.0",
+      "inputs": [
+        [
+          "前壳配置",
+          "锁类型",
+          0
+        ],
+        [
+          "前壳配置",
+          "前后基准值",
+          0.78
+        ],
+        [
+          "后壳配置",
+          "圆角位置",
+          0.0
+        ]
+      ],
+      "meshes": {
+        "前壳配置": {
+          "vertices": 251071,
+          "triangles": 502162,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 1.8128490374582417e-07,
+          "dimensions_mm": [
+            252.9455108642578,
+            162.16473388671875,
+            270.85498046875
+          ],
+          "signed_volume_cm3": 265.1856832800135,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "后壳配置": {
+          "vertices": 66772,
+          "triangles": 133816,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 2.101485572360465e-07,
+          "dimensions_mm": [
+            235.75588989257812,
+            177.40069580078125,
+            250.60983276367188
+          ],
+          "signed_volume_cm3": 233.1548423836883,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "seconds": 7.125
+    },
+    {
+      "name": "lock0_seam0.78_round0.037",
+      "inputs": [
+        [
+          "前壳配置",
+          "锁类型",
+          0
+        ],
+        [
+          "前壳配置",
+          "前后基准值",
+          0.78
+        ],
+        [
+          "后壳配置",
+          "圆角位置",
+          0.037
+        ]
+      ],
+      "meshes": {
+        "前壳配置": {
+          "vertices": 251071,
+          "triangles": 502162,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 1.8128490374582417e-07,
+          "dimensions_mm": [
+            252.9455108642578,
+            162.16473388671875,
+            270.85498046875
+          ],
+          "signed_volume_cm3": 265.1856832800135,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "后壳配置": {
+          "vertices": 62259,
+          "triangles": 124790,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 2.101485572360465e-07,
+          "dimensions_mm": [
+            235.75588989257812,
+            177.40069580078125,
+            248.5341033935547
+          ],
+          "signed_volume_cm3": 230.85414511859292,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "seconds": 5.313
+    },
+    {
+      "name": "lock0_seam0.78_round0.1",
+      "inputs": [
+        [
+          "前壳配置",
+          "锁类型",
+          0
+        ],
+        [
+          "前壳配置",
+          "前后基准值",
+          0.78
+        ],
+        [
+          "后壳配置",
+          "圆角位置",
+          0.1
+        ]
+      ],
+      "meshes": {
+        "前壳配置": {
+          "vertices": 251071,
+          "triangles": 502162,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 1.8128490374582417e-07,
+          "dimensions_mm": [
+            252.9455108642578,
+            162.16473388671875,
+            270.85498046875
+          ],
+          "signed_volume_cm3": 265.1856832800135,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "后壳配置": {
+          "vertices": 886692,
+          "triangles": 1773640,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 6.606860551983118e-07,
+          "dimensions_mm": [
+            235.7297821044922,
+            177.39569091796875,
+            203.06015014648438
+          ],
+          "signed_volume_cm3": 192.66798964285016,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": true
+        }
+      },
+      "errors": [],
+      "seconds": 18.073
+    },
+    {
+      "name": "lock0_seam0.85_round0.0",
+      "inputs": [
+        [
+          "前壳配置",
+          "锁类型",
+          0
+        ],
+        [
+          "前壳配置",
+          "前后基准值",
+          0.85
+        ],
+        [
+          "后壳配置",
+          "圆角位置",
+          0.0
+        ]
+      ],
+      "meshes": {
+        "前壳配置": {
+          "vertices": 253117,
+          "triangles": 506254,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 8.22605702638264e-08,
+          "dimensions_mm": [
+            252.9455108642578,
+            167.03872680664062,
+            272.99005126953125
+          ],
+          "signed_volume_cm3": 275.3138508707959,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "后壳配置": {
+          "vertices": 64595,
+          "triangles": 129454,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 2.2321435976870897e-06,
+          "dimensions_mm": [
+            235.57786560058594,
+            172.5266876220703,
+            250.32350158691406
+          ],
+          "signed_volume_cm3": 222.84675774348557,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "seconds": 4.362
+    },
+    {
+      "name": "lock0_seam0.85_round0.037",
+      "inputs": [
+        [
+          "前壳配置",
+          "锁类型",
+          0
+        ],
+        [
+          "前壳配置",
+          "前后基准值",
+          0.85
+        ],
+        [
+          "后壳配置",
+          "圆角位置",
+          0.037
+        ]
+      ],
+      "meshes": {
+        "前壳配置": {
+          "vertices": 253117,
+          "triangles": 506254,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 8.22605702638264e-08,
+          "dimensions_mm": [
+            252.9455108642578,
+            167.03872680664062,
+            272.99005126953125
+          ],
+          "signed_volume_cm3": 275.3138508707959,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "后壳配置": {
+          "vertices": 57918,
+          "triangles": 116100,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 3.0996397048564875e-06,
+          "dimensions_mm": [
+            235.57786560058594,
+            172.5266876220703,
+            247.88497924804688
+          ],
+          "signed_volume_cm3": 219.78291571064324,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "seconds": 4.284
+    },
+    {
+      "name": "lock0_seam0.85_round0.1",
+      "inputs": [
+        [
+          "前壳配置",
+          "锁类型",
+          0
+        ],
+        [
+          "前壳配置",
+          "前后基准值",
+          0.85
+        ],
+        [
+          "后壳配置",
+          "圆角位置",
+          0.1
+        ]
+      ],
+      "meshes": {
+        "前壳配置": {
+          "vertices": 253117,
+          "triangles": 506254,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 8.22605702638264e-08,
+          "dimensions_mm": [
+            252.9455108642578,
+            167.03872680664062,
+            272.99005126953125
+          ],
+          "signed_volume_cm3": 275.3138508707959,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "后壳配置": {
+          "vertices": 860746,
+          "triangles": 1721740,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 6.602276698686182e-07,
+          "dimensions_mm": [
+            235.54010009765625,
+            172.5218505859375,
+            201.01220703125
+          ],
+          "signed_volume_cm3": 182.41788569311007,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": true
+        }
+      },
+      "errors": [],
+      "seconds": 16.091
+    },
+    {
+      "name": "lock1_seam0.0_round0.0",
+      "inputs": [
+        [
+          "前壳配置",
+          "锁类型",
+          1
+        ],
+        [
+          "前壳配置",
+          "前后基准值",
+          0.0
+        ],
+        [
+          "后壳配置",
+          "圆角位置",
+          0.0
+        ]
+      ],
+      "meshes": {
+        "前壳配置": {
+          "vertices": 237482,
+          "triangles": 475000,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 5.607844660482948e-08,
+          "dimensions_mm": [
+            252.9455108642578,
+            141.73898315429688,
+            229.89219665527344
+          ],
+          "signed_volume_cm3": 156.0783676213445,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "后壳配置": {
+          "vertices": 90563,
+          "triangles": 181402,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 3.3544314964614706e-08,
+          "dimensions_mm": [
+            236.87078857421875,
+            218.04653930664062,
+            254.61648559570312
+          ],
+          "signed_volume_cm3": 325.9367919111668,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "seconds": 4.456
+    },
+    {
+      "name": "lock1_seam0.0_round0.037",
+      "inputs": [
+        [
+          "前壳配置",
+          "锁类型",
+          1
+        ],
+        [
+          "前壳配置",
+          "前后基准值",
+          0.0
+        ],
+        [
+          "后壳配置",
+          "圆角位置",
+          0.037
+        ]
+      ],
+      "meshes": {
+        "前壳配置": {
+          "vertices": 237482,
+          "triangles": 475000,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 5.607844660482948e-08,
+          "dimensions_mm": [
+            252.9455108642578,
+            141.73898315429688,
+            229.89219665527344
+          ],
+          "signed_volume_cm3": 156.0783676213445,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "后壳配置": {
+          "vertices": 90467,
+          "triangles": 181210,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 3.3544314964614706e-08,
+          "dimensions_mm": [
+            236.87078857421875,
+            218.04653930664062,
+            254.47015380859375
+          ],
+          "signed_volume_cm3": 325.92461898786945,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "seconds": 4.533
+    },
+    {
+      "name": "lock1_seam0.0_round0.1",
+      "inputs": [
+        [
+          "前壳配置",
+          "锁类型",
+          1
+        ],
+        [
+          "前壳配置",
+          "前后基准值",
+          0.0
+        ],
+        [
+          "后壳配置",
+          "圆角位置",
+          0.1
+        ]
+      ],
+      "meshes": {
+        "前壳配置": {
+          "vertices": 237482,
+          "triangles": 475000,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 5.607844660482948e-08,
+          "dimensions_mm": [
+            252.9455108642578,
+            141.73898315429688,
+            229.89219665527344
+          ],
+          "signed_volume_cm3": 156.0783676213445,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "后壳配置": {
+          "vertices": 1139237,
+          "triangles": 2278782,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 6.606860551983118e-07,
+          "dimensions_mm": [
+            236.8672332763672,
+            218.0417022705078,
+            244.1065673828125
+          ],
+          "signed_volume_cm3": 309.5985546182131,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": true
+        }
+      },
+      "errors": [],
+      "seconds": 23.757
+    },
+    {
+      "name": "lock1_seam0.3_round0.0",
+      "inputs": [
+        [
+          "前壳配置",
+          "锁类型",
+          1
+        ],
+        [
+          "前壳配置",
+          "前后基准值",
+          0.3
+        ],
+        [
+          "后壳配置",
+          "圆角位置",
+          0.0
+        ]
+      ],
+      "meshes": {
+        "前壳配置": {
+          "vertices": 246245,
+          "triangles": 492526,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 1,
+          "min_triangle_area_mm2": 9.003709490354569e-09,
+          "dimensions_mm": [
+            252.9455108642578,
+            141.73898315429688,
+            249.54808044433594
+          ],
+          "signed_volume_cm3": 192.34644284328726,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "后壳配置": {
+          "vertices": 84861,
+          "triangles": 170002,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 1.8098231946157135e-08,
+          "dimensions_mm": [
+            236.87078857421875,
+            206.64984130859375,
+            253.71461486816406
+          ],
+          "signed_volume_cm3": 292.3796722538738,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "seconds": 4.553
+    },
+    {
+      "name": "lock1_seam0.3_round0.037",
+      "inputs": [
+        [
+          "前壳配置",
+          "锁类型",
+          1
+        ],
+        [
+          "前壳配置",
+          "前后基准值",
+          0.3
+        ],
+        [
+          "后壳配置",
+          "圆角位置",
+          0.037
+        ]
+      ],
+      "meshes": {
+        "前壳配置": {
+          "vertices": 246245,
+          "triangles": 492526,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 1,
+          "min_triangle_area_mm2": 9.003709490354569e-09,
+          "dimensions_mm": [
+            252.9455108642578,
+            141.73898315429688,
+            249.54808044433594
+          ],
+          "signed_volume_cm3": 192.34644284328726,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "后壳配置": {
+          "vertices": 84444,
+          "triangles": 169168,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 2.9080527376560295e-08,
+          "dimensions_mm": [
+            236.87078857421875,
+            206.64984130859375,
+            252.677490234375
+          ],
+          "signed_volume_cm3": 292.18588234515863,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "seconds": 4.824
+    },
+    {
+      "name": "lock1_seam0.3_round0.1",
+      "inputs": [
+        [
+          "前壳配置",
+          "锁类型",
+          1
+        ],
+        [
+          "前壳配置",
+          "前后基准值",
+          0.3
+        ],
+        [
+          "后壳配置",
+          "圆角位置",
+          0.1
+        ]
+      ],
+      "meshes": {
+        "前壳配置": {
+          "vertices": 246245,
+          "triangles": 492526,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 1,
+          "min_triangle_area_mm2": 9.003709490354569e-09,
+          "dimensions_mm": [
+            252.9455108642578,
+            141.73898315429688,
+            249.54808044433594
+          ],
+          "signed_volume_cm3": 192.34644284328726,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "后壳配置": {
+          "vertices": 1045667,
+          "triangles": 2091614,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 6.606860551983118e-07,
+          "dimensions_mm": [
+            236.8672332763672,
+            206.64495849609375,
+            224.42022705078125
+          ],
+          "signed_volume_cm3": 260.45385063928563,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": true
+        }
+      },
+      "errors": [],
+      "seconds": 21.312
+    },
+    {
+      "name": "lock1_seam0.65_round0.0",
+      "inputs": [
+        [
+          "前壳配置",
+          "锁类型",
+          1
+        ],
+        [
+          "前壳配置",
+          "前后基准值",
+          0.65
+        ],
+        [
+          "后壳配置",
+          "圆角位置",
+          0.0
+        ]
+      ],
+      "meshes": {
+        "前壳配置": {
+          "vertices": 257273,
+          "triangles": 514582,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 4.50488904697711e-08,
+          "dimensions_mm": [
+            252.9455108642578,
+            153.39620971679688,
+            266.3038330078125
+          ],
+          "signed_volume_cm3": 245.52388323604035,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "后壳配置": {
+          "vertices": 75422,
+          "triangles": 151116,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 1.5213579734302223e-07,
+          "dimensions_mm": [
+            236.50152587890625,
+            186.16921997070312,
+            251.29478454589844
+          ],
+          "signed_volume_cm3": 246.26276401782656,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "seconds": 4.592
+    },
+    {
+      "name": "lock1_seam0.65_round0.037",
+      "inputs": [
+        [
+          "前壳配置",
+          "锁类型",
+          1
+        ],
+        [
+          "前壳配置",
+          "前后基准值",
+          0.65
+        ],
+        [
+          "后壳配置",
+          "圆角位置",
+          0.037
+        ]
+      ],
+      "meshes": {
+        "前壳配置": {
+          "vertices": 257273,
+          "triangles": 514582,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 4.50488904697711e-08,
+          "dimensions_mm": [
+            252.9455108642578,
+            153.39620971679688,
+            266.3038330078125
+          ],
+          "signed_volume_cm3": 245.52388323604035,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "后壳配置": {
+          "vertices": 73188,
+          "triangles": 146648,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 1.0306497097572853e-07,
+          "dimensions_mm": [
+            236.50152587890625,
+            186.16921997070312,
+            249.60687255859375
+          ],
+          "signed_volume_cm3": 244.93040536334988,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "seconds": 4.392
+    },
+    {
+      "name": "lock1_seam0.65_round0.1",
+      "inputs": [
+        [
+          "前壳配置",
+          "锁类型",
+          1
+        ],
+        [
+          "前壳配置",
+          "前后基准值",
+          0.65
+        ],
+        [
+          "后壳配置",
+          "圆角位置",
+          0.1
+        ]
+      ],
+      "meshes": {
+        "前壳配置": {
+          "vertices": 257273,
+          "triangles": 514582,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 4.50488904697711e-08,
+          "dimensions_mm": [
+            252.9455108642578,
+            153.39620971679688,
+            266.3038330078125
+          ],
+          "signed_volume_cm3": 245.52388323604035,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "后壳配置": {
+          "vertices": 915319,
+          "triangles": 1830902,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 6.585687515325844e-07,
+          "dimensions_mm": [
+            236.486572265625,
+            186.1630401611328,
+            207.63150024414062
+          ],
+          "signed_volume_cm3": 206.0995477504263,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": true
+        }
+      },
+      "errors": [],
+      "seconds": 19.032
+    },
+    {
+      "name": "lock1_seam0.78_round0.0",
+      "inputs": [
+        [
+          "前壳配置",
+          "锁类型",
+          1
+        ],
+        [
+          "前壳配置",
+          "前后基准值",
+          0.78
+        ],
+        [
+          "后壳配置",
+          "圆角位置",
+          0.0
+        ]
+      ],
+      "meshes": {
+        "前壳配置": {
+          "vertices": 261132,
+          "triangles": 522292,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 4.517883607163621e-08,
+          "dimensions_mm": [
+            252.9455108642578,
+            162.16473388671875,
+            270.85498046875
+          ],
+          "signed_volume_cm3": 265.53349584978633,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "后壳配置": {
+          "vertices": 71588,
+          "triangles": 143448,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 1.3480144243679883e-07,
+          "dimensions_mm": [
+            236.55226135253906,
+            177.40069580078125,
+            250.60983276367188
+          ],
+          "signed_volume_cm3": 227.88973818269184,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "seconds": 4.486
+    },
+    {
+      "name": "lock1_seam0.78_round0.037",
+      "inputs": [
+        [
+          "前壳配置",
+          "锁类型",
+          1
+        ],
+        [
+          "前壳配置",
+          "前后基准值",
+          0.78
+        ],
+        [
+          "后壳配置",
+          "圆角位置",
+          0.037
+        ]
+      ],
+      "meshes": {
+        "前壳配置": {
+          "vertices": 261132,
+          "triangles": 522292,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 4.517883607163621e-08,
+          "dimensions_mm": [
+            252.9455108642578,
+            162.16473388671875,
+            270.85498046875
+          ],
+          "signed_volume_cm3": 265.53349584978633,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "后壳配置": {
+          "vertices": 67114,
+          "triangles": 134500,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 5.031227719250761e-08,
+          "dimensions_mm": [
+            236.55226135253906,
+            177.40069580078125,
+            248.5341033935547
+          ],
+          "signed_volume_cm3": 225.58894572665542,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "seconds": 4.337
+    },
+    {
+      "name": "lock1_seam0.78_round0.1",
+      "inputs": [
+        [
+          "前壳配置",
+          "锁类型",
+          1
+        ],
+        [
+          "前壳配置",
+          "前后基准值",
+          0.78
+        ],
+        [
+          "后壳配置",
+          "圆角位置",
+          0.1
+        ]
+      ],
+      "meshes": {
+        "前壳配置": {
+          "vertices": 261132,
+          "triangles": 522292,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 4.517883607163621e-08,
+          "dimensions_mm": [
+            252.9455108642578,
+            162.16473388671875,
+            270.85498046875
+          ],
+          "signed_volume_cm3": 265.53349584978633,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "后壳配置": {
+          "vertices": 873497,
+          "triangles": 1747250,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 6.606860551983118e-07,
+          "dimensions_mm": [
+            236.53585815429688,
+            177.39569091796875,
+            203.06015014648438
+          ],
+          "signed_volume_cm3": 187.39484356039878,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": true
+        }
+      },
+      "errors": [],
+      "seconds": 18.094
+    },
+    {
+      "name": "lock1_seam0.85_round0.0",
+      "inputs": [
+        [
+          "前壳配置",
+          "锁类型",
+          1
+        ],
+        [
+          "前壳配置",
+          "前后基准值",
+          0.85
+        ],
+        [
+          "后壳配置",
+          "圆角位置",
+          0.0
+        ]
+      ],
+      "meshes": {
+        "前壳配置": {
+          "vertices": 263256,
+          "triangles": 526540,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 8.22605702638264e-08,
+          "dimensions_mm": [
+            252.9455108642578,
+            167.03872680664062,
+            272.99005126953125
+          ],
+          "signed_volume_cm3": 276.16632920630866,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "后壳配置": {
+          "vertices": 69514,
+          "triangles": 139292,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 6.996305391701728e-08,
+          "dimensions_mm": [
+            236.28640747070312,
+            172.5266876220703,
+            250.32350158691406
+          ],
+          "signed_volume_cm3": 217.808078777913,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "seconds": 4.508
+    },
+    {
+      "name": "lock1_seam0.85_round0.037",
+      "inputs": [
+        [
+          "前壳配置",
+          "锁类型",
+          1
+        ],
+        [
+          "前壳配置",
+          "前后基准值",
+          0.85
+        ],
+        [
+          "后壳配置",
+          "圆角位置",
+          0.037
+        ]
+      ],
+      "meshes": {
+        "前壳配置": {
+          "vertices": 263256,
+          "triangles": 526540,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 8.22605702638264e-08,
+          "dimensions_mm": [
+            252.9455108642578,
+            167.03872680664062,
+            272.99005126953125
+          ],
+          "signed_volume_cm3": 276.16632920630866,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "后壳配置": {
+          "vertices": 62857,
+          "triangles": 125978,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 6.996305391701728e-08,
+          "dimensions_mm": [
+            236.28640747070312,
+            172.5266876220703,
+            247.88497924804688
+          ],
+          "signed_volume_cm3": 214.744262563978,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "seconds": 4.453
+    },
+    {
+      "name": "lock1_seam0.85_round0.1",
+      "inputs": [
+        [
+          "前壳配置",
+          "锁类型",
+          1
+        ],
+        [
+          "前壳配置",
+          "前后基准值",
+          0.85
+        ],
+        [
+          "后壳配置",
+          "圆角位置",
+          0.1
+        ]
+      ],
+      "meshes": {
+        "前壳配置": {
+          "vertices": 263256,
+          "triangles": 526540,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 8.22605702638264e-08,
+          "dimensions_mm": [
+            252.9455108642578,
+            167.03872680664062,
+            272.99005126953125
+          ],
+          "signed_volume_cm3": 276.16632920630866,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "后壳配置": {
+          "vertices": 851148,
+          "triangles": 1702544,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 6.602276698686182e-07,
+          "dimensions_mm": [
+            236.26254272460938,
+            172.5218505859375,
+            201.01220703125
+          ],
+          "signed_volume_cm3": 177.37140191971636,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": true
+        }
+      },
+      "errors": [],
+      "seconds": 16.946
+    },
+    {
+      "name": "lock2_seam0.0_round0.0",
+      "inputs": [
+        [
+          "前壳配置",
+          "锁类型",
+          2
+        ],
+        [
+          "前壳配置",
+          "前后基准值",
+          0.0
+        ],
+        [
+          "后壳配置",
+          "圆角位置",
+          0.0
+        ]
+      ],
+      "meshes": {
+        "前壳配置": {
+          "vertices": 231949,
+          "triangles": 463910,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 5.607844660482948e-08,
+          "dimensions_mm": [
+            252.9455108642578,
+            141.73898315429688,
+            229.89219665527344
+          ],
+          "signed_volume_cm3": 155.2508139014598,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "后壳配置": {
+          "vertices": 85856,
+          "triangles": 171972,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 5.221368647484034e-07,
+          "dimensions_mm": [
+            236.87078857421875,
+            218.04653930664062,
+            254.61648559570312
+          ],
+          "signed_volume_cm3": 320.9324010221722,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "seconds": 4.002
+    },
+    {
+      "name": "lock2_seam0.0_round0.037",
+      "inputs": [
+        [
+          "前壳配置",
+          "锁类型",
+          2
+        ],
+        [
+          "前壳配置",
+          "前后基准值",
+          0.0
+        ],
+        [
+          "后壳配置",
+          "圆角位置",
+          0.037
+        ]
+      ],
+      "meshes": {
+        "前壳配置": {
+          "vertices": 231949,
+          "triangles": 463910,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 5.607844660482948e-08,
+          "dimensions_mm": [
+            252.9455108642578,
+            141.73898315429688,
+            229.89219665527344
+          ],
+          "signed_volume_cm3": 155.2508139014598,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "后壳配置": {
+          "vertices": 85755,
+          "triangles": 171770,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 4.969236362936928e-06,
+          "dimensions_mm": [
+            236.87078857421875,
+            218.04653930664062,
+            254.47015380859375
+          ],
+          "signed_volume_cm3": 320.92022754579784,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "seconds": 4.035
+    },
+    {
+      "name": "lock2_seam0.0_round0.1",
+      "inputs": [
+        [
+          "前壳配置",
+          "锁类型",
+          2
+        ],
+        [
+          "前壳配置",
+          "前后基准值",
+          0.0
+        ],
+        [
+          "后壳配置",
+          "圆角位置",
+          0.1
+        ]
+      ],
+      "meshes": {
+        "前壳配置": {
+          "vertices": 231949,
+          "triangles": 463910,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 5.607844660482948e-08,
+          "dimensions_mm": [
+            252.9455108642578,
+            141.73898315429688,
+            229.89219665527344
+          ],
+          "signed_volume_cm3": 155.2508139014598,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "后壳配置": {
+          "vertices": 1080034,
+          "triangles": 2160360,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 6.606860551983118e-07,
+          "dimensions_mm": [
+            236.8672332763672,
+            218.0417022705078,
+            244.1065673828125
+          ],
+          "signed_volume_cm3": 304.59736051872966,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": true
+        }
+      },
+      "errors": [],
+      "seconds": 24.072
+    },
+    {
+      "name": "lock2_seam0.3_round0.0",
+      "inputs": [
+        [
+          "前壳配置",
+          "锁类型",
+          2
+        ],
+        [
+          "前壳配置",
+          "前后基准值",
+          0.3
+        ],
+        [
+          "后壳配置",
+          "圆角位置",
+          0.0
+        ]
+      ],
+      "meshes": {
+        "前壳配置": {
+          "vertices": 237527,
+          "triangles": 475066,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 1,
+          "min_triangle_area_mm2": 9.003709490354569e-09,
+          "dimensions_mm": [
+            252.9455108642578,
+            141.73898315429688,
+            249.54808044433594
+          ],
+          "signed_volume_cm3": 187.2262452234657,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "后壳配置": {
+          "vertices": 80061,
+          "triangles": 160386,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 2.587895120764808e-06,
+          "dimensions_mm": [
+            236.87078857421875,
+            206.64984130859375,
+            253.71461486816406
+          ],
+          "signed_volume_cm3": 285.3040311362594,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "seconds": 4.142
+    },
+    {
+      "name": "lock2_seam0.3_round0.037",
+      "inputs": [
+        [
+          "前壳配置",
+          "锁类型",
+          2
+        ],
+        [
+          "前壳配置",
+          "前后基准值",
+          0.3
+        ],
+        [
+          "后壳配置",
+          "圆角位置",
+          0.037
+        ]
+      ],
+      "meshes": {
+        "前壳配置": {
+          "vertices": 237527,
+          "triangles": 475066,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 1,
+          "min_triangle_area_mm2": 9.003709490354569e-09,
+          "dimensions_mm": [
+            252.9455108642578,
+            141.73898315429688,
+            249.54808044433594
+          ],
+          "signed_volume_cm3": 187.2262452234657,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "后壳配置": {
+          "vertices": 79643,
+          "triangles": 159550,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 4.53663991570618e-07,
+          "dimensions_mm": [
+            236.87078857421875,
+            206.64984130859375,
+            252.677490234375
+          ],
+          "signed_volume_cm3": 285.1102427839935,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "seconds": 4.231
+    },
+    {
+      "name": "lock2_seam0.3_round0.1",
+      "inputs": [
+        [
+          "前壳配置",
+          "锁类型",
+          2
+        ],
+        [
+          "前壳配置",
+          "前后基准值",
+          0.3
+        ],
+        [
+          "后壳配置",
+          "圆角位置",
+          0.1
+        ]
+      ],
+      "meshes": {
+        "前壳配置": {
+          "vertices": 237527,
+          "triangles": 475066,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 1,
+          "min_triangle_area_mm2": 9.003709490354569e-09,
+          "dimensions_mm": [
+            252.9455108642578,
+            141.73898315429688,
+            249.54808044433594
+          ],
+          "signed_volume_cm3": 187.2262452234657,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "后壳配置": {
+          "vertices": 979726,
+          "triangles": 1959716,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 6.606860551983118e-07,
+          "dimensions_mm": [
+            236.8672332763672,
+            206.64495849609375,
+            224.42022705078125
+          ],
+          "signed_volume_cm3": 253.3808670503084,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": true
+        }
+      },
+      "errors": [],
+      "seconds": 21.075
+    },
+    {
+      "name": "lock2_seam0.65_round0.0",
+      "inputs": [
+        [
+          "前壳配置",
+          "锁类型",
+          2
+        ],
+        [
+          "前壳配置",
+          "前后基准值",
+          0.65
+        ],
+        [
+          "后壳配置",
+          "圆角位置",
+          0.0
+        ]
+      ],
+      "meshes": {
+        "前壳配置": {
+          "vertices": 247088,
+          "triangles": 494180,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 4.50488904697711e-08,
+          "dimensions_mm": [
+            252.9455108642578,
+            153.39620971679688,
+            266.3038330078125
+          ],
+          "signed_volume_cm3": 235.12453127649954,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "后壳配置": {
+          "vertices": 70591,
+          "triangles": 141438,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 5.5619582232279756e-06,
+          "dimensions_mm": [
+            236.87078857421875,
+            186.16921997070312,
+            251.29478454589844
+          ],
+          "signed_volume_cm3": 238.65257513690491,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "seconds": 4.103
+    },
+    {
+      "name": "lock2_seam0.65_round0.037",
+      "inputs": [
+        [
+          "前壳配置",
+          "锁类型",
+          2
+        ],
+        [
+          "前壳配置",
+          "前后基准值",
+          0.65
+        ],
+        [
+          "后壳配置",
+          "圆角位置",
+          0.037
+        ]
+      ],
+      "meshes": {
+        "前壳配置": {
+          "vertices": 247088,
+          "triangles": 494180,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 4.50488904697711e-08,
+          "dimensions_mm": [
+            252.9455108642578,
+            153.39620971679688,
+            266.3038330078125
+          ],
+          "signed_volume_cm3": 235.12453127649954,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "后壳配置": {
+          "vertices": 68356,
+          "triangles": 136968,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 4.271759803430999e-07,
+          "dimensions_mm": [
+            236.87078857421875,
+            186.16921997070312,
+            249.60687255859375
+          ],
+          "signed_volume_cm3": 237.32017469061012,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "seconds": 4.112
+    },
+    {
+      "name": "lock2_seam0.65_round0.1",
+      "inputs": [
+        [
+          "前壳配置",
+          "锁类型",
+          2
+        ],
+        [
+          "前壳配置",
+          "前后基准值",
+          0.65
+        ],
+        [
+          "后壳配置",
+          "圆角位置",
+          0.1
+        ]
+      ],
+      "meshes": {
+        "前壳配置": {
+          "vertices": 247088,
+          "triangles": 494180,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 4.50488904697711e-08,
+          "dimensions_mm": [
+            252.9455108642578,
+            153.39620971679688,
+            266.3038330078125
+          ],
+          "signed_volume_cm3": 235.12453127649954,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "后壳配置": {
+          "vertices": 845542,
+          "triangles": 1691332,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 6.585687515325844e-07,
+          "dimensions_mm": [
+            236.8672332763672,
+            186.1630401611328,
+            207.63150024414062
+          ],
+          "signed_volume_cm3": 198.49221361538616,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": true
+        }
+      },
+      "errors": [],
+      "seconds": 17.432
+    },
+    {
+      "name": "lock2_seam0.78_round0.0",
+      "inputs": [
+        [
+          "前壳配置",
+          "锁类型",
+          2
+        ],
+        [
+          "前壳配置",
+          "前后基准值",
+          0.78
+        ],
+        [
+          "后壳配置",
+          "圆角位置",
+          0.0
+        ]
+      ],
+      "meshes": {
+        "前壳配置": {
+          "vertices": 250845,
+          "triangles": 501694,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 1.8128490374582417e-07,
+          "dimensions_mm": [
+            252.9455108642578,
+            162.16473388671875,
+            270.85498046875
+          ],
+          "signed_volume_cm3": 253.70985752077493,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "后壳配置": {
+          "vertices": 66774,
+          "triangles": 133804,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 2.7473869567158604e-06,
+          "dimensions_mm": [
+            236.849365234375,
+            177.40069580078125,
+            250.60983276367188
+          ],
+          "signed_volume_cm3": 220.77065548741632,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "seconds": 4.07
+    },
+    {
+      "name": "lock2_seam0.78_round0.037",
+      "inputs": [
+        [
+          "前壳配置",
+          "锁类型",
+          2
+        ],
+        [
+          "前壳配置",
+          "前后基准值",
+          0.78
+        ],
+        [
+          "后壳配置",
+          "圆角位置",
+          0.037
+        ]
+      ],
+      "meshes": {
+        "前壳配置": {
+          "vertices": 250845,
+          "triangles": 501694,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 1.8128490374582417e-07,
+          "dimensions_mm": [
+            252.9455108642578,
+            162.16473388671875,
+            270.85498046875
+          ],
+          "signed_volume_cm3": 253.70985752077493,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "后壳配置": {
+          "vertices": 62268,
+          "triangles": 124792,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 2.7473869567158604e-06,
+          "dimensions_mm": [
+            236.849365234375,
+            177.40069580078125,
+            248.5341033935547
+          ],
+          "signed_volume_cm3": 218.46986324169674,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "seconds": 4.072
+    },
+    {
+      "name": "lock2_seam0.78_round0.1",
+      "inputs": [
+        [
+          "前壳配置",
+          "锁类型",
+          2
+        ],
+        [
+          "前壳配置",
+          "前后基准值",
+          0.78
+        ],
+        [
+          "后壳配置",
+          "圆角位置",
+          0.1
+        ]
+      ],
+      "meshes": {
+        "前壳配置": {
+          "vertices": 250845,
+          "triangles": 501694,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 1.8128490374582417e-07,
+          "dimensions_mm": [
+            252.9455108642578,
+            162.16473388671875,
+            270.85498046875
+          ],
+          "signed_volume_cm3": 253.70985752077493,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "后壳配置": {
+          "vertices": 804522,
+          "triangles": 1609284,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 6.606860551983118e-07,
+          "dimensions_mm": [
+            236.84197998046875,
+            177.39569091796875,
+            203.06015014648438
+          ],
+          "signed_volume_cm3": 180.27920094998657,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": true
+        }
+      },
+      "errors": [],
+      "seconds": 16.41
+    },
+    {
+      "name": "lock2_seam0.85_round0.0",
+      "inputs": [
+        [
+          "前壳配置",
+          "锁类型",
+          2
+        ],
+        [
+          "前壳配置",
+          "前后基准值",
+          0.85
+        ],
+        [
+          "后壳配置",
+          "圆角位置",
+          0.0
+        ]
+      ],
+      "meshes": {
+        "前壳配置": {
+          "vertices": 252883,
+          "triangles": 505770,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 8.22605702638264e-08,
+          "dimensions_mm": [
+            252.9455108642578,
+            167.03872680664062,
+            272.99005126953125
+          ],
+          "signed_volume_cm3": 263.73357095474654,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "后壳配置": {
+          "vertices": 64698,
+          "triangles": 129644,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 2.2321435976870897e-06,
+          "dimensions_mm": [
+            236.48690795898438,
+            172.5266876220703,
+            250.32350158691406
+          ],
+          "signed_volume_cm3": 211.12759559870636,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "seconds": 4.19
+    },
+    {
+      "name": "lock2_seam0.85_round0.037",
+      "inputs": [
+        [
+          "前壳配置",
+          "锁类型",
+          2
+        ],
+        [
+          "前壳配置",
+          "前后基准值",
+          0.85
+        ],
+        [
+          "后壳配置",
+          "圆角位置",
+          0.037
+        ]
+      ],
+      "meshes": {
+        "前壳配置": {
+          "vertices": 252883,
+          "triangles": 505770,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 8.22605702638264e-08,
+          "dimensions_mm": [
+            252.9455108642578,
+            167.03872680664062,
+            272.99005126953125
+          ],
+          "signed_volume_cm3": 263.73357095474654,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "后壳配置": {
+          "vertices": 58039,
+          "triangles": 116326,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 3.0996397048564875e-06,
+          "dimensions_mm": [
+            236.48690795898438,
+            172.5266876220703,
+            247.88497924804688
+          ],
+          "signed_volume_cm3": 208.06377408732845,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "seconds": 4.019
+    },
+    {
+      "name": "lock2_seam0.85_round0.1",
+      "inputs": [
+        [
+          "前壳配置",
+          "锁类型",
+          2
+        ],
+        [
+          "前壳配置",
+          "前后基准值",
+          0.85
+        ],
+        [
+          "后壳配置",
+          "圆角位置",
+          0.1
+        ]
+      ],
+      "meshes": {
+        "前壳配置": {
+          "vertices": 252883,
+          "triangles": 505770,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 8.22605702638264e-08,
+          "dimensions_mm": [
+            252.9455108642578,
+            167.03872680664062,
+            272.99005126953125
+          ],
+          "signed_volume_cm3": 263.73357095474654,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "后壳配置": {
+          "vertices": 783446,
+          "triangles": 1567124,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 6.602276698686182e-07,
+          "dimensions_mm": [
+            236.47134399414062,
+            172.5218505859375,
+            201.01220703125
+          ],
+          "signed_volume_cm3": 170.69417858323004,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": true
+        }
+      },
+      "errors": [],
+      "seconds": 16.014
+    },
+    {
+      "name": "vision_reverseFalse_pupil5.5",
+      "inputs": [
+        [
+          "视孔",
+          "生成",
+          true
+        ],
+        [
+          "视孔",
+          "反向",
+          false
+        ],
+        [
+          "视孔",
+          "瞳距",
+          5.5
+        ]
+      ],
+      "meshes": {
+        "视孔": {
+          "vertices": 437260,
+          "triangles": 874512,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 5.48199750483036e-07,
+          "dimensions_mm": [
+            102.68659973144531,
+            17.52893829345703,
+            18.003433227539062
+          ],
+          "signed_volume_cm3": 5.9110502824113755,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "前壳配置": {
+          "vertices": 278903,
+          "triangles": 557834,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 4.517883607163621e-08,
+          "dimensions_mm": [
+            252.9455108642578,
+            162.16473388671875,
+            270.85498046875
+          ],
+          "signed_volume_cm3": 265.4745402373709,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "seconds": 6.112
+    },
+    {
+      "name": "vision_reverseFalse_pupil6.03",
+      "inputs": [
+        [
+          "视孔",
+          "生成",
+          true
+        ],
+        [
+          "视孔",
+          "反向",
+          false
+        ],
+        [
+          "视孔",
+          "瞳距",
+          6.03
+        ]
+      ],
+      "meshes": {
+        "视孔": {
+          "vertices": 433164,
+          "triangles": 866320,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 2.201995812356472e-07,
+          "dimensions_mm": [
+            107.72097778320312,
+            17.254165649414062,
+            18.326213836669922
+          ],
+          "signed_volume_cm3": 5.891439909509875,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "前壳配置": {
+          "vertices": 277668,
+          "triangles": 555364,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 3.6937522988160094e-08,
+          "dimensions_mm": [
+            252.9455108642578,
+            162.16473388671875,
+            270.85498046875
+          ],
+          "signed_volume_cm3": 265.46705640295954,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "seconds": 6.094
+    },
+    {
+      "name": "vision_reverseFalse_pupil7.0",
+      "inputs": [
+        [
+          "视孔",
+          "生成",
+          true
+        ],
+        [
+          "视孔",
+          "反向",
+          false
+        ],
+        [
+          "视孔",
+          "瞳距",
+          7.0
+        ]
+      ],
+      "meshes": {
+        "视孔": {
+          "vertices": 447344,
+          "triangles": 894680,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 1.1138617992401123e-06,
+          "dimensions_mm": [
+            116.92753601074219,
+            16.54583740234375,
+            18.96492576599121
+          ],
+          "signed_volume_cm3": 7.599581302169852,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "前壳配置": {
+          "vertices": 274388,
+          "triangles": 548804,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 3.1486332529668775e-08,
+          "dimensions_mm": [
+            252.9455108642578,
+            162.16473388671875,
+            270.85498046875
+          ],
+          "signed_volume_cm3": 264.7622009360784,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "seconds": 5.961
+    },
+    {
+      "name": "vision_reverseTrue_pupil5.5",
+      "inputs": [
+        [
+          "视孔",
+          "生成",
+          true
+        ],
+        [
+          "视孔",
+          "反向",
+          true
+        ],
+        [
+          "视孔",
+          "瞳距",
+          5.5
+        ]
+      ],
+      "meshes": {
+        "视孔": {
+          "vertices": 438648,
+          "triangles": 877288,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 9.345239959657192e-07,
+          "dimensions_mm": [
+            94.86532592773438,
+            16.524688720703125,
+            20.190874099731445
+          ],
+          "signed_volume_cm3": 5.773726926840016,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "前壳配置": {
+          "vertices": 317780,
+          "triangles": 635588,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 1.5841032308565794e-08,
+          "dimensions_mm": [
+            252.9455108642578,
+            162.16473388671875,
+            270.85498046875
+          ],
+          "signed_volume_cm3": 265.0781365766336,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "seconds": 6.761
+    },
+    {
+      "name": "vision_reverseTrue_pupil6.03",
+      "inputs": [
+        [
+          "视孔",
+          "生成",
+          true
+        ],
+        [
+          "视孔",
+          "反向",
+          true
+        ],
+        [
+          "视孔",
+          "瞳距",
+          6.03
+        ]
+      ],
+      "meshes": {
+        "视孔": {
+          "vertices": 447508,
+          "triangles": 895008,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 1.9863364286720753e-07,
+          "dimensions_mm": [
+            100.24197387695312,
+            16.337684631347656,
+            20.22560691833496
+          ],
+          "signed_volume_cm3": 5.879488467719386,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "前壳配置": {
+          "vertices": 320577,
+          "triangles": 641182,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 4.517883607163621e-08,
+          "dimensions_mm": [
+            252.9455108642578,
+            162.16473388671875,
+            270.85498046875
+          ],
+          "signed_volume_cm3": 265.05573627294194,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "seconds": 8.291
+    },
+    {
+      "name": "vision_reverseTrue_pupil7.0",
+      "inputs": [
+        [
+          "视孔",
+          "生成",
+          true
+        ],
+        [
+          "视孔",
+          "反向",
+          true
+        ],
+        [
+          "视孔",
+          "瞳距",
+          7.0
+        ]
+      ],
+      "meshes": {
+        "视孔": {
+          "vertices": 467980,
+          "triangles": 935952,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 2.8538539606038807e-07,
+          "dimensions_mm": [
+            110.19032287597656,
+            18.239028930664062,
+            19.5028018951416
+          ],
+          "signed_volume_cm3": 7.7743836336339776,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "前壳配置": {
+          "vertices": 287443,
+          "triangles": 574914,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 3.902328722098814e-08,
+          "dimensions_mm": [
+            252.9455108642578,
+            162.16473388671875,
+            270.85498046875
+          ],
+          "signed_volume_cm3": 264.2980964161046,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "seconds": 6.086
+    },
+    {
+      "name": "eyeliner_boolean",
+      "inputs": [
+        [
+          "眼线配置",
+          "是否布尔",
+          true
+        ]
+      ],
+      "meshes": {
+        "眼线配置": {
+          "vertices": 25397,
+          "triangles": 50786,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 1.6995859475732634e-06,
+          "dimensions_mm": [
+            175.2564697265625,
+            31.263595581054688,
+            33.153785705566406
+          ],
+          "signed_volume_cm3": 4.730725598949816,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "seconds": 3.544
+    },
+    {
+      "name": "eyeliner_engraving",
+      "inputs": [
+        [
+          "眼线配置",
+          "是否布尔",
+          true
+        ],
+        [
+          "眼线配置",
+          "是否刻字",
+          true
+        ]
+      ],
+      "meshes": {
+        "眼线配置": {
+          "vertices": 25491,
+          "triangles": 50974,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 2.2033628026910581e-07,
+          "dimensions_mm": [
+            175.2564697265625,
+            31.263595581054688,
+            33.153785705566406
+          ],
+          "signed_volume_cm3": 4.7256457001605865,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "seconds": 3.393
+    },
+    {
+      "name": "eyelash0_eye0.0",
+      "inputs": [
+        [
+          "头壳",
+          "睁眼大小",
+          0.0
+        ],
+        [
+          "睫毛",
+          "睫毛类型",
+          0
+        ],
+        [
+          "眼线配置",
+          "是否布尔",
+          true
+        ]
+      ],
+      "meshes": {
+        "睫毛": {
+          "vertices": 49412,
+          "triangles": 98816,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 0.0013230154453081032,
+          "dimensions_mm": [
+            175.7799835205078,
+            33.947364807128906,
+            33.44448471069336
+          ],
+          "signed_volume_cm3": 11.15998538112496,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "眼线配置": {
+          "vertices": 25397,
+          "triangles": 50786,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 1.6995859475732634e-06,
+          "dimensions_mm": [
+            175.2564697265625,
+            31.263595581054688,
+            33.153785705566406
+          ],
+          "signed_volume_cm3": 4.730725598949816,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "seconds": 3.467
+    },
+    {
+      "name": "eyelash1_eye0.0",
+      "inputs": [
+        [
+          "头壳",
+          "睁眼大小",
+          0.0
+        ],
+        [
+          "睫毛",
+          "睫毛类型",
+          1
+        ],
+        [
+          "眼线配置",
+          "是否布尔",
+          true
+        ]
+      ],
+      "meshes": {
+        "睫毛": {
+          "vertices": 38660,
+          "triangles": 77312,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 0.0011231492569724623,
+          "dimensions_mm": [
+            158.08871459960938,
+            32.52928161621094,
+            23.611392974853516
+          ],
+          "signed_volume_cm3": 9.526432698534984,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "眼线配置": {
+          "vertices": 20044,
+          "triangles": 40080,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 7.610792347880091e-07,
+          "dimensions_mm": [
+            158.06710815429688,
+            27.212318420410156,
+            23.002460479736328
+          ],
+          "signed_volume_cm3": 3.9023437304623596,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "seconds": 3.468
+    },
+    {
+      "name": "eyelash2_eye0.0",
+      "inputs": [
+        [
+          "头壳",
+          "睁眼大小",
+          0.0
+        ],
+        [
+          "睫毛",
+          "睫毛类型",
+          2
+        ],
+        [
+          "眼线配置",
+          "是否布尔",
+          true
+        ]
+      ],
+      "meshes": {
+        "睫毛": {
+          "vertices": 43780,
+          "triangles": 87552,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 0.0013230154453081032,
+          "dimensions_mm": [
+            175.7799835205078,
+            33.747764587402344,
+            33.44448471069336
+          ],
+          "signed_volume_cm3": 10.872903473009654,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "眼线配置": {
+          "vertices": 22932,
+          "triangles": 45856,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 8.776964134869346e-07,
+          "dimensions_mm": [
+            175.2564697265625,
+            31.063995361328125,
+            33.14961242675781
+          ],
+          "signed_volume_cm3": 4.681313280692602,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "seconds": 3.66
+    },
+    {
+      "name": "eyelash0_eye0.3",
+      "inputs": [
+        [
+          "头壳",
+          "睁眼大小",
+          0.3
+        ],
+        [
+          "睫毛",
+          "睫毛类型",
+          0
+        ],
+        [
+          "眼线配置",
+          "是否布尔",
+          true
+        ]
+      ],
+      "meshes": {
+        "睫毛": {
+          "vertices": 49412,
+          "triangles": 98816,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 0.0011069329437676152,
+          "dimensions_mm": [
+            171.28553771972656,
+            32.853004455566406,
+            27.597644805908203
+          ],
+          "signed_volume_cm3": 9.262603611892409,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "眼线配置": {
+          "vertices": 26008,
+          "triangles": 52008,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 1.7313148791801656e-05,
+          "dimensions_mm": [
+            171.04586791992188,
+            30.10265350341797,
+            26.32193374633789
+          ],
+          "signed_volume_cm3": 4.196755280149804,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "deformation_max_displacement_mm": 7.071550497939684,
+      "seconds": 3.93
+    },
+    {
+      "name": "eyelash1_eye0.3",
+      "inputs": [
+        [
+          "头壳",
+          "睁眼大小",
+          0.3
+        ],
+        [
+          "睫毛",
+          "睫毛类型",
+          1
+        ],
+        [
+          "眼线配置",
+          "是否布尔",
+          true
+        ]
+      ],
+      "meshes": {
+        "睫毛": {
+          "vertices": 38660,
+          "triangles": 77312,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 0.0009533000924341362,
+          "dimensions_mm": [
+            154.66970825195312,
+            31.537399291992188,
+            20.291654586791992
+          ],
+          "signed_volume_cm3": 7.958160642125622,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "眼线配置": {
+          "vertices": 20514,
+          "triangles": 41020,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 5.538374671236485e-06,
+          "dimensions_mm": [
+            154.66970825195312,
+            26.222824096679688,
+            19.392578125
+          ],
+          "signed_volume_cm3": 3.5194509687598026,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "deformation_max_displacement_mm": 7.115179341960851,
+      "seconds": 3.62
+    },
+    {
+      "name": "eyelash2_eye0.3",
+      "inputs": [
+        [
+          "头壳",
+          "睁眼大小",
+          0.3
+        ],
+        [
+          "睫毛",
+          "睫毛类型",
+          2
+        ],
+        [
+          "眼线配置",
+          "是否布尔",
+          true
+        ]
+      ],
+      "meshes": {
+        "睫毛": {
+          "vertices": 43780,
+          "triangles": 87552,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 0.0011069329437676152,
+          "dimensions_mm": [
+            171.28553771972656,
+            32.316429138183594,
+            27.597644805908203
+          ],
+          "signed_volume_cm3": 9.032241064218649,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "眼线配置": {
+          "vertices": 23390,
+          "triangles": 46772,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 5.390636210062727e-06,
+          "dimensions_mm": [
+            171.04586791992188,
+            29.566085815429688,
+            26.321426391601562
+          ],
+          "signed_volume_cm3": 4.1307146204361285,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "deformation_max_displacement_mm": 7.081678258442361,
+      "seconds": 3.756
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,298 @@
+{
+  "source_sha256": "f9ff2d067c5da83d2f92f2014e775c04a4dbc0e517879beedd5b42ba257b8af6",
+  "template_rotation": [
+    [
+      0.995030724104929,
+      0.01907766811582554,
+      -0.09772359319265138
+    ],
+    [
+      0.03653488770353706,
+      0.8430559014562967,
+      0.5365835899468047
+    ],
+    [
+      0.09262321559798264,
+      -0.5374874785508708,
+      0.8381695236247356
+    ]
+  ],
+  "template_translation_mm": [
+    -116.0330440286025,
+    -69.61189766132954,
+    -116.1562378843853
+  ],
+  "base_point_mm": [
+    -0.010565,
+    58.161121,
+    144.17639
+  ],
+  "feature_fit_residual_mm": 1.4715741832135936e-05,
+  "pattern_mm": [
+    20,
+    20
+  ],
+  "plastic_bore_mm": 3.5,
+  "seat_x_mm": 5.6,
+  "back_x_mm": 9.6,
+  "lock_offset_mm": 11.0,
+  "lock_tail_relief_diameter_mm": 10.0,
+  "latch_image_spec": {
+    "length_mm": 40,
+    "width_mm": 27,
+    "height_mm": 12.5,
+    "plate_thickness_mm": 0.5,
+    "metal_hole_diameter_mm": 3.5
+  },
+  "fasteners": {
+    "screws": "8 x M3x10 ISO 7380-1, head D5.7 H1.65",
+    "washers": "8 x DIN125 M3, 3.2 x 7 x 0.5 mm",
+    "nuts": "8 x DIN985 M3, AF5.5 H4 mm"
+  },
+  "mounts": [
+    {
+      "side": "L",
+      "index": 0,
+      "template_yz_mm": [
+        -16.0,
+        -10.0
+      ],
+      "seat_center_world_mm": [
+        -98.7994437315416,
+        -30.10091161295852,
+        28.756946543529978
+      ],
+      "inward_normal": [
+        0.995030724104929,
+        0.03653488770353706,
+        0.09262321559798264
+      ],
+      "attached_shell": "后壳配置",
+      "objects": [
+        "SideLatch_L_0_Shaft",
+        "SideLatch_L_0_Head",
+        "SideLatch_L_0_Washer",
+        "SideLatch_L_0_Nut"
+      ]
+    },
+    {
+      "side": "L",
+      "index": 1,
+      "template_yz_mm": [
+        -16.0,
+        10.0
+      ],
+      "seat_center_world_mm": [
+        -100.75391559539463,
+        -19.36923981402243,
+        45.52033701602468
+      ],
+      "inward_normal": [
+        0.995030724104929,
+        0.03653488770353706,
+        0.09262321559798264
+      ],
+      "attached_shell": "后壳配置",
+      "objects": [
+        "SideLatch_L_1_Shaft",
+        "SideLatch_L_1_Head",
+        "SideLatch_L_1_Washer",
+        "SideLatch_L_1_Nut"
+      ]
+    },
+    {
+      "side": "L",
+      "index": 2,
+      "template_yz_mm": [
+        4.0,
+        -10.0
+      ],
+      "seat_center_world_mm": [
+        -98.41789036922509,
+        -13.239793583832586,
+        18.00719697251256
+      ],
+      "inward_normal": [
+        0.995030724104929,
+        0.03653488770353706,
+        0.09262321559798264
+      ],
+      "attached_shell": "前壳配置",
+      "objects": [
+        "SideLatch_L_2_Shaft",
+        "SideLatch_L_2_Head",
+        "SideLatch_L_2_Washer",
+        "SideLatch_L_2_Nut"
+      ]
+    },
+    {
+      "side": "L",
+      "index": 3,
+      "template_yz_mm": [
+        4.0,
+        10.0
+      ],
+      "seat_center_world_mm": [
+        -100.3723622330781,
+        -2.5081217848964954,
+        34.770587445007266
+      ],
+      "inward_normal": [
+        0.995030724104929,
+        0.03653488770353706,
+        0.09262321559798264
+      ],
+      "attached_shell": "前壳配置",
+      "objects": [
+        "SideLatch_L_3_Shaft",
+        "SideLatch_L_3_Head",
+        "SideLatch_L_3_Washer",
+        "SideLatch_L_3_Nut"
+      ]
+    },
+    {
+      "side": "R",
+      "index": 0,
+      "template_yz_mm": [
+        -16.0,
+        -10.0
+      ],
+      "seat_center_world_mm": [
+        98.7783137315416,
+        -30.10091161295852,
+        28.756946543529978
+      ],
+      "inward_normal": [
+        -0.995030724104929,
+        0.03653488770353706,
+        0.09262321559798264
+      ],
+      "attached_shell": "后壳配置",
+      "objects": [
+        "SideLatch_R_0_Shaft",
+        "SideLatch_R_0_Head",
+        "SideLatch_R_0_Washer",
+        "SideLatch_R_0_Nut"
+      ]
+    },
+    {
+      "side": "R",
+      "index": 1,
+      "template_yz_mm": [
+        -16.0,
+        10.0
+      ],
+      "seat_center_world_mm": [
+        100.73278559539463,
+        -19.36923981402243,
+        45.52033701602468
+      ],
+      "inward_normal": [
+        -0.995030724104929,
+        0.03653488770353706,
+        0.09262321559798264
+      ],
+      "attached_shell": "后壳配置",
+      "objects": [
+        "SideLatch_R_1_Shaft",
+        "SideLatch_R_1_Head",
+        "SideLatch_R_1_Washer",
+        "SideLatch_R_1_Nut"
+      ]
+    },
+    {
+      "side": "R",
+      "index": 2,
+      "template_yz_mm": [
+        4.0,
+        -10.0
+      ],
+      "seat_center_world_mm": [
+        98.39676036922509,
+        -13.239793583832586,
+        18.00719697251256
+      ],
+      "inward_normal": [
+        -0.995030724104929,
+        0.03653488770353706,
+        0.09262321559798264
+      ],
+      "attached_shell": "前壳配置",
+      "objects": [
+        "SideLatch_R_2_Shaft",
+        "SideLatch_R_2_Head",
+        "SideLatch_R_2_Washer",
+        "SideLatch_R_2_Nut"
+      ]
+    },
+    {
+      "side": "R",
+      "index": 3,
+      "template_yz_mm": [
+        4.0,
+        10.0
+      ],
+      "seat_center_world_mm": [
+        100.35123223307811,
+        -2.5081217848964954,
+        34.770587445007266
+      ],
+      "inward_normal": [
+        -0.995030724104929,
+        0.03653488770353706,
+        0.09262321559798264
+      ],
+      "attached_shell": "前壳配置",
+      "objects": [
+        "SideLatch_R_3_Shaft",
+        "SideLatch_R_3_Head",
+        "SideLatch_R_3_Washer",
+        "SideLatch_R_3_Nut"
+      ]
+    }
+  ],
+  "meshes": {
+    "前壳配置": {
+      "vertices": 261132,
+      "triangles": 522292,
+      "boundary_edges": 0,
+      "multi_face_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_triangles": 0,
+      "degenerate_triangles": 0,
+      "near_zero_triangles": 0,
+      "min_triangle_area_mm2": 4.517883607163621e-08,
+      "dimensions_mm": [
+        252.9455108642578,
+        162.16473388671875,
+        270.85498046875
+      ],
+      "signed_volume_cm3": 265.53349584978633,
+      "wire_edges": 0,
+      "loose_vertices": 0,
+      "sdf_rebuilt": false
+    },
+    "后壳配置": {
+      "vertices": 67114,
+      "triangles": 134500,
+      "boundary_edges": 0,
+      "multi_face_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_triangles": 0,
+      "degenerate_triangles": 0,
+      "near_zero_triangles": 0,
+      "min_triangle_area_mm2": 5.031227719250761e-08,
+      "dimensions_mm": [
+        236.55226135253906,
+        177.40069580078125,
+        248.5341033935547
+      ],
+      "signed_volume_cm3": 225.58894572665542,
+      "wire_edges": 0,
+      "loose_vertices": 0,
+      "sdf_rebuilt": false
+    }
+  },
+  "saved_sha256": "da73224dc28a9ff95df5f7a943420aeea5048c778f3ad02641783f41f5e9abf2",
+  "geometry_passed": true
+}
