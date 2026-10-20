@@ -12,7 +12,11 @@
 - `docs/USER_GUIDE.zh-CN.md`：中文使用手册及配图
 - `tools/validate_model.py`：在 Blender 中运行的只读几何回归检查
 - `tools/repair_model.py`：第五轮修复的可重放脚本，需要明确指定输出文件
-- `tools/repair_lock_pin.py`：独立 `r插销` 的清理、保存及 STL 导出脚本
+- `tools/repair_lock_pin.py`：旧 `r插销` 的历史清理脚本；当前装配不使用该件
+- `tools/repair_top_hinge.py`、`tools/repair_side_latches.py`：肩轴铰链和侧锁螺丝安装座的可重放改造
+- `tools/validate_top_hinge.py`、`tools/validate_side_latches.py`：装配运动、孔距、通孔和承压厚度检查
+- `tools/export_top_hinge.py`：要求同一工程的装配验证通过后，导出七个打印 STL
+- `tools/render_top_hinge.py`：从实际求值网格生成装配示意与开合动画
 
 ## 使用说明
 
@@ -30,13 +34,22 @@
 - Base 已隐藏黑色 `睫毛` 和 `眼线配置`，眉形开孔保留；隐藏状态不改变壳体几何。
 - 回归检查验证的是数字网格和导出文件，不代替打印材料、支撑、切片、铰链装配和佩戴适配验证。
 
-2026-10-21 的本地交付文件为 `exports/2026-10-21/ProjectPulsar_Front.stl` 和 `ProjectPulsar_Rear.stl`，均为毫米坐标、独立壳体，不包含睫毛、眼线或辅助对象。STL 是可重新生成的本地产物，未纳入 Git；文件哈希、尺寸和检查结果见 [导出清单](docs/stl-export-manifest-2026-10-21.json)。打印方案已确定为 **拓竹 H2S、0.4 mm 喷嘴、PLA**，当前两壳各自可按原尺寸放入其成型空间；[手册的打印优化步骤](docs/USER_GUIDE.zh-CN.md#74-为-3d-打印优化)给出这套设备的候选配置和试打顺序。
+当前打印文件在 **`exports/2026-10-21-closure-v3/`**：
 
-锁座和侧边插扣已包含在两份壳体中；独立 `r插销` 另导出为 `exports/2026-10-21/ProjectPulsar_R_Pin.stl`。该零件经清理后为 1,026 个三角面，尺寸约 5.17 × 9.06 × 23.28 mm，详见[锁扣零件说明](docs/USER_GUIDE.zh-CN.md#43-锁扣与独立插销)及[插销验证记录](docs/lock-pin-validation-2026-10-21.json)。插销修复未改变两壳几何；重新打开最新工程导出的三个 STL 均与交付文件的三角形载荷一致。
+- `ProjectPulsar_Front_Closure_v3.stl`、`ProjectPulsar_Rear_Closure_v3.stl`：整套前后壳，各一件。
+- `ProjectPulsar_Hinge_Spacer_1p4.stl`：顶部轴向垫套，一件，已平放。
+- `ProjectPulsar_Hinge_Test_Front.stl`、`ProjectPulsar_Hinge_Test_Rear.stl`：顶部局部试打件。
+- `ProjectPulsar_SideLatch_Test_Front_L.stl`、`ProjectPulsar_SideLatch_Test_Rear_L.stl`：侧锁局部试打件。
 
-**闭合机构尚未完成装配验证。** 侧边输出包含锁具安装结构，未包含单独的活动锁具；适配的成品锁型号尚未确认。`r插销` 在原工程中没有装配定位，其配合位置、方向、数量与止退方式均未确认，不能把导出成功理解为“锁扣方案已完整”。顶部铰链孔与侧锁座的局部图及说明见[闭合结构检查](docs/closure-inspection-2026-10-21.json)和手册第 4.3 节。
+STL 单位为毫米，按仓库惯例保留为本地产物，未纳入 Git；源工程、重放／验证／导出脚本和[文件哈希清单](docs/top-hinge-stl-manifest-2026-10-21.json)纳入版本管理。旧 `exports/2026-10-21/` 和 `exports/2026-10-21-hinge-v2/` 不与本版混用。
 
-侧锁的实际安装尺寸和固定方式见[手册第 4.4 节](docs/USER_GUIDE.zh-CN.md#44-侧边搭扣安装尺寸与固定方式)。用户提供的三款商品图中，小号 40 × 27 mm **带锁**、20 × 20 mm 孔距的款式最接近当前结构。模型目前使用实心定位柱，没有螺丝通孔；商品候选与固定方案均尚未完成实物验证。
+顶部使用 **Ø6 × 55 mm 光轴、M5 尾牙的金属肩轴螺钉**，配两种金属平垫圈、1.4 mm 打印垫套和 M5 防松螺母。前后轴孔 Ø6.6 mm，每侧耳轴间隙约 0.728 mm，止退后的轴向余量约 1.02 mm。旧 `r插销` 隐藏并标为历史件，本版不装配。左侧轴头插入通道已让位；移除了阻碍起始开合的刚性侧插舌。
+
+两侧改为 **40 × 27 × 12.5 mm 带锁搭扣、20 × 20 mm 孔距**的 M3 穿孔固定。每侧 4 孔，共 8 孔，孔径 Ø3.5 mm，承压厚度 4 mm；背面留出垫圈、防松螺母和套筒空间。使用 8 套 M3 × 10 低圆头螺丝、M3 平垫圈及 M3 防松螺母。完整采购／打印数量、规格、安装顺序见[中文使用手册](docs/USER_GUIDE.zh-CN.md)第 4.3～4.5 节，STL 复现命令见第 7.5 节。
+
+默认配置已完成 **0–80°、每 0.25° 共 321 个姿态**的两壳与顶部／侧锁五金包络检查，常用开角为 **0–75°**。另验证轴向装入、工具通道、止退对照、8 个侧锁通孔、两组实测孔距和承压厚度。记录见[开合装配验证](docs/top-hinge-validation-2026-10-21.json)与[侧锁验证](docs/side-latch-validation-2026-10-21.json)。这些是数字几何检查；没有实际打印、五金到货测量、扭矩、疲劳或承载试验，商品搭扣活动盖也没有完整 CAD 数据。先用随附局部试打件和实物五金确认，再打印整壳。
+
+打印方案为 **拓竹 H2S、0.4 mm 喷嘴、PLA**。两壳各自保持 100% 尺寸可放入名义成型空间；手册给出候选切片配置，本次没有生成 G-code。
 
 ## 几何回归检查
 
@@ -51,9 +64,9 @@
 
 完整检查包括 45 组锁类型、前后基准值、圆角位置组合，以及默认导出、视孔正反向的三组瞳距、眼线布尔和刻字，再加上三种睫毛在两种睁眼状态下的检查，共 61 个场景。去掉 `--matrix` 可运行 16 个重点场景。检查不会保存或改写工程。
 
-2026-10-21 在 Blender 5.2.2 LTS 上实测 **61/61 通过**。完整记录见 [验证结果](docs/validation-2026-10-21.json)，修复前后精度记录见 [曲面距离检查](docs/surface-comparison-2026-10-21.json)；记录内包含被检文件的 SHA-256。
+本次合并改造后在 Blender 5.2.2 LTS 上实测 **61/61 通过**，结果见[当前回归记录](docs/top-hinge-regression-2026-10-21.json)，内含当前源工程 SHA-256。默认配置另有前述机械装配检查；参数矩阵中的其他配置只接受拓扑与导出检查，未逐一进行运动学验收。修改头型、分界、锁深度等参数后需要重新核对机械装配。
 
-随后仅调整了睫毛／眼线的隐藏状态，保存后的工程重新打开并通过[当前配置与 STL 检查](docs/print-export-validation-2026-10-21.json)。[隐藏前后对比](docs/print-visibility-verification-2026-10-21.json)确认两壳的顶点和三角面指纹完全一致；两份 STL 的三角形载荷也与 61 场景回归时的默认导出逐字节一致。完整回归记录保留其原始被检 SHA-256。
+[第五轮验证](docs/validation-2026-10-21.json)、[曲面距离检查](docs/surface-comparison-2026-10-21.json)、[旧隐藏状态检查](docs/print-visibility-verification-2026-10-21.json)等仍保留为历史记录；它们的 SHA 不代表本次修改后的工程。当前黑色睫毛／眼线仍隐藏，眉形开孔仍保留。
 
 检查自己保存的参数时，用 `--current` 替换 `--matrix`，并把输入文件换成自己的 `.blend`。此模式不重置参数，要求前后壳的「是否布尔」均已开启；`--exports` 会导出当前前后壳和已开启的视孔／眼线对象。
 
