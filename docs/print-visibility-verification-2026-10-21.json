@@ -1,0 +1,34 @@
+{
+  "source_sha256": "6920fe5d8c0b6d2e0874bdbb8a4ee391df7e2d157e39335cd1c084d6ee62ce1d",
+  "before": {
+    "前壳配置": "b4e91939c863a362560ef90b358ccc7a3ef696c6efc0549cf49596bb20ed7f93",
+    "后壳配置": "2de22a0dab1455f0a6eae7dc4d4af15de401a9260b60e3324821be842574794a"
+  },
+  "visibility": {
+    "睫毛": {
+      "before": {
+        "viewport_hidden": false,
+        "render_hidden": false
+      },
+      "after": {
+        "viewport_hidden": true,
+        "render_hidden": true
+      }
+    },
+    "眼线配置": {
+      "before": {
+        "viewport_hidden": true,
+        "render_hidden": true
+      },
+      "after": {
+        "viewport_hidden": true,
+        "render_hidden": true
+      }
+    }
+  },
+  "after": {
+    "前壳配置": "b4e91939c863a362560ef90b358ccc7a3ef696c6efc0549cf49596bb20ed7f93",
+    "后壳配置": "2de22a0dab1455f0a6eae7dc4d4af15de401a9260b60e3324821be842574794a"
+  },
+  "saved_sha256": "6657f43f66fde17170de09abb4aa3e967c2a6605811c55dbbdff84570f44192b"
+}

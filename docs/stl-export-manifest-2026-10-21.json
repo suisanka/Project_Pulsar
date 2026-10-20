@@ -1,0 +1,68 @@
+{
+  "blend_sha256": "6657f43f66fde17170de09abb4aa3e967c2a6605811c55dbbdff84570f44192b",
+  "validation": "docs/print-export-validation-2026-10-21.json",
+  "visibility_verification": "docs/print-visibility-verification-2026-10-21.json",
+  "units": "millimetres",
+  "scale": 1000,
+  "evaluation": "VIEWPORT",
+  "configuration": {
+    "lock_type": 1,
+    "seam": 0.78,
+    "rear_rounding": 0.037,
+    "vision_generation": false,
+    "eyelashes_visible": false,
+    "eyeliner_visible": false,
+    "eyebrow_shaped_openings": "preserved"
+  },
+  "files": [
+    {
+      "path": "exports/2026-10-21/ProjectPulsar_Front.stl",
+      "object": "前壳配置",
+      "bytes": 26171284,
+      "sha256": "fd7452c1dbf9e9fc66303489d4c76ca638b47ca4cc644acdb15c1799273f87fb",
+      "matches_pre_visibility_stl_payload": true,
+      "metrics": {
+        "vertices": 261710,
+        "triangles": 523424,
+        "boundary_edges": 0,
+        "multi_face_edges": 0,
+        "inconsistent_edges": 0,
+        "duplicate_triangles": 0,
+        "degenerate_triangles": 0,
+        "near_zero_triangles": 1,
+        "min_triangle_area_mm2": 9.003709490354569e-09,
+        "dimensions_mm": [
+          252.9455108642578,
+          162.16473388671875,
+          270.85498046875
+        ],
+        "signed_volume_cm3": 267.8423557544636
+      }
+    },
+    {
+      "path": "exports/2026-10-21/ProjectPulsar_Rear.stl",
+      "object": "后壳配置",
+      "bytes": 6891984,
+      "sha256": "01f52263b4c661fa33bcc248aaef92beb649e8cc62f35f4dc89c93a3a1833a32",
+      "matches_pre_visibility_stl_payload": true,
+      "metrics": {
+        "vertices": 68791,
+        "triangles": 137838,
+        "boundary_edges": 0,
+        "multi_face_edges": 0,
+        "inconsistent_edges": 0,
+        "duplicate_triangles": 0,
+        "degenerate_triangles": 0,
+        "near_zero_triangles": 0,
+        "min_triangle_area_mm2": 7.888204752812392e-07,
+        "dimensions_mm": [
+          236.55226135253906,
+          177.40069580078125,
+          248.5341033935547
+        ],
+        "signed_volume_cm3": 232.10877194624766
+      }
+    }
+  ],
+  "passed": true
+}

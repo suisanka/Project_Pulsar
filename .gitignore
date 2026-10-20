@@ -28,3 +28,6 @@ desktop.ini
 
 # 开发用副本（只发布 Base）
 ProjectPulsar_Dev.blend
+
+# 可重新生成的本地打印导出；尺寸、哈希和检查结果保存在 docs/
+/exports/**/*.stl
