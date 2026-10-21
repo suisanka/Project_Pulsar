@@ -1,5 +1,5 @@
 {
-  "blend_sha256": "da73224dc28a9ff95df5f7a943420aeea5048c778f3ad02641783f41f5e9abf2",
+  "blend_sha256": "8beca797aa5a225a8549b68d5a32caadc7b0c20c6791fcbfa8a4584bb5e6dc44",
   "mounts": [
     {
       "side": "L",
@@ -32,7 +32,7 @@
       ],
       "min_bore_radius_mm": 1.7494854927062988,
       "max_bore_radius_mm": 1.7495158910751343,
-      "min_pad_thickness_mm": 3.9995727567002177,
+      "min_pad_thickness_mm": 3.999664972303435,
       "max_pad_thickness_mm": 4.000002244254574,
       "nominal_thread_past_nut_mm": 1.0
     },
@@ -67,8 +67,8 @@
       ],
       "min_bore_radius_mm": 1.7494866847991943,
       "max_bore_radius_mm": 1.7495216131210327,
-      "min_pad_thickness_mm": 3.999703127425164,
-      "max_pad_thickness_mm": 4.00000206544064,
+      "min_pad_thickness_mm": 3.9998258010018617,
+      "max_pad_thickness_mm": 4.000009575393051,
       "nominal_thread_past_nut_mm": 1.0
     },
     {
@@ -102,8 +102,8 @@
       ],
       "min_bore_radius_mm": 1.7494868040084839,
       "max_bore_radius_mm": 1.7495208978652954,
-      "min_pad_thickness_mm": 3.9997032696846873,
-      "max_pad_thickness_mm": 4.0000100852921605,
+      "min_pad_thickness_mm": 3.999856590060517,
+      "max_pad_thickness_mm": 4.00000227894634,
       "nominal_thread_past_nut_mm": 1.0
     },
     {
@@ -137,8 +137,8 @@
       ],
       "min_bore_radius_mm": 1.7494845390319824,
       "max_bore_radius_mm": 1.749511957168579,
-      "min_pad_thickness_mm": 3.999672303441912,
-      "max_pad_thickness_mm": 4.000009720912203,
+      "min_pad_thickness_mm": 3.9996799412183464,
+      "max_pad_thickness_mm": 4.000009720213711,
       "nominal_thread_past_nut_mm": 1.0
     },
     {
@@ -172,8 +172,8 @@
       ],
       "min_bore_radius_mm": 1.7473969459533691,
       "max_bore_radius_mm": 1.7516049146652222,
-      "min_pad_thickness_mm": 3.9995729317888618,
-      "max_pad_thickness_mm": 4.000002242159098,
+      "min_pad_thickness_mm": 3.9996649720706046,
+      "max_pad_thickness_mm": 4.00000987155363,
       "nominal_thread_past_nut_mm": 1.0
     },
     {
@@ -207,8 +207,8 @@
       ],
       "min_bore_radius_mm": 1.747395396232605,
       "max_bore_radius_mm": 1.7516082525253296,
-      "min_pad_thickness_mm": 3.999695499893278,
-      "max_pad_thickness_mm": 4.000002424698323,
+      "min_pad_thickness_mm": 3.999825802631676,
+      "max_pad_thickness_mm": 4.000009577255696,
       "nominal_thread_past_nut_mm": 1.0
     },
     {
@@ -242,7 +242,7 @@
       ],
       "min_bore_radius_mm": 1.7473896741867065,
       "max_bore_radius_mm": 1.751604676246643,
-      "min_pad_thickness_mm": 3.9997032694518566,
+      "min_pad_thickness_mm": 3.99984895857051,
       "max_pad_thickness_mm": 4.000009964220226,
       "nominal_thread_past_nut_mm": 1.0
     },
@@ -277,8 +277,8 @@
       ],
       "min_bore_radius_mm": 1.7474008798599243,
       "max_bore_radius_mm": 1.7516058683395386,
-      "min_pad_thickness_mm": 3.999679939355701,
-      "max_pad_thickness_mm": 4.00000960403122,
+      "min_pad_thickness_mm": 3.999687578994781,
+      "max_pad_thickness_mm": 4.000009731622413,
       "nominal_thread_past_nut_mm": 1.0
     }
   ],
@@ -304,6 +304,30 @@
         19.999997239613254,
         20.000005416184628,
         20.000004748563644
+      ]
+    }
+  ],
+  "solid_center_backings": [
+    {
+      "side": "L",
+      "samples": 81,
+      "failed_samples": [],
+      "min_thickness_mm": 3.9999946132302284,
+      "max_thickness_mm": 4.050002223812044,
+      "face_offset_range_mm": [
+        -1.0232441127300262e-05,
+        5.1013194024562836e-06
+      ]
+    },
+    {
+      "side": "R",
+      "samples": 81,
+      "failed_samples": [],
+      "min_thickness_mm": 3.999994612764567,
+      "max_thickness_mm": 4.0500022252090275,
+      "face_offset_range_mm": [
+        -0.0210345396772027,
+        -0.021019188221544027
       ]
     }
   ],

@@ -71,7 +71,7 @@ def main():
         manifest['files'].append({'path':str(path),'role':role,'sha256':hashlib.sha256(path.read_bytes()).hexdigest(),'bytes':path.stat().st_size,
                                   'source_metrics':source,'stl_metrics':result,'export_transform':transform})
         print('EXPORTED',filename,flush=True)
-    version='Closure_v3' if side_revision else 'Hinge_v2'
+    version=('Closure_v4' if side_revision>=2 else 'Closure_v3') if side_revision else 'Hinge_v2'
     export(SHELL_NAMES[0],f'ProjectPulsar_Front_{version}.stl','front shell')
     export(SHELL_NAMES[1],f'ProjectPulsar_Rear_{version}.stl','rear shell')
     points,faces=arrays(SPACER_NAME);points-=AXIS

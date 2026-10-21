@@ -34,18 +34,18 @@
 - Base 已隐藏黑色 `睫毛` 和 `眼线配置`，眉形开孔保留；隐藏状态不改变壳体几何。
 - 回归检查验证的是数字网格和导出文件，不代替打印材料、支撑、切片、铰链装配和佩戴适配验证。
 
-当前打印文件在 **`exports/2026-10-21-closure-v3/`**：
+当前打印文件在 **`exports/2026-10-21-closure-v4/`**：
 
-- `ProjectPulsar_Front_Closure_v3.stl`、`ProjectPulsar_Rear_Closure_v3.stl`：整套前后壳，各一件。
+- `ProjectPulsar_Front_Closure_v4.stl`、`ProjectPulsar_Rear_Closure_v4.stl`：整套前后壳，各一件。
 - `ProjectPulsar_Hinge_Spacer_1p4.stl`：顶部轴向垫套，一件，已平放。
 - `ProjectPulsar_Hinge_Test_Front.stl`、`ProjectPulsar_Hinge_Test_Rear.stl`：顶部局部试打件。
 - `ProjectPulsar_SideLatch_Test_Front_L.stl`、`ProjectPulsar_SideLatch_Test_Rear_L.stl`：侧锁局部试打件。
 
-STL 单位为毫米，按仓库惯例保留为本地产物，未纳入 Git；源工程、重放／验证／导出脚本和[文件哈希清单](docs/top-hinge-stl-manifest-2026-10-21.json)纳入版本管理。旧 `exports/2026-10-21/` 和 `exports/2026-10-21-hinge-v2/` 不与本版混用。
+STL 单位为毫米，按仓库惯例保留为本地产物，未纳入 Git；源工程、重放／验证／导出脚本和[文件哈希清单](docs/top-hinge-stl-manifest-2026-10-21.json)纳入版本管理。旧 `exports/2026-10-21/`、`exports/2026-10-21-hinge-v2/` 和 `exports/2026-10-21-closure-v3/` 不与本版混用。
 
 顶部使用 **Ø6 × 55 mm 光轴、M5 尾牙的金属肩轴螺钉**，配两种金属平垫圈、1.4 mm 打印垫套和 M5 防松螺母。前后轴孔 Ø6.6 mm，每侧耳轴间隙约 0.728 mm，止退后的轴向余量约 1.02 mm。旧 `r插销` 隐藏并标为历史件，本版不装配。左侧轴头插入通道已让位；移除了阻碍起始开合的刚性侧插舌。
 
-两侧改为 **40 × 27 × 12.5 mm 带锁搭扣、20 × 20 mm 孔距**的 M3 穿孔固定。每侧 4 孔，共 8 孔，孔径 Ø3.5 mm，承压厚度 4 mm；背面留出垫圈、防松螺母和套筒空间。使用 8 套 M3 × 10 低圆头螺丝、M3 平垫圈及 M3 防松螺母。完整采购／打印数量、规格、安装顺序见[中文使用手册](docs/USER_GUIDE.zh-CN.md)第 4.3～4.5 节，STL 复现命令见第 7.5 节。
+两侧改为 **40 × 27 × 12.5 mm 带锁搭扣、20 × 20 mm 孔距**的 M3 穿孔固定。每侧 4 孔，共 8 孔，孔径 Ø3.5 mm，承压厚度 4 mm；背面留出垫圈、防松螺母和套筒空间。两侧中心已取消 Ø10 mm 让位孔，改为 12 × 16 mm、厚 4 mm 的实体连接区。使用 8 套 M3 × 10 低圆头螺丝、M3 平垫圈及 M3 防松螺母。完整采购／打印数量、规格、安装顺序见[中文使用手册](docs/USER_GUIDE.zh-CN.md)第 4.3～4.5 节，STL 复现命令见第 7.5 节。
 
 默认配置已完成 **0–80°、每 0.25° 共 321 个姿态**的两壳与顶部／侧锁五金包络检查，常用开角为 **0–75°**。另验证轴向装入、工具通道、止退对照、8 个侧锁通孔、两组实测孔距和承压厚度。记录见[开合装配验证](docs/top-hinge-validation-2026-10-21.json)与[侧锁验证](docs/side-latch-validation-2026-10-21.json)。这些是数字几何检查；没有实际打印、五金到货测量、扭矩、疲劳或承载试验，商品搭扣活动盖也没有完整 CAD 数据。先用随附局部试打件和实物五金确认，再打印整壳。
 

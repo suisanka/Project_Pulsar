@@ -111,7 +111,8 @@ def main():
              'template_rotation':rotation.tolist(),'template_translation_mm':translation.tolist(),
              'base_point_mm':BASE_POINT.tolist(),'feature_fit_residual_mm':residual,
              'pattern_mm':[20,20],'plastic_bore_mm':3.5,'seat_x_mm':SEAT_X,'back_x_mm':BACK_X,'lock_offset_mm':LOCK_OFFSET_MM,
-             'lock_tail_relief_diameter_mm':10.0,
+             'lock_tail_relief_diameter_mm':0.0,
+             'center_backing_mm':{'thickness':4.0,'length_y':12.0,'width_z':16.0,'center_yz':[4.0,0.0]},
              'latch_image_spec':{'length_mm':40,'width_mm':27,'height_mm':12.5,'plate_thickness_mm':.5,'metal_hole_diameter_mm':3.5},
              'fasteners':{'screws':'8 x M3x10 ISO 7380-1, head D5.7 H1.65','washers':'8 x DIN125 M3, 3.2 x 7 x 0.5 mm','nuts':'8 x DIN985 M3, AF5.5 H4 mm'},
              'mounts':[]}
@@ -119,8 +120,10 @@ def main():
     def active(obj):
         created.append(obj);transform_template(obj,rotation,translation);return obj
     pads=[active(tube('Reinforcement pad',SEAT_X-.05,BACK_X+.05,5.5,center=(y,z))) for y,z in HOLES]
+    # Continuous material between the two front screw pads. No speculative
+    # lock-tail aperture: the user requested a solid mounting face here.
+    pads.append(active(box('Solid latch centre backing',[SEAT_X,-2,-8],[BACK_X,10,8])))
     cuts=[active(box('Flat 40x27 seat clearance',[-30,-21.8,-13.8],[SEAT_X,18.8,13.8]))]
-    cuts.append(active(tube('Lock cylinder tail relief',SEAT_X-.01,40,5,center=(4,0))))
     for y,z in HOLES:
         cuts.append(active(tube('M3 through hole',-30,40,1.75,center=(y,z))))
         cuts.append(active(tube('Washer and nut rear access',BACK_X,40,4.3,center=(y,z))))
@@ -161,7 +164,7 @@ def main():
     receipt['meshes']={name:evaluated_metrics(name) for name in ('前壳配置','后壳配置')}
     errors=[f'{name}: {error}' for name,metrics in receipt['meshes'].items() for error in failures(metrics)]
     if errors:raise ValueError(errors)
-    scene['pulsar_side_latch_revision']=1
+    scene['pulsar_side_latch_revision']=2
     scene['pulsar_side_latch_specification']=json.dumps(receipt,ensure_ascii=False)
     args.output.parent.mkdir(parents=True,exist_ok=True);args.receipt.parent.mkdir(parents=True,exist_ok=True)
     bpy.ops.wm.save_as_mainfile(filepath=str(args.output.resolve()))

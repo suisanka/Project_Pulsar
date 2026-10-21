@@ -1,6 +1,6 @@
 {
   "blender": "5.2.2 LTS",
-  "blend_sha256": "da73224dc28a9ff95df5f7a943420aeea5048c778f3ad02641783f41f5e9abf2",
+  "blend_sha256": "8beca797aa5a225a8549b68d5a32caadc7b0c20c6791fcbfa8a4584bb5e6dc44",
   "specification": {
     "revision": 2,
     "axis_world_mm": [
@@ -76,41 +76,41 @@
   ],
   "mesh_checks": {
     "前壳配置": {
-      "vertices": 261132,
-      "triangles": 522292,
+      "vertices": 260912,
+      "triangles": 521844,
       "boundary_edges": 0,
       "multi_face_edges": 0,
       "inconsistent_edges": 0,
       "duplicate_triangles": 0,
       "degenerate_triangles": 0,
       "near_zero_triangles": 0,
-      "min_triangle_area_mm2": 4.517883607163621e-08,
+      "min_triangle_area_mm2": 4.4942581879494985e-08,
       "dimensions_mm": [
         252.9455108642578,
         162.16473388671875,
         270.85498046875
       ],
-      "signed_volume_cm3": 265.53349584978633,
+      "signed_volume_cm3": 266.24413501298676,
       "wire_edges": 0,
       "loose_vertices": 0,
       "sdf_rebuilt": false
     },
     "后壳配置": {
-      "vertices": 67114,
-      "triangles": 134500,
+      "vertices": 67005,
+      "triangles": 134282,
       "boundary_edges": 0,
       "multi_face_edges": 0,
       "inconsistent_edges": 0,
       "duplicate_triangles": 0,
       "degenerate_triangles": 0,
-      "near_zero_triangles": 0,
-      "min_triangle_area_mm2": 5.031227719250761e-08,
+      "near_zero_triangles": 1,
+      "min_triangle_area_mm2": 9.790078782606702e-09,
       "dimensions_mm": [
         236.55226135253906,
         177.40069580078125,
         248.5341033935547
       ],
-      "signed_volume_cm3": 225.58894572665542,
+      "signed_volume_cm3": 225.59569918037516,
       "wire_edges": 0,
       "loose_vertices": 0,
       "sdf_rebuilt": false
@@ -1161,7 +1161,7 @@
   ],
   "negative_controls": {
     "oversized_D8_axle_pairs": 1566,
-    "reverse_opening_5deg_pairs": 10469
+    "reverse_opening_5deg_pairs": 8643
   },
   "motion": [
     {
@@ -2449,7 +2449,7 @@
       "collisions": {}
     }
   ],
-  "motion_seconds": 24.837,
+  "motion_seconds": 18.201,
   "solid_intersections": [
     {
       "angle_deg": 0,

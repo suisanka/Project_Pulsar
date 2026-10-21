@@ -1,4 +1,4 @@
-"""Validate eight real side-latch bores, bearing pads and fastener clearance."""
+"""Validate screw bores, bearing pads, solid centre backing and fastener clearance."""
 
 import argparse
 import hashlib
@@ -76,15 +76,42 @@ def main():
         report['mounts'].append(row)
         print('MOUNT',mount['side'],mount['index'],'bore',min(radii),max(radii),'pad',thickness,flush=True)
     report['patterns']=[]
+    report['solid_center_backings']=[]
     for side in ('L','R'):
         c={m['index']:np.array(m['measured_center_world_mm']) for m in report['mounts'] if m['side']==side}
         dimensions=[float(np.linalg.norm(c[a]-c[b])) for a,b in ((0,1),(2,3),(0,2),(1,3))]
         require(all(abs(d-20)<.002 for d in dimensions),side+' hole pitch is not 20 x 20 mm')
         report['patterns'].append({'side':side,'measured_edge_lengths_mm':dimensions})
+        # Check the former D10 aperture on the evaluated shell, independently
+        # of the build marker. The old open-hole model must fail this check.
+        mounts={m['index']:m for m in spec['mounts'] if m['side']==side}
+        p={i:np.array(m['seat_center_world_mm']) for i,m in mounts.items()}
+        center=(p[2]+p[3])/2
+        normal=np.array(mounts[2]['inward_normal'])
+        y_axis=(p[2]-p[0])/20;z_axis=(p[3]-p[2])/20
+        bvh=trees[mounts[2]['attached_shell']]
+        thickness=[];face_offsets=[];missing=[];samples=0
+        for dy in np.arange(-5,5.01,1):
+            for dz in np.arange(-5,5.01,1):
+                if dy*dy+dz*dz>25:continue
+                samples+=1;point=center+dy*y_axis+dz*z_axis
+                hits=hits_along(bvh,point-2*normal,normal,20)
+                solid=all(inside(bvh,point+depth*normal) for depth in (.1,2.,3.9))
+                # The original mirrored seat differs from the reference
+                # hardware plane by about 0.021 mm; measure that offset and
+                # allow 0.05 mm without relaxing the material-thickness check.
+                if len(hits)<2 or abs(hits[0]-2)>.05 or hits[1]-hits[0]<3.95 or not solid:
+                    missing.append({'offset_yz_mm':[float(dy),float(dz)],'hits_mm':hits,'solid':solid})
+                else:thickness.append(hits[1]-hits[0]);face_offsets.append(hits[0]-2)
+        require(not missing,side+' former D10 opening lacks continuous 4 mm backing')
+        report['solid_center_backings'].append({'side':side,'samples':samples,'failed_samples':missing,
+                'min_thickness_mm':min(thickness) if thickness else None,
+                'max_thickness_mm':max(thickness) if thickness else None,
+                'face_offset_range_mm':[min(face_offsets),max(face_offsets)] if face_offsets else None})
     report['passed']=not report['errors'];args.output.parent.mkdir(parents=True,exist_ok=True)
     args.output.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
     if report['errors']:raise RuntimeError(report['errors'])
-    print('PASS: eight through holes, both 20x20 patterns, 4 mm pads and M3 fasteners checked',flush=True)
+    print('PASS: eight through holes, both 20x20 patterns, solid centres, 4 mm pads and M3 fasteners checked',flush=True)
 
 
 if __name__=='__main__':main()

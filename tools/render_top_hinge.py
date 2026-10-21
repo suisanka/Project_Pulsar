@@ -23,6 +23,7 @@ def main():
     args=parser.parse_args(sys.argv[sys.argv.index('--')+1:]);args.output.mkdir(parents=True,exist_ok=True)
     side_parts={obj.name:obj['pulsar_attached_shell'] for obj in bpy.data.objects if 'pulsar_attached_shell' in obj}
     side_spec=json.loads(bpy.context.scene['pulsar_side_latch_specification']) if side_parts else None
+    side_version='v4' if bpy.context.scene.get('pulsar_side_latch_revision',0)>=2 else 'v3'
     data={name:arrays(name) for name in (*SHELL_NAMES,*HARDWARE_NAMES,*side_parts)}
     scene=bpy.data.scenes.new('Pulsar hinge assembly illustrations');bpy.context.window.scene=scene
     scene.render.engine='BLENDER_WORKBENCH';scene.render.resolution_x=1200;scene.render.resolution_y=900;scene.render.resolution_percentage=100
@@ -86,10 +87,10 @@ def main():
         mounts=[m for m in side_spec['mounts'] if m['side']=='L']
         center=np.array([m['seat_center_world_mm'] for m in mounts]).mean(0)/1000
         normal=np.array(mounts[0]['inward_normal'])
-        render('side-latch-v3-outside.png',tuple(-normal),.085,focus=center)
+        render(f'side-latch-{side_version}-outside.png',tuple(-normal),.085,focus=center)
         for mount in mounts:
             for name in mount['objects']:copies[name].hide_render=False
-        render('side-latch-v3-inside.png',tuple(normal+np.array([0,.2,.1])),.085,focus=center+normal*.004)
+        render(f'side-latch-{side_version}-inside.png',tuple(normal+np.array([0,.2,.1])),.085,focus=center+normal*.004)
     print('PASS: assembly illustrations rendered from evaluated meshes',flush=True)
 
 

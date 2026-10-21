@@ -10,7 +10,7 @@
 
 完整物料表见第 4.5 节，当前七份 STL 见第 7.5 节。五金参考对象只用于装配示意，不与壳体一起打印。
 
-![当前闭合壳体与五金位置示意](images/closure-v3-overview.png)
+![当前闭合壳体与五金位置示意](images/closure-v4-overview.png)
 
 ## 1. 第一次使用：先导出一套默认模型
 
@@ -171,9 +171,9 @@ M5 平垫圈的孔径 5.3 mm 小于光轴直径 6 mm，因此它抵住金属轴�
 
 四根实心定位柱已去除，每侧改成四个 **Ø3.5 mm 真通孔**。孔周为 **Ø11 mm、厚 4 mm 的加强承压区**，背面有 **Ø8.6 mm** 垫圈／螺母与小套筒让位，外侧安装让位区为 **40.6 × 27.6 mm**。两侧共 8 个螺栓固定点，其中每侧前壳两个、后壳两个。
 
-锁芯尾部另留 **Ø10 mm 贯通让位孔**。这个数值是本次设计的预留空间，不是厂家锁芯尾部的实测尺寸。商品图没有提供完整背面凸起、锁盖内侧及活动轮廓；需用实际五金与随附的侧锁试打件确认这些细节。数字验证确认了壳体孔位、螺栓和承压面，不能据此声称已经验收商品锁盖本身的开锁动作。
+**中心不再开锁芯让位孔。** 根据本轮修订，两侧原 Ø10 mm 开孔均补回实体；在前壳两个螺丝承压区之间设置 **12 × 16 mm、厚 4 mm** 的实体连接区，与安装座合为一体，避免大孔削弱中间连接。每侧只保留四个 Ø3.5 mm 螺丝通孔。数字检查另对原孔覆盖范围逐点测量，确认中心连续实心和承托厚度；这不是材料承载或疲劳试验。商品图没有提供完整背面凸起、锁盖内侧及活动轮廓，商品五金的贴合和开锁动作仍需用实物与侧锁试打件确认。
 
-![侧锁螺丝安装座外侧，蓝色前壳、棕色后壳；移除五金以显示通孔](images/side-latch-v3-outside.png)
+![侧锁螺丝安装座外侧，蓝色前壳、棕色后壳；移除五金以显示通孔](images/side-latch-v4-outside.png)
 
 每个固定点的顺序是：**M3 低圆头螺丝 → 金属搭扣底板 → 4 mm 塑料承压区 → M3 金属平垫圈 → M3 防松螺母**。使用 ISO 7380-1 M3 × 10 螺丝，头部最大 Ø5.7 × 1.65 mm，2 mm 内六角；不要换成头径更大的带法兰款。后侧使用内径 3.2 × 外径 7 × 厚 0.5 mm 的金属平垫圈，以及对边 5.5、总高 4 mm 的 DIN 985 M3 尼龙圈防松螺母。用于后侧孔内的 5.5 mm 薄壁套筒外径应不超过 8 mm。两侧各 4 套，总计 8 套。
 
@@ -183,9 +183,9 @@ M5 平垫圈的孔径 5.3 mm 小于光轴直径 6 mm，因此它抵住金属轴�
 
 装配时先让头壳完全闭合，把搭扣两半分别放在前、后壳上，四个孔应自然对齐。先装上全部螺丝并轻拧，再交替均匀收紧。打开搭扣，确认四个螺丝头不顶住活动盖，锁芯尾部不顶住壳体，再验证头壳开合。左右搭扣必须都释放后，后壳才能绕顶部轴翻开。
 
-![侧锁背面的垫圈、螺母和让位空间；局部裁切仅用于查看](images/side-latch-v3-inside.png)
+![侧锁背面的垫圈、螺母和让位空间；局部裁切仅用于查看](images/side-latch-v4-inside.png)
 
-[侧锁验证记录](side-latch-validation-2026-10-21.json)逐个测量了 8 个孔的通透、实际截面、4 mm 承压厚度和两组 20 × 20 mm 孔距。整壳开合检查同时包含 32 个侧锁螺丝、头部、垫圈和螺母外包络；释放后的商品搭扣活动盖没有 CAD 数据，未纳入运动学检查。旧实心柱尺寸保存在[改造前测量记录](side-lock-dimensions-2026-10-21.json)，不再作为本版钻孔依据。
+[侧锁验证记录](side-latch-validation-2026-10-21.json)逐个测量了 8 个孔的通透、实际截面、4 mm 承压厚度和两组 20 × 20 mm 孔距，并检查两侧原 Ø10 mm 孔范围内的实体承托（每侧 81 点，实测约 4.00–4.05 mm）。整壳开合检查同时包含 32 个侧锁螺丝、头部、垫圈和螺母外包络；释放后的商品搭扣活动盖没有 CAD 数据，未纳入运动学检查。旧实心柱尺寸保存在[改造前测量记录](side-lock-dimensions-2026-10-21.json)，不再作为本版钻孔依据。
 
 ### 4.5 整套装配物料表
 
@@ -193,8 +193,8 @@ M5 平垫圈的孔径 5.3 mm 小于光轴直径 6 mm，因此它抵住金属轴�
 
 | 类别 | 物料 | 规格 | 数量 |
 |---|---|---|---:|
-| 打印 | 前壳 | `ProjectPulsar_Front_Closure_v3.stl` | 1 |
-| 打印 | 后壳 | `ProjectPulsar_Rear_Closure_v3.stl` | 1 |
+| 打印 | 前壳 | `ProjectPulsar_Front_Closure_v4.stl` | 1 |
+| 打印 | 后壳 | `ProjectPulsar_Rear_Closure_v4.stl` | 1 |
 | 打印 | 顶部轴向垫套 | Ø6.6 内孔 × Ø10 外径 × 1.4 mm 厚 | 1 |
 | 采购 | 顶部金属肩轴 | Ø6 × 55 mm 光轴，M5 × 0.8 尾牙长 9.5 mm；例 Ganter `ISO 7379-6-M5-55` | 1 |
 | 采购 | 顶部轴头侧平垫圈 | M6，6.4 × 12 × 1.6 mm，金属 | 1 |
@@ -359,19 +359,19 @@ PLA 品牌尚未指定时，先选 `Generic PLA @BBL H2S`。本次核对的该�
 
 ### 7.5 本次 STL 交付与复现
 
-当前交付目录为 **`exports/2026-10-21-closure-v3/`**。这次修改了两壳的顶部孔、轴向间隙、左侧装入通道，移除妨碍开合的后壳刚性插舌，并将两侧搭扣改为 M3 穿孔固定。旧目录 `exports/2026-10-21/` 属于历史版本，不与本版混用；旧 `ProjectPulsar_R_Pin.stl` 不装配。
+当前交付目录为 **`exports/2026-10-21-closure-v4/`**。这次修改了两壳的顶部孔、轴向间隙、左侧装入通道，移除妨碍开合的后壳刚性插舌，并将两侧搭扣改为 M3 穿孔固定。本轮再取消两侧中心 Ø10 mm 让位孔，补回 4 mm 厚实体连接区。旧目录 `exports/2026-10-21/`、`exports/2026-10-21-closure-v3/` 属于历史版本，不与本版混用；旧 `ProjectPulsar_R_Pin.stl` 不装配。
 
 仍使用默认小锁配置：`锁类型=1`、`前后基准值=0.78`、`圆角位置=0.037`、`视孔生成=关闭`；黑色睫毛／眼线隐藏，眉形开孔保留。
 
 | 文件 | 用途 | 三角形数量 |
 |---|---|---:|
-| `ProjectPulsar_Front_Closure_v3.stl` | 前壳，打印 1 件 | 522,292 |
-| `ProjectPulsar_Rear_Closure_v3.stl` | 后壳，打印 1 件 | 134,500 |
+| `ProjectPulsar_Front_Closure_v4.stl` | 前壳，打印 1 件 | 521,844 |
+| `ProjectPulsar_Rear_Closure_v4.stl` | 后壳，打印 1 件 | 134,282 |
 | `ProjectPulsar_Hinge_Spacer_1p4.stl` | 1.4 mm 垫套，打印 1 件；已平放 | 1,024 |
 | `ProjectPulsar_Hinge_Test_Front.stl` | 顶部前壳局部试件 | 4,430 |
 | `ProjectPulsar_Hinge_Test_Rear.stl` | 顶部后壳局部试件 | 4,768 |
-| `ProjectPulsar_SideLatch_Test_Front_L.stl` | 左侧搭扣前壳局部试件 | 11,608 |
-| `ProjectPulsar_SideLatch_Test_Rear_L.stl` | 左侧搭扣后壳局部试件 | 7,688 |
+| `ProjectPulsar_SideLatch_Test_Front_L.stl` | 左侧搭扣前壳局部试件 | 11,414 |
+| `ProjectPulsar_SideLatch_Test_Rear_L.stl` | 左侧搭扣后壳局部试件 | 7,584 |
 
 七个 STL 均通过导出回读的开放边、多面共边、绕序、重复面和退化面检查；单位为 mm。文件尺寸、SHA-256、打印坐标变换和源工程 SHA 见[当前导出清单](top-hinge-stl-manifest-2026-10-21.json)。前后壳各打印一件，垫套打印一件；另外四件是先行试打件。STL 按仓库惯例保留在本地，未纳入 Git。
 
@@ -393,7 +393,7 @@ PLA 品牌尚未指定时，先选 `Generic PLA @BBL H2S`。本次核对的该�
   ProjectPulsar_Base.blend --python tools/export_top_hinge.py -- \
   --validation /tmp/pulsar-hinge-validation.json \
   --side-validation /tmp/pulsar-side-latch-validation.json \
-  --exports exports/2026-10-21-closure-v3 \
+  --exports exports/2026-10-21-closure-v4 \
   --manifest /tmp/pulsar-hinge-stl-manifest.json
 ```
 
