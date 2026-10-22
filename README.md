@@ -84,6 +84,27 @@ python3 tools/dimension_vertical_section.py --sections /tmp/pulsar-sections.json
   --draw /tmp/pulsar-dimensions.json --output docs/images
 ```
 
+## 指定尺寸的头模适配测试
+
+已按 **头高 230 mm、最大头宽 135 mm（不含耳）、头围 590 mm、瞳高 127 mm、瞳距 65 mm** 建立两个独立的参数包络头模。头高、瞳高均从下巴最低点起算，量法已确认。测试工程为 [ProjectPulsar_HeadformFit_230-135-590.blend](studies/headform-fit-2026-10-22/ProjectPulsar_HeadformFit_230-135-590.blend)，原始 Base 未修改。
+
+头长和真实轮廓尚未提供，因此用两种满足相同输入尺寸的截面作假设对照。两者都使用假设的下巴收窄轮廓，头围平面位于下巴以上 157 mm；鼻、耳、头发及个体脸型没有重建。这是尺寸包络测试，不能视为真人扫描或最终佩戴结论。
+
+| 假设头模 | 根据头宽／头围推算的头长 | 测试姿态的完整三维结果 | 瞳距 65 mm 的左右直视线 |
+|---|---:|---|---|
+| 椭圆水平截面，指数 2 | 233.95 mm | 与前壳、后壳相交 | 均通过现有眼部开口 |
+| 方圆水平截面，超椭圆指数 3 | 212.26 mm | 与前壳、后壳相交，干涉较小 | 均通过现有眼部开口 |
+
+姿态搜索保持头模竖直、左右居中，在两眼共同通光高度中保留 3 mm 的采样余量后搜索上下与前后平移，没有扫描俯仰、偏航或侧倾，也没有验证戴入／取下路径。最终所选瞳孔高度分别为模型坐标 `Z = -11 / -15 mm`。所有已建模的顶部连接件和侧锁紧固件均纳入碰撞检查，未检出与这些部件相交；尚无 CAD 的商品搭扣活动盖不在检查范围内。
+
+见[三维剖视对照图](docs/images/headform-fit-comparison.png)和[正中剖面叠合图](docs/images/headform-fit-sections.png)。绿色表示尺寸包络，红色标出与完整装配相交的头模三角面。Blender 工程中默认显示 `Headform_Ellipse`；可切换到 `Headform_Rounded`，不要同时显示两个候选头模作为同一次试戴。
+
+两个头模均为 **48,640 个三角面**，通过独立网格 QA。另存工程重读后，头高、头宽、头围、碰撞数量均复核通过。完整假设、放置搜索、测量、眼位射线和碰撞记录见[测试记录](docs/headform-fit-2026-10-22.json)，重读结果见[保存验证](docs/headform-fit-readback-2026-10-22.json)。前后向搜索余量是定向采样指标，不能解释为法线穿透深度；相交姿态的最近表面距离也不能解释为可用净空。
+
+下一步最有用的实测数据是**额头到后脑的最大直线头长**及正侧面轮廓。当前结果不支持直接认定真人适配，也不支持据此统一缩放带有固定孔径和装配公差的壳体。内衬、打印偏差和软组织变形未计入。
+
+复现脚本：`tools/test_headform_fit.py` 在加载 Base 的 Blender 中运行，要求 `--output` 指向独立 `.blend`、`--receipt` 指向 JSON、`--images` 指向 QA 图片目录，`--qa-scripts` 指向 `blender-asset-qa/scripts`；随后用 `tools/render_headform_fit.py` 重读测试工程、检查并渲染，用安装 Pillow 的 Python 运行 `tools/illustrate_headform_fit.py` 组合对照图。各脚本的 `--help` 列出参数。
+
 ## 几何回归检查
 
 在仓库根目录运行。以下命令使用 macOS 的 Blender 路径；其他平台需替换可执行文件路径，Windows 还需调整换行方式和 `/tmp` 输出目录：

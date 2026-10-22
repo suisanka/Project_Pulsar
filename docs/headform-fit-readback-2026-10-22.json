@@ -1,0 +1,34 @@
+{
+  "study_sha256": "03eaea81d0defa03fe2ffb569b188a9bb641527ddd21924024643318590719f7",
+  "cases": [
+    {
+      "label": "Ellipse",
+      "dimensions_mm": [
+        135.00000536441803,
+        233.95025730133057,
+        230.00000417232513
+      ],
+      "girth_mm": 590.0002050826106,
+      "reproduced_shell_intersections": {
+        "前壳配置": 2256,
+        "后壳配置": 1108
+      },
+      "highlighted_head_triangles": 900
+    },
+    {
+      "label": "Rounded",
+      "dimensions_mm": [
+        135.00000536441803,
+        212.26239204406738,
+        230.00000417232513
+      ],
+      "girth_mm": 590.0000045871288,
+      "reproduced_shell_intersections": {
+        "前壳配置": 1504,
+        "后壳配置": 898
+      },
+      "highlighted_head_triangles": 582
+    }
+  ],
+  "passed": true
+}
