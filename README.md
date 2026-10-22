@@ -51,6 +51,24 @@ STL 单位为毫米，按仓库惯例保留为本地产物，未纳入 Git；源
 
 打印方案为 **拓竹 H2S、0.4 mm 喷嘴、PLA**。两壳各自保持 100% 尺寸可放入名义成型空间；手册给出候选切片配置，本次没有生成 G-code。
 
+## 头壳剖面
+
+[垂直剖面主图](docs/images/head-vertical-section.png)沿模型正中线 `X = 0 mm` 从面部到后脑切开，展示额头、鼻部、下巴、后脑与顶部连接处的实际轮廓。图中面部朝右，附俯视定位图；可放大的原始轮廓见[正中矢状剖面 SVG](docs/images/head-section-sagittal-x0mm.svg)。
+
+[水平横切面主图](docs/images/head-horizontal-section.png)展示模型原始坐标 `Z = 0 mm` 的截面，附中线侧剖面定位；[三高度对照图](docs/images/head-horizontal-sections-comparison.png)展示 `Z = -40 / 0 / +60 mm`。从头顶向下看，面部朝上，蓝色为前壳，橙色为后壳，网格间距 20 mm。
+
+截面直接取自当前 Base 求值后的三角网格，色块对应被平面切到的实体材料，仅含前后壳，不含独立五金、内衬或佩戴者。水平 `Z = 0 mm` 截面外包络为 **252.1 × 217.5 mm**，包含此高度的耳部；这不是内部净空尺寸。Z 使用模型坐标，不能直接理解为从下巴起算的高度。可放大的原始轮廓见 [Z = 0 SVG](docs/images/head-section-z+0mm.svg)，源文件哈希、拓扑检查及轮廓数据见[剖面记录](docs/head-cross-sections-2026-10-22.json)。
+
+复现时先用 Blender 提取几何，再用安装了 Pillow 的 Python 绘图；`--font` 可指定支持中文的字体，默认使用 macOS 的黑体。脚本不保存或改写 `.blend`：
+
+```sh
+"/Applications/Blender.app/Contents/MacOS/Blender" \
+  --background --factory-startup --disable-autoexec --python-exit-code 1 \
+  ProjectPulsar_Base.blend --python tools/render_cross_sections.py -- \
+  --output /tmp/pulsar-sections.json
+python3 tools/render_cross_sections.py --draw /tmp/pulsar-sections.json --output docs/images
+```
+
 ## 几何回归检查
 
 在仓库根目录运行。以下命令使用 macOS 的 Blender 路径；其他平台需替换可执行文件路径，Windows 还需调整换行方式和 `/tmp` 输出目录：
