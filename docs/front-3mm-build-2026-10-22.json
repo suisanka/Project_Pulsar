@@ -1,0 +1,151 @@
+{
+  "source": "/Volumes/Workbench/Projects/Project_Pulsar/ProjectPulsar_Base.blend",
+  "source_sha256": "8beca797aa5a225a8549b68d5a32caadc7b0c20c6791fcbfa8a4584bb5e6dc44",
+  "blender": "5.2.2 LTS",
+  "nominal_front_thickness_mm": 3.0,
+  "previous_nominal_thickness_mm": 2.6199999265372753,
+  "source_object": "头壳_前脸3mm",
+  "solidify_offset": -1,
+  "replaced_geometry_nodes": [
+    "物体信息.003",
+    "群组.003"
+  ],
+  "seam_anchor_source": "头壳",
+  "rear_geometry_unchanged": true,
+  "metrics": {
+    "前壳配置": {
+      "vertices": 267459,
+      "triangles": 534938,
+      "boundary_edges": 0,
+      "multi_face_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_triangles": 0,
+      "degenerate_triangles": 0,
+      "near_zero_triangles": 2,
+      "min_triangle_area_mm2": 7.805539354925538e-09,
+      "dimensions_mm": [
+        252.9455108642578,
+        162.16473388671875,
+        270.85498046875
+      ],
+      "signed_volume_cm3": 296.204496235678,
+      "wire_edges": 0,
+      "loose_vertices": 0,
+      "sdf_rebuilt": false
+    },
+    "后壳配置": {
+      "vertices": 67005,
+      "triangles": 134282,
+      "boundary_edges": 0,
+      "multi_face_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_triangles": 0,
+      "degenerate_triangles": 0,
+      "near_zero_triangles": 1,
+      "min_triangle_area_mm2": 9.790078782606702e-09,
+      "dimensions_mm": [
+        236.55226135253906,
+        177.40069580078125,
+        248.5341033935547
+      ],
+      "signed_volume_cm3": 225.59569918037516,
+      "wire_edges": 0,
+      "loose_vertices": 0,
+      "sdf_rebuilt": false
+    }
+  },
+  "wall_samples": [
+    {
+      "label": "额头",
+      "thickness_mm": 2.9380305839538576,
+      "previous_thickness_mm": 2.565852983093262,
+      "outer_xyz_mm": [
+        5.581689066502804e-08,
+        107.439453125,
+        80.0
+      ],
+      "inner_xyz_mm": [
+        -0.023735975846648216,
+        104.5743408203125,
+        79.34993743896484
+      ],
+      "distance_from_reference_mm": 5.029139060752641e-08,
+      "reverse_ray_error_mm": 1.856398739301925e-08
+    },
+    {
+      "label": "眉鼻间",
+      "thickness_mm": 2.938786847686768,
+      "previous_thickness_mm": 2.566510541534424,
+      "outer_xyz_mm": [
+        -2.1645185199759e-08,
+        105.93250274658203,
+        4.76837158203125e-07
+      ],
+      "inner_xyz_mm": [
+        -0.030896659940481186,
+        103.07321166992188,
+        0.6782307624816895
+      ],
+      "distance_from_reference_mm": 2.3900719270386617e-07,
+      "reverse_ray_error_mm": 4.772473408327278e-07
+    },
+    {
+      "label": "鼻尖",
+      "thickness_mm": 2.835863454437256,
+      "previous_thickness_mm": 2.2310811115264895,
+      "outer_xyz_mm": [
+        1.4901161193847656e-07,
+        125.96040344238281,
+        -52.46989059448242
+      ],
+      "inner_xyz_mm": [
+        -0.154441237449646,
+        123.1297378540039,
+        -52.3951301574707
+      ],
+      "distance_from_reference_mm": 7.450580596923828e-08,
+      "reverse_ray_error_mm": 1.4901161193847656e-08
+    },
+    {
+      "label": "口部",
+      "thickness_mm": 2.751170022583008,
+      "previous_thickness_mm": 2.3846555782318117,
+      "outer_xyz_mm": [
+        -4.916471496585473e-08,
+        108.56082153320312,
+        -90.0
+      ],
+      "inner_xyz_mm": [
+        -0.021961571648716927,
+        105.85525512695312,
+        -90.49834442138672
+      ],
+      "distance_from_reference_mm": 2.421438694000244e-08,
+      "reverse_ray_error_mm": 4.955547849885473e-08
+    },
+    {
+      "label": "下巴底部",
+      "thickness_mm": 2.847385270690918,
+      "previous_thickness_mm": 2.4872644973754885,
+      "outer_xyz_mm": [
+        8.940696716308594e-08,
+        80.0,
+        -126.10211944580078
+      ],
+      "inner_xyz_mm": [
+        -0.050575751811265945,
+        80.03831481933594,
+        -123.25543975830078
+      ],
+      "distance_from_reference_mm": 4.470348358154297e-08,
+      "reverse_ray_error_mm": 4.470348358154297e-08
+    }
+  ],
+  "limits": [
+    "Nominal Solidify setting precedes subdivision and Booleans; it is not a global minimum wall thickness.",
+    "Ears retain their original separate 2 mm source; mechanical pads and hinge retain their own dimensions.",
+    "This variant captures the current face controls; later face-control edits require keeping both head-source modifiers in sync."
+  ],
+  "blend_sha256": "38125f437e2dd618255b23e39404d36fac5c1b9f3f79a5cd548a440ea3b38c32",
+  "passed": true
+}

@@ -7,6 +7,7 @@ Purchased metal hardware and the unused legacy R pin are never exported.
 import argparse
 import hashlib
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -51,7 +52,10 @@ def main():
     parser.add_argument('--exports',type=Path,required=True)
     parser.add_argument('--manifest',type=Path,required=True)
     parser.add_argument('--side-validation',type=Path)
+    parser.add_argument('--variant',help='Optional filename suffix, e.g. Front3mm (letters, digits, underscore or hyphen)')
     args=parser.parse_args(sys.argv[sys.argv.index('--')+1:])
+    if args.variant and not re.fullmatch(r'[A-Za-z0-9_-]+',args.variant):
+        raise ValueError('--variant must be a safe filename suffix')
     digest=hashlib.sha256(Path(bpy.data.filepath).read_bytes()).hexdigest()
     receipt=json.loads(args.validation.read_text())
     if not receipt.get('passed') or receipt['blend_sha256']!=digest:
@@ -72,6 +76,9 @@ def main():
                                   'source_metrics':source,'stl_metrics':result,'export_transform':transform})
         print('EXPORTED',filename,flush=True)
     version=('Closure_v4' if side_revision>=2 else 'Closure_v3') if side_revision else 'Hinge_v2'
+    if args.variant:
+        version+='_'+args.variant
+        manifest['variant']=args.variant
     export(SHELL_NAMES[0],f'ProjectPulsar_Front_{version}.stl','front shell')
     export(SHELL_NAMES[1],f'ProjectPulsar_Rear_{version}.stl','rear shell')
     points,faces=arrays(SPACER_NAME);points-=AXIS
