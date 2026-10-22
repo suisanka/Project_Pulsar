@@ -1,0 +1,334 @@
+{
+  "source": "ProjectPulsar_Base.blend",
+  "source_sha256": "8beca797aa5a225a8549b68d5a32caadc7b0c20c6791fcbfa8a4584bb5e6dc44",
+  "section_sha256": "660f52bef65442b696b1856ba81b26db4b2f138d508ead5ab6809964f5c4493b",
+  "blender": "5.2.2 LTS",
+  "units": "mm",
+  "plane": "X=0",
+  "clearances": [
+    {
+      "id": "D1",
+      "axis": "Y",
+      "z_mm": 80,
+      "start_yz_mm": [
+        -112.96571048646143,
+        80.0
+      ],
+      "end_yz_mm": [
+        104.80883523840893,
+        80.0
+      ],
+      "length_mm": 217.77454572487036,
+      "mesh_ray_endpoint_errors_mm": [
+        7.62939453125e-06,
+        7.62939453125e-06
+      ]
+    },
+    {
+      "id": "D2",
+      "axis": "Y",
+      "z_mm": 0,
+      "start_yz_mm": [
+        -108.94619741585348,
+        0.0
+      ],
+      "end_yz_mm": [
+        103.29640087239997,
+        2.7755575615628914e-17
+      ],
+      "length_mm": 212.24259828825345,
+      "mesh_ray_endpoint_errors_mm": [
+        0.0,
+        7.62939453125e-06
+      ]
+    },
+    {
+      "id": "D3",
+      "axis": "Y",
+      "z_mm": -60,
+      "start_yz_mm": [
+        -91.62865681483916,
+        -60.0
+      ],
+      "end_yz_mm": [
+        116.28335244501,
+        -60.0
+      ],
+      "length_mm": 207.91200925984916,
+      "mesh_ray_endpoint_errors_mm": [
+        7.62939453125e-06,
+        7.62939453125e-06
+      ]
+    },
+    {
+      "id": "H1",
+      "axis": "Z",
+      "y_mm": 80,
+      "start_yz_mm": [
+        80.0,
+        -123.61490462121138
+      ],
+      "end_yz_mm": [
+        80.0,
+        122.65570958824165
+      ],
+      "length_mm": 246.27061420945302,
+      "mesh_ray_endpoint_errors_mm": [
+        7.62939453125e-06,
+        7.62939453125e-06
+      ]
+    }
+  ],
+  "wall_samples": [
+    {
+      "id": "T1",
+      "label": "顶部",
+      "shell": "后壳配置",
+      "thickness_mm": 2.55303345451355,
+      "outer_xyz_mm": [
+        6.63172414760993e-08,
+        2.384185791015625e-07,
+        158.4229278564453
+      ],
+      "inner_xyz_mm": [
+        -0.0230888482183218,
+        -0.08991366624832153,
+        155.87158203125
+      ],
+      "inward_normal": [
+        -0.009043717756867409,
+        -0.035218458622694016,
+        -0.9993387460708618
+      ],
+      "outer_triangle": 60791,
+      "inner_triangle": 79871,
+      "section_to_mesh_distance_mm": 1.526079540781211e-05,
+      "reverse_ray_error_mm": 4.845658051876981e-07,
+      "x_departure_mm": 0.0230888482183218
+    },
+    {
+      "id": "T2",
+      "label": "上后脑",
+      "shell": "后壳配置",
+      "thickness_mm": 2.5499449802398684,
+      "outer_xyz_mm": [
+        2.7901791099793627e-08,
+        -115.54918670654297,
+        80.0
+      ],
+      "inner_xyz_mm": [
+        -0.022259658202528954,
+        -113.03301239013672,
+        79.58699035644531
+      ],
+      "inward_normal": [
+        -0.008729476481676102,
+        0.986757218837738,
+        -0.161969393491745
+      ],
+      "outer_triangle": 63308,
+      "inner_triangle": 82340,
+      "section_to_mesh_distance_mm": 7.6294454629533e-06,
+      "reverse_ray_error_mm": 4.652824195882155e-08,
+      "x_departure_mm": 0.022259658202528954
+    },
+    {
+      "id": "T3",
+      "label": "下后脑",
+      "shell": "后壳配置",
+      "thickness_mm": 2.5747862888336184,
+      "outer_xyz_mm": [
+        0.0,
+        -111.57157897949219,
+        -8.577480912208557e-07
+      ],
+      "inner_xyz_mm": [
+        -0.01792176440358162,
+        -109.04644775390625,
+        0.5028971433639526
+      ],
+      "inward_normal": [
+        -0.006960486061871052,
+        0.9807155728340149,
+        0.19531641900539398
+      ],
+      "outer_triangle": 62174,
+      "inner_triangle": 81242,
+      "section_to_mesh_distance_mm": 8.577480912208557e-07,
+      "reverse_ray_error_mm": 7.63672273280855e-06,
+      "x_departure_mm": 0.01792176440358162
+    },
+    {
+      "id": "T4",
+      "label": "额头",
+      "shell": "前壳配置",
+      "thickness_mm": 2.565852983093262,
+      "outer_xyz_mm": [
+        5.525498281144792e-09,
+        107.439453125,
+        80.0
+      ],
+      "inner_xyz_mm": [
+        -0.020729243755340576,
+        104.9372787475586,
+        79.43228149414062
+      ],
+      "inward_normal": [
+        -0.008078891783952713,
+        -0.9751816987991333,
+        -0.22125892341136932
+      ],
+      "outer_triangle": 175699,
+      "inner_triangle": 250551,
+      "section_to_mesh_distance_mm": 7.629396350239404e-06,
+      "reverse_ray_error_mm": 9.375662874053853e-09,
+      "x_departure_mm": 0.020729243755340576
+    },
+    {
+      "id": "T5",
+      "label": "眉鼻间",
+      "shell": "前壳配置",
+      "thickness_mm": 2.566510541534424,
+      "outer_xyz_mm": [
+        -4.8813806330372245e-09,
+        105.93250274658203,
+        2.384185791015625e-07
+      ],
+      "inner_xyz_mm": [
+        -0.026982754468917847,
+        103.43541717529297,
+        0.5923144817352295
+      ],
+      "inward_normal": [
+        -0.010513398796319962,
+        -0.9729478359222412,
+        0.2307858169078827
+      ],
+      "outer_triangle": 180555,
+      "inner_triangle": 255401,
+      "section_to_mesh_distance_mm": 2.3846854446674115e-07,
+      "reverse_ray_error_mm": 4.176171607408688e-07,
+      "x_departure_mm": 0.026982754468917847
+    },
+    {
+      "id": "T6",
+      "label": "鼻尖",
+      "shell": "前壳配置",
+      "thickness_mm": 2.2310811115264895,
+      "outer_xyz_mm": [
+        7.450580596923828e-08,
+        125.96040344238281,
+        -52.46989059448242
+      ],
+      "inner_xyz_mm": [
+        -0.12150482088327408,
+        123.73341369628906,
+        -52.41107177734375
+      ],
+      "inward_normal": [
+        -0.05446009710431099,
+        -0.998167872428894,
+        0.026362258940935135
+      ],
+      "outer_triangle": 201497,
+      "inner_triangle": 276070,
+      "section_to_mesh_distance_mm": 7.450580596923828e-08,
+      "reverse_ray_error_mm": 1.043081283569336e-07,
+      "x_departure_mm": 0.12150482088327408
+    },
+    {
+      "id": "T7",
+      "label": "口部",
+      "shell": "前壳配置",
+      "thickness_mm": 2.3846555782318117,
+      "outer_xyz_mm": [
+        -2.4950328025852286e-08,
+        108.56082153320312,
+        -90.0
+      ],
+      "inner_xyz_mm": [
+        -0.019035805016756058,
+        106.21569061279297,
+        -90.43195343017578
+      ],
+      "inward_normal": [
+        -0.007982611656188965,
+        -0.983424961566925,
+        -0.18113993108272552
+      ],
+      "outer_triangle": 225051,
+      "inner_triangle": 299916,
+      "section_to_mesh_distance_mm": 2.4950328025852286e-08,
+      "reverse_ray_error_mm": 1.9753155609187914e-08,
+      "x_departure_mm": 0.019035805016756058
+    },
+    {
+      "id": "T8",
+      "label": "下巴底部",
+      "shell": "前壳配置",
+      "thickness_mm": 2.4872644973754885,
+      "outer_xyz_mm": [
+        4.470348358154297e-08,
+        80.0,
+        -126.10211944580078
+      ],
+      "inner_xyz_mm": [
+        -0.04417925700545311,
+        80.0334701538086,
+        -123.61547088623047
+      ],
+      "inward_normal": [
+        -0.0177622027695179,
+        0.013457559049129486,
+        0.999751627445221
+      ],
+      "outer_triangle": 228166,
+      "inner_triangle": 303038,
+      "section_to_mesh_distance_mm": 4.470348358154297e-08,
+      "reverse_ray_error_mm": 4.842877388000488e-08,
+      "x_departure_mm": 0.04417925700545311
+    }
+  ],
+  "source_checks": {
+    "前壳配置": {
+      "vertices": 260912,
+      "triangles": 521844,
+      "boundary_edges": 0,
+      "multi_face_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_triangles": 0,
+      "degenerate_triangles": 0,
+      "near_zero_triangles": 0,
+      "min_triangle_area_mm2": 4.4942581879494985e-08,
+      "dimensions_mm": [
+        252.9455108642578,
+        162.16473388671875,
+        270.85498046875
+      ],
+      "signed_volume_cm3": 266.24413501298676
+    },
+    "后壳配置": {
+      "vertices": 67005,
+      "triangles": 134282,
+      "boundary_edges": 0,
+      "multi_face_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_triangles": 0,
+      "degenerate_triangles": 0,
+      "near_zero_triangles": 1,
+      "min_triangle_area_mm2": 9.790078782606702e-09,
+      "dimensions_mm": [
+        236.55226135253906,
+        177.40069580078125,
+        248.5341033935547
+      ],
+      "signed_volume_cm3": 225.59569918037516
+    }
+  },
+  "definitions": {
+    "clearance": "First shell material on either side of a point in the cavity, measured along the specified Y or Z line in the X=0 plane.",
+    "wall": "First hit along the inward normal of the evaluated outer surface triangle. Samples are local, not a global minimum or constant wall thickness.",
+    "height": "H1 is at Y=80 mm, from chin interior to the underside of the top connection boss. The neck is open; no universal enclosed cavity height exists.",
+    "limitations": "Nominal digital geometry only; separate hardware, padding and print tolerances are not subtracted. Two-decimal wall labels are not manufacturing tolerances."
+  }
+}

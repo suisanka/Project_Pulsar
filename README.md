@@ -55,6 +55,10 @@ STL 单位为毫米，按仓库惯例保留为本地产物，未纳入 Git；源
 
 [垂直剖面主图](docs/images/head-vertical-section.png)沿模型正中线 `X = 0 mm` 从面部到后脑切开，展示额头、鼻部、下巴、后脑与顶部连接处的实际轮廓。图中面部朝右，附俯视定位图；可放大的原始轮廓见[正中矢状剖面 SVG](docs/images/head-section-sagittal-x0mm.svg)。
 
+[净空与壁厚标注图](docs/images/head-vertical-section-dimensioned.png)及[标注版 SVG](docs/images/head-vertical-section-dimensioned.svg)进一步标出实际测量端点。`Z = +80 / 0 / -60 mm` 处的前后净深分别为 **217.8 / 212.2 / 207.9 mm**；`Y = +80 mm` 处从下巴内侧至顶部连接座下表面的竖直净高为 **246.3 mm**。下方颈口开放，该净高只在标注竖线上成立。
+
+沿八个外表面取样点的三角面法线向内测得：顶部 **2.55 mm**、上后脑 **2.55 mm**、下后脑 **2.57 mm**、额头 **2.57 mm**、眉鼻间 **2.57 mm**、鼻尖 **2.23 mm**、口部 **2.38 mm**、下巴底部 **2.49 mm**。这些是局部法线射线壁厚，不代表全壳最小值或统一壁厚；两位小数为数值读数精度，不是制造公差。净空未扣除独立五金、内衬和打印偏差。测量端点、法线、源文件哈希、拓扑与射线复核结果见[尺寸记录](docs/head-vertical-section-dimensions-2026-10-22.json)。
+
 [水平横切面主图](docs/images/head-horizontal-section.png)展示模型原始坐标 `Z = 0 mm` 的截面，附中线侧剖面定位；[三高度对照图](docs/images/head-horizontal-sections-comparison.png)展示 `Z = -40 / 0 / +60 mm`。从头顶向下看，面部朝上，蓝色为前壳，橙色为后壳，网格间距 20 mm。
 
 截面直接取自当前 Base 求值后的三角网格，色块对应被平面切到的实体材料，仅含前后壳，不含独立五金、内衬或佩戴者。水平 `Z = 0 mm` 截面外包络为 **252.1 × 217.5 mm**，包含此高度的耳部；这不是内部净空尺寸。Z 使用模型坐标，不能直接理解为从下巴起算的高度。可放大的原始轮廓见 [Z = 0 SVG](docs/images/head-section-z+0mm.svg)，源文件哈希、拓扑检查及轮廓数据见[剖面记录](docs/head-cross-sections-2026-10-22.json)。
@@ -67,6 +71,17 @@ STL 单位为毫米，按仓库惯例保留为本地产物，未纳入 Git；源
   ProjectPulsar_Base.blend --python tools/render_cross_sections.py -- \
   --output /tmp/pulsar-sections.json
 python3 tools/render_cross_sections.py --draw /tmp/pulsar-sections.json --output docs/images
+```
+
+复现尺寸标注（使用上一步匹配同一源模型的截面数据）：
+
+```sh
+"/Applications/Blender.app/Contents/MacOS/Blender" \
+  --background --factory-startup --disable-autoexec --python-exit-code 1 \
+  ProjectPulsar_Base.blend --python tools/dimension_vertical_section.py -- \
+  --sections /tmp/pulsar-sections.json --output /tmp/pulsar-dimensions.json
+python3 tools/dimension_vertical_section.py --sections /tmp/pulsar-sections.json \
+  --draw /tmp/pulsar-dimensions.json --output docs/images
 ```
 
 ## 几何回归检查
