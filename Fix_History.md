@@ -5,6 +5,15 @@
 - 修改日期：2026 年 9 月至 10 月
 - 工具：第一至四轮使用 Blender 5.1.2；第五轮使用 Blender 5.2.2 LTS
 
+## 2026-10-24：按用户更正，后壳直接采用原始 STL
+
+用户明确要求“不要按头模测试，你照抄我给你的后壳数据”。据此将此前 ReferenceFit 40 mm 扩展方案标为弃用，当前后壳改为提供的 `后半头壳-全头.stl` 原始网格。
+
+- 后壳源文件归档到 `assets/reference/user-rear-2026-10-24/`，试验用 STL 直接按字节复制，不重建、简化、扩孔、加厚、变形或重新设计通风孔／卡扣。
+- 新增独立 `variants/reference-rear-exact/ProjectPulsar_ReferenceRearExact.blend`，使用毫米场景保存原生 STL 顶点，重新打开后逐三角面核对顶点坐标与绕序。原方案保留为明确命名的历史编辑场景。
+- 另设仅旋转／平移的接口对照场景；其摆放不改变后壳局部数据，不代表与 Front3mm 或 Closure v4 五金已匹配。
+- 本轮不创建、不拟合、不验证头模。后壳形状唯一基准是用户提供的数据，文件哈希、一致性核对及原始网格检查见[原样采用说明](docs/REFERENCE_REAR_EXACT.zh-CN.md)。
+
 ## 2026-10-24：参考头壳的后脑空间与下缘分件修订
 
 根据用户提供的 `前半头壳.stl` 与 `后半头壳-全头.stl`，按确认的佩戴空间优先方向，从 Front3mm 生成独立 `variants/reference-fit/ProjectPulsar_ReferenceFit.blend`，Base 和 Front3mm 源文件保留。
