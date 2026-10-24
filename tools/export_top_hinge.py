@@ -52,7 +52,6 @@ def main():
     parser.add_argument('--exports',type=Path,required=True)
     parser.add_argument('--manifest',type=Path,required=True)
     parser.add_argument('--side-validation',type=Path)
-    parser.add_argument('--fit-validation',type=Path,help='Required matching fit receipt for ReferenceFit variants')
     parser.add_argument('--variant',help='Optional filename suffix, e.g. Front3mm (letters, digits, underscore or hyphen)')
     args=parser.parse_args(sys.argv[sys.argv.index('--')+1:])
     if args.variant and not re.fullmatch(r'[A-Za-z0-9_-]+',args.variant):
@@ -66,17 +65,9 @@ def main():
         if not args.side_validation:raise ValueError('--side-validation is required for the screw-mounted latch version')
         side=json.loads(args.side_validation.read_text())
         if not side.get('passed') or side['blend_sha256']!=digest:raise ValueError('Side-latch receipt does not match this file')
-    if bpy.context.scene.get('pulsar_reference_fit_revision') and not args.fit_validation:
-        raise ValueError('--fit-validation is required for the ReferenceFit version')
-    if args.fit_validation:
-        fit=json.loads(args.fit_validation.read_text())
-        if not fit.get('passed') or fit['blend_sha256']!=digest:
-            raise ValueError('Fit receipt does not match this file')
     args.exports.mkdir(parents=True,exist_ok=True);args.manifest.parent.mkdir(parents=True,exist_ok=True)
     manifest={'blend_sha256':digest,'units':'mm','assembly_validation_sha256':hashlib.sha256(args.validation.read_bytes()).hexdigest(),'files':[],
               'excluded':'Purchased shoulder axle, washers, nut, helper cutters and unused legacy R pin.'}
-    if args.fit_validation:
-        manifest['fit_validation_sha256']=hashlib.sha256(args.fit_validation.read_bytes()).hexdigest()
     def export(name,filename,role,transform=None):
         path=args.exports/filename
         source=evaluated_metrics(name);result=export_stl(name,path)

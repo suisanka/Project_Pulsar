@@ -110,25 +110,19 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path, required=True)
     parser.add_argument('--step', type=float, default=.25)
-    parser.add_argument('--rear-round', type=float, default=.037,
-                        help='Expected saved rear round control; explicitly set for a revised lower opening')
     args = parser.parse_args(sys.argv[sys.argv.index('--')+1:])
     if not 0 < args.step <= .25:
         raise ValueError('Step must be in (0, 0.25] degrees')
-    if not math.isfinite(args.rear_round) or not 0 <= args.rear_round <= .1:
-        raise ValueError('Expected rear rounding must be finite and in [0, 0.1]')
     if bpy.context.scene.get('pulsar_hinge_revision') != REVISION:
         raise ValueError('Expected hinge revision 2')
     for obj, key, expected in DEFAULTS:
-        if (obj, key) == ('后壳配置', '圆角位置'):
-            expected = args.rear_round
         if abs(float(get_input(obj, key))-float(expected)) > 1e-6:
             raise ValueError(f'Motion acceptance is for documented defaults: {obj}/{key}')
     args.output.parent.mkdir(parents=True, exist_ok=True)
     report = {
         'blender': bpy.app.version_string,
         'blend_sha256': hashlib.sha256(Path(bpy.data.filepath).read_bytes()).hexdigest(),
-        'specification': SPEC, 'expected_rear_round': args.rear_round, 'errors': [],
+        'specification': SPEC, 'errors': [],
         'method': 'Full evaluated triangle meshes, BVH surface overlap plus connected-component parity containment; independent Manifold solid intersections at four angles.',
         'limits': ['Discrete rigid geometry only; not a continuous collision proof.', 'No purchased hardware measurement, slicing, print, elasticity, wear, fatigue or load test.'],
     }

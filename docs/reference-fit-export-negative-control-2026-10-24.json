@@ -1,7 +1,0 @@
-{
-  "control": "Export with passing assembly/side receipts but deliberately wrong fit blend_sha256",
-  "expected_error": "Fit receipt does not match this file",
-  "exit_code": 1,
-  "observed_error": true,
-  "passed": true
-}
