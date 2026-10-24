@@ -53,6 +53,7 @@ def main():
     parser.add_argument('--manifest',type=Path,required=True)
     parser.add_argument('--side-validation',type=Path)
     parser.add_argument('--fit-validation',type=Path,help='Required matching fit receipt for ReferenceFit variants')
+    parser.add_argument('--reference-validation',type=Path,help='Required interface and mesh-quality receipt for rounded reference variants')
     parser.add_argument('--variant',help='Optional filename suffix, e.g. Front3mm (letters, digits, underscore or hyphen)')
     args=parser.parse_args(sys.argv[sys.argv.index('--')+1:])
     if args.variant and not re.fullmatch(r'[A-Za-z0-9_-]+',args.variant):
@@ -72,15 +73,25 @@ def main():
         fit=json.loads(args.fit_validation.read_text())
         if not fit.get('passed') or fit['blend_sha256']!=digest:
             raise ValueError('Fit receipt does not match this file')
+    if bpy.context.scene.get('pulsar_reference_hardware_revision') and not args.reference_validation:
+        raise ValueError('--reference-validation is required for the fixed reference rear')
+    if args.reference_validation:
+        reference=json.loads(args.reference_validation.read_text())
+        if not reference.get('passed') or reference['blend_sha256']!=digest:
+            raise ValueError('Reference-quality receipt does not match this file')
     args.exports.mkdir(parents=True,exist_ok=True);args.manifest.parent.mkdir(parents=True,exist_ok=True)
     manifest={'blend_sha256':digest,'units':'mm','assembly_validation_sha256':hashlib.sha256(args.validation.read_bytes()).hexdigest(),'files':[],
               'excluded':'Purchased shoulder axle, washers, nut, helper cutters and unused legacy R pin.'}
     if args.fit_validation:
         manifest['fit_validation_sha256']=hashlib.sha256(args.fit_validation.read_bytes()).hexdigest()
+    if args.reference_validation:
+        manifest['reference_validation_sha256']=hashlib.sha256(args.reference_validation.read_bytes()).hexdigest()
     def export(name,filename,role,transform=None):
         path=args.exports/filename
-        source=evaluated_metrics(name);result=export_stl(name,path)
-        if failures(source) or failures(result):raise ValueError((name,failures(source),failures(result)))
+        source=evaluated_metrics(name)
+        if failures(source):raise ValueError((name,failures(source)))
+        result=export_stl(name,path)
+        if failures(result):raise ValueError((name,failures(result)))
         manifest['files'].append({'path':str(path),'role':role,'sha256':hashlib.sha256(path.read_bytes()).hexdigest(),'bytes':path.stat().st_size,
                                   'source_metrics':source,'stl_metrics':result,'export_transform':transform})
         print('EXPORTED',filename,flush=True)
@@ -100,7 +111,12 @@ def main():
     if side_revision:
         manifest['side_validation_sha256']=hashlib.sha256(args.side_validation.read_bytes()).hexdigest()
         for name,label in zip(SHELL_NAMES,('Front','Rear')):
-            coupon,transform=cropped_coupon(name,([-125,-50,5],[-80,20,65]),'Side_Latch_Coupon')
+            # The rounded rear has triangulated transition faces on the old
+            # crop planes. Move only the coupon's artificial cuts outward by
+            # 0.2 mm to avoid coplanar Boolean slivers; mounting geometry stays
+            # at its original coordinates. Both mating coupons use one box.
+            bounds=([-125.2,-50.2,4.8],[-79.8,20.2,65.2]) if args.reference_validation else ([-125,-50,5],[-80,20,65])
+            coupon,transform=cropped_coupon(name,bounds,'Side_Latch_Coupon')
             export(coupon.name,f'ProjectPulsar_SideLatch_Test_{label}_L.stl','left-side latch fit coupon; both sides use the same mirrored 20x20 pattern',transform)
     manifest['passed']=True
     args.manifest.write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')

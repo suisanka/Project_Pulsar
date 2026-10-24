@@ -1,0 +1,335 @@
+{
+  "blend_sha256": "77cf0c391d0f7286ec1f29e661b904bf8e0c6acc7e14ce71867395641d787d9f",
+  "mounts": [
+    {
+      "side": "L",
+      "index": 0,
+      "template_yz_mm": [
+        -16.0,
+        -10.0
+      ],
+      "seat_center_world_mm": [
+        -98.7994437315416,
+        -30.10091161295852,
+        28.756946543529978
+      ],
+      "inward_normal": [
+        0.995030724104929,
+        0.03653488770353706,
+        0.09262321559798264
+      ],
+      "attached_shell": "后壳配置",
+      "objects": [
+        "SideLatch_L_0_Shaft",
+        "SideLatch_L_0_Head",
+        "SideLatch_L_0_Washer",
+        "SideLatch_L_0_Nut"
+      ],
+      "measured_center_world_mm": [
+        -98.79944338795923,
+        -30.10090950106849,
+        28.75694201947321
+      ],
+      "min_bore_radius_mm": 1.7499964237213135,
+      "max_bore_radius_mm": 1.7502012252807617,
+      "min_pad_thickness_mm": 3.999665331793949,
+      "max_pad_thickness_mm": 4.000017628539354,
+      "nominal_thread_past_nut_mm": 1.0
+    },
+    {
+      "side": "L",
+      "index": 1,
+      "template_yz_mm": [
+        -16.0,
+        10.0
+      ],
+      "seat_center_world_mm": [
+        -100.75391559539463,
+        -19.36923981402243,
+        45.52033701602468
+      ],
+      "inward_normal": [
+        0.995030724104929,
+        0.03653488770353706,
+        0.09262321559798264
+      ],
+      "attached_shell": "后壳配置",
+      "objects": [
+        "SideLatch_L_1_Shaft",
+        "SideLatch_L_1_Head",
+        "SideLatch_L_1_Washer",
+        "SideLatch_L_1_Nut"
+      ],
+      "measured_center_world_mm": [
+        -100.75391576207687,
+        -19.369247503725855,
+        45.52034183983041
+      ],
+      "min_bore_radius_mm": 1.7499934434890747,
+      "max_bore_radius_mm": 1.7502248287200928,
+      "min_pad_thickness_mm": 3.999795455718413,
+      "max_pad_thickness_mm": 4.000002422835678,
+      "nominal_thread_past_nut_mm": 1.0
+    },
+    {
+      "side": "L",
+      "index": 2,
+      "template_yz_mm": [
+        4.0,
+        -10.0
+      ],
+      "seat_center_world_mm": [
+        -98.41789036922509,
+        -13.239793583832586,
+        18.00719697251256
+      ],
+      "inward_normal": [
+        0.995030724104929,
+        0.03653488770353706,
+        0.09262321559798264
+      ],
+      "attached_shell": "前壳配置",
+      "objects": [
+        "SideLatch_L_2_Shaft",
+        "SideLatch_L_2_Head",
+        "SideLatch_L_2_Washer",
+        "SideLatch_L_2_Nut"
+      ],
+      "measured_center_world_mm": [
+        -98.41789077616,
+        -13.239794583421034,
+        18.007201738408238
+      ],
+      "min_bore_radius_mm": 1.7494868040084839,
+      "max_bore_radius_mm": 1.7495208978652954,
+      "min_pad_thickness_mm": 3.999856590060517,
+      "max_pad_thickness_mm": 4.00000227894634,
+      "nominal_thread_past_nut_mm": 1.0
+    },
+    {
+      "side": "L",
+      "index": 3,
+      "template_yz_mm": [
+        4.0,
+        10.0
+      ],
+      "seat_center_world_mm": [
+        -100.3723622330781,
+        -2.5081217848964954,
+        34.770587445007266
+      ],
+      "inward_normal": [
+        0.995030724104929,
+        0.03653488770353706,
+        0.09262321559798264
+      ],
+      "attached_shell": "前壳配置",
+      "objects": [
+        "SideLatch_L_3_Shaft",
+        "SideLatch_L_3_Head",
+        "SideLatch_L_3_Washer",
+        "SideLatch_L_3_Nut"
+      ],
+      "measured_center_world_mm": [
+        -100.37236241854224,
+        -2.50812563385019,
+        34.77059095561311
+      ],
+      "min_bore_radius_mm": 1.7494845390319824,
+      "max_bore_radius_mm": 1.749511957168579,
+      "min_pad_thickness_mm": 3.9996799412183464,
+      "max_pad_thickness_mm": 4.000009720213711,
+      "nominal_thread_past_nut_mm": 1.0
+    },
+    {
+      "side": "R",
+      "index": 0,
+      "template_yz_mm": [
+        -16.0,
+        -10.0
+      ],
+      "seat_center_world_mm": [
+        98.7783137315416,
+        -30.10091161295852,
+        28.756946543529978
+      ],
+      "inward_normal": [
+        -0.995030724104929,
+        0.03653488770353706,
+        0.09262321559798264
+      ],
+      "attached_shell": "后壳配置",
+      "objects": [
+        "SideLatch_R_0_Shaft",
+        "SideLatch_R_0_Head",
+        "SideLatch_R_0_Washer",
+        "SideLatch_R_0_Nut"
+      ],
+      "measured_center_world_mm": [
+        98.77838740829397,
+        -30.100649633903092,
+        28.75763469991145
+      ],
+      "min_bore_radius_mm": 1.7499945163726807,
+      "max_bore_radius_mm": 1.7516059875488281,
+      "min_pad_thickness_mm": 3.999665329698473,
+      "max_pad_thickness_mm": 4.000009999144822,
+      "nominal_thread_past_nut_mm": 1.0
+    },
+    {
+      "side": "R",
+      "index": 1,
+      "template_yz_mm": [
+        -16.0,
+        10.0
+      ],
+      "seat_center_world_mm": [
+        100.73278559539463,
+        -19.36923981402243,
+        45.52033701602468
+      ],
+      "inward_normal": [
+        -0.995030724104929,
+        0.03653488770353706,
+        0.09262321559798264
+      ],
+      "attached_shell": "后壳配置",
+      "objects": [
+        "SideLatch_R_1_Shaft",
+        "SideLatch_R_1_Head",
+        "SideLatch_R_1_Washer",
+        "SideLatch_R_1_Nut"
+      ],
+      "measured_center_world_mm": [
+        100.73285728495797,
+        -19.368989197198186,
+        45.52100830626423
+      ],
+      "min_bore_radius_mm": 1.7499908208847046,
+      "max_bore_radius_mm": 1.7516120672225952,
+      "min_pad_thickness_mm": 3.9997801987919956,
+      "max_pad_thickness_mm": 4.000002424698323,
+      "nominal_thread_past_nut_mm": 1.0
+    },
+    {
+      "side": "R",
+      "index": 2,
+      "template_yz_mm": [
+        4.0,
+        -10.0
+      ],
+      "seat_center_world_mm": [
+        98.39676036922509,
+        -13.239793583832586,
+        18.00719697251256
+      ],
+      "inward_normal": [
+        -0.995030724104929,
+        0.03653488770353706,
+        0.09262321559798264
+      ],
+      "attached_shell": "前壳配置",
+      "objects": [
+        "SideLatch_R_2_Shaft",
+        "SideLatch_R_2_Head",
+        "SideLatch_R_2_Washer",
+        "SideLatch_R_2_Nut"
+      ],
+      "measured_center_world_mm": [
+        98.39697026316003,
+        -13.239037556932265,
+        18.00915360460519
+      ],
+      "min_bore_radius_mm": 1.7473896741867065,
+      "max_bore_radius_mm": 1.751604676246643,
+      "min_pad_thickness_mm": 3.99984895857051,
+      "max_pad_thickness_mm": 4.000009964220226,
+      "nominal_thread_past_nut_mm": 1.0
+    },
+    {
+      "side": "R",
+      "index": 3,
+      "template_yz_mm": [
+        4.0,
+        10.0
+      ],
+      "seat_center_world_mm": [
+        100.35123223307811,
+        -2.5081217848964954,
+        34.770587445007266
+      ],
+      "inward_normal": [
+        -0.995030724104929,
+        0.03653488770353706,
+        0.09262321559798264
+      ],
+      "attached_shell": "前壳配置",
+      "objects": [
+        "SideLatch_R_3_Shaft",
+        "SideLatch_R_3_Head",
+        "SideLatch_R_3_Washer",
+        "SideLatch_R_3_Nut"
+      ],
+      "measured_center_world_mm": [
+        100.35144188559025,
+        -2.507368491191411,
+        34.772542561647064
+      ],
+      "min_bore_radius_mm": 1.7474008798599243,
+      "max_bore_radius_mm": 1.7516058683395386,
+      "min_pad_thickness_mm": 3.999687578994781,
+      "max_pad_thickness_mm": 4.000009731622413,
+      "nominal_thread_past_nut_mm": 1.0
+    }
+  ],
+  "errors": [],
+  "limits": [
+    "Purchased latch outline/hole pattern follows the user drawing; moving cover internals and actual lock-cylinder tail dimensions are not supplied.",
+    "No physical printing, screw torque or fatigue test."
+  ],
+  "patterns": [
+    {
+      "side": "L",
+      "measured_edge_lengths_mm": [
+        20.00000262558855,
+        19.99999739728883,
+        19.999992369299427,
+        20.000003943436926
+      ]
+    },
+    {
+      "side": "R",
+      "measured_edge_lengths_mm": [
+        19.999979572331803,
+        19.999997239613254,
+        19.999732166431798,
+        19.9997311582761
+      ]
+    }
+  ],
+  "solid_center_backings": [
+    {
+      "side": "L",
+      "samples": 81,
+      "failed_samples": [],
+      "min_thickness_mm": 3.9999946132302284,
+      "max_thickness_mm": 4.050002223812044,
+      "face_offset_range_mm": [
+        -1.0232441127300262e-05,
+        5.1013194024562836e-06
+      ]
+    },
+    {
+      "side": "R",
+      "samples": 81,
+      "failed_samples": [],
+      "min_thickness_mm": 3.999994612764567,
+      "max_thickness_mm": 4.0500022252090275,
+      "face_offset_range_mm": [
+        -0.0210345396772027,
+        -0.021019188221544027
+      ]
+    }
+  ],
+  "passed": true
+}

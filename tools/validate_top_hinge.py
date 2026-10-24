@@ -19,7 +19,7 @@ from mathutils.bvhtree import BVHTree
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from hinge_common import AXIS, AXLE_NAME, CHECKED_ANGLE, HARDWARE_NAMES, REVISION, SHELL_NAMES, SPEC, arrays, rotated, tube
-from validate_model import DEFAULTS, evaluated_metrics, failures, get_input
+from validate_model import DEFAULTS, evaluated_metrics, failures, fixed_reference_rear, get_input
 
 
 def tree(points, faces):
@@ -119,7 +119,10 @@ def main():
         raise ValueError('Expected rear rounding must be finite and in [0, 0.1]')
     if bpy.context.scene.get('pulsar_hinge_revision') != REVISION:
         raise ValueError('Expected hinge revision 2')
+    fixed_rear = fixed_reference_rear()
     for obj, key, expected in DEFAULTS:
+        if obj == '后壳配置' and fixed_rear:
+            continue
         if (obj, key) == ('后壳配置', '圆角位置'):
             expected = args.rear_round
         if abs(float(get_input(obj, key))-float(expected)) > 1e-6:
@@ -128,7 +131,8 @@ def main():
     report = {
         'blender': bpy.app.version_string,
         'blend_sha256': hashlib.sha256(Path(bpy.data.filepath).read_bytes()).hexdigest(),
-        'specification': SPEC, 'expected_rear_round': args.rear_round, 'errors': [],
+        'specification': SPEC, 'expected_rear_round': None if fixed_rear else args.rear_round, 'errors': [],
+        'rear_mode': 'fixed_reference_hardware' if fixed_rear else 'parametric',
         'method': 'Full evaluated triangle meshes, BVH surface overlap plus connected-component parity containment; independent Manifold solid intersections at four angles.',
         'limits': ['Discrete rigid geometry only; not a continuous collision proof.', 'No purchased hardware measurement, slicing, print, elasticity, wear, fatigue or load test.'],
     }

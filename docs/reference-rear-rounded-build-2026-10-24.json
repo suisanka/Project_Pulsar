@@ -1,0 +1,108 @@
+{
+  "blender": "5.2.2 LTS",
+  "baseline": "/Volumes/Workbench/Projects/Project_Pulsar/variants/front-3mm/ProjectPulsar_Front3mm.blend",
+  "baseline_sha256": "38125f437e2dd618255b23e39404d36fac5c1b9f3f79a5cd548a440ea3b38c32",
+  "source": "assets/reference/user-rear-2026-10-24/后半头壳-全头.stl",
+  "source_sha256": "3dd5067826cda886d7c03bbe10719db12acdf16de927f5adbf7b1bd4783fff39",
+  "blend": "variants/reference-rear-rounded/ProjectPulsar_ReferenceRearRounded.blend",
+  "blend_sha256": "77cf0c391d0f7286ec1f29e661b904bf8e0c6acc7e14ce71867395641d787d9f",
+  "rigid_pose": {
+    "rotation_matrix": [
+      [
+        -0.8660019545054035,
+        0.5000406131174785,
+        -5.090927018669598e-06
+      ],
+      [
+        -0.4957621209022493,
+        -0.8585935200218316,
+        -0.13052619221836015
+      ],
+      [
+        -0.06527276822170776,
+        -0.11303341368647171,
+        0.9914448613609628
+      ]
+    ],
+    "translation_mm": [
+      46.86300949150544,
+      145.26007930580218,
+      -58.980439674135766
+    ]
+  },
+  "unchanged_mesh_digests": {
+    "前壳配置": "932af6567af233096e530603f1fd05890abe8c28592bc0704610acb4990bb655",
+    "Hinge_Axle_D6_L55_M5_REFERENCE": "bbd5cec5c1bf7498230fb6ed0efdedd3124e5591195727ef223ecca7cfd7132c",
+    "Hinge_Washer_M6_REFERENCE": "7b048c0eb2de3d9f59b7b647f310cbaac86e05aa4f4086cd5a4c1959f31c0c26",
+    "Hinge_Spacer_1p4_PRINT": "f94a93673a6c97046ce1d9695e76b166c29eb1caf7c7ae1ae8df2f6559605141",
+    "Hinge_Washer_M5_REFERENCE": "b5cd8e4dca49e7e4b6a12231b2f9c1acb8131dc4af605007e34e457683a08984",
+    "Hinge_Nut_M5_REFERENCE": "c6022235f40423570f32b35db0c37ad53edaa34c2d0c39e9bd6c0a9669ca78e5",
+    "SideLatch_L_0_Head": "2436988d586f32244549a37d1c298634babe6f4ce0ecf4f11d8fc7f2ee381d2b",
+    "SideLatch_L_0_Nut": "4c87eec7847629f1f2b5c1b4d16aaae72dfd21f54116484734829bfb0c9c3582",
+    "SideLatch_L_0_Shaft": "1cc03a0e2f67bf4bf77c446df4e027c7a1e41b84bc8a8c951f033863bc02445d",
+    "SideLatch_L_0_Washer": "8364ba33c6d0295a060d2efa7ce4c508612ec71a02d9080f067c44e29f88ae92",
+    "SideLatch_L_1_Head": "bbd35f5b1a32f3cbc97cb2112efda0413590461ee533bc0103ffb54d66f1d4c6",
+    "SideLatch_L_1_Nut": "f0499eb52bec094fe05bedb9704746d887532646691eed9f3edb0e4c8106d2e9",
+    "SideLatch_L_1_Shaft": "4136316f320ecf886b63b5f2861a0502ed2e66b7d36e10a08ad23acd82dc09e1",
+    "SideLatch_L_1_Washer": "94ae95b8c673f01f36e827e5044d6703c76553e84ffcda56ec8704b2f46cc6e3",
+    "SideLatch_L_2_Head": "76a04ac7244ff6bac2490c30781d5f1e8a49e9a91cbe1f408744a618d62247bf",
+    "SideLatch_L_2_Nut": "da9749027713399ea22c6ee5d919e1ef5365fb7f071cbe660e0d6428ed9d9584",
+    "SideLatch_L_2_Shaft": "ebfd5116b77a69420754860c5b72976255b002672f9e2fac18528b7fbe71aec4",
+    "SideLatch_L_2_Washer": "1d3da3b9c4bf351f13e6b0bc354fdbac95a2d75ab33259f3bf7ec8651dde085b",
+    "SideLatch_L_3_Head": "883799d1d3ffbf7e7276ee7f93b16c004e46808826e88e4134601bd322aa3d52",
+    "SideLatch_L_3_Nut": "8777b39ff0bc6b19c2731891ce1c34367056e90ee605b80f2b0c9276fdcaacfb",
+    "SideLatch_L_3_Shaft": "a95c854f49fa1486d81ffceca9f34e4828b2938ca82a0877e387cae8f2c196b6",
+    "SideLatch_L_3_Washer": "98ab187317a08d7a4561556442c41ff9ba8011105892a504c6f2e9d30b17df9e",
+    "SideLatch_R_0_Head": "87b8410e8572b278f409322a660422687456ce60a326075af0593c20bc24f5ab",
+    "SideLatch_R_0_Nut": "1ca509a8e65c3d2e11d6b7190440a7e3e3d08ff6af773730c12787cef4e4e02f",
+    "SideLatch_R_0_Shaft": "aad8aa830f31c436af804f43770d817de2dd6d72c1d9b2fcaaf6866faed792d5",
+    "SideLatch_R_0_Washer": "9a23dd7114086bf79e28cdceae9fbcd4f66d6abed898fd6e2c53dd049c856a55",
+    "SideLatch_R_1_Head": "9362fdf555259571e8d0a104bb80773ae1dc09c95bda46dc7480b73b7215a4a6",
+    "SideLatch_R_1_Nut": "08fad46958f1d4e44ecf3187dbdc2316ee775743dc0de144554f43f00baf9a64",
+    "SideLatch_R_1_Shaft": "1ed918f8ad1eca1b99516a85d4b52f31c9c935edbfe8c66893d5c6f65244d1fc",
+    "SideLatch_R_1_Washer": "1a95dad9b6945c1d7824721d64bd6ba912b76b32eb94b9cacee06c45e3f2be21",
+    "SideLatch_R_2_Head": "921edee2929a92b44750aea4ab18a141a7ad864ff9cd03652fb03d1be550beea",
+    "SideLatch_R_2_Nut": "3c9165923f3c2cf4189f14a0562c27c8f83ddbd13f44c117e2619ed56b77bac7",
+    "SideLatch_R_2_Shaft": "29ed323a80a9ab7492c4633a5f39a27402c88c69b7619fb065e375d81f16e420",
+    "SideLatch_R_2_Washer": "190ea1d130c104a64b2ad5815a17e6ba31449e12cf8916ecd4ad4ea447799008",
+    "SideLatch_R_3_Head": "3258dc137e62128d4822f42324ec73f6fc438d72b826f360e2db6a9bb0f307bd",
+    "SideLatch_R_3_Nut": "707376d9d868793eeb726be8efbce9bda8a08241edd7a2bfe1db5e55f2f89c8d",
+    "SideLatch_R_3_Shaft": "22c987f08051910b0e7b2e15a58f856109daf1a625c2d8c534820132e1858926",
+    "SideLatch_R_3_Washer": "bd65703f1c91e5b47c16811d11afbfb23a88eb67c1a00efb3df3fcb434d5e270"
+  },
+  "front_and_hardware_unchanged": true,
+  "rear_mesh_digest": "0d7ad0ca235e68cba9394145ac61bed12c586d77ab61ba4ff2515fa1bd81e0fc",
+  "rear_metrics": {
+    "vertices": 71815,
+    "triangles": 143854,
+    "boundary_edges": 0,
+    "multi_face_edges": 0,
+    "inconsistent_edges": 0,
+    "duplicate_triangles": 0,
+    "degenerate_triangles": 0,
+    "near_zero_triangles": 0,
+    "min_triangle_area_mm2": 1.1558687691911199e-08,
+    "dimensions_mm": [
+      236.55227661132812,
+      188.66094970703125,
+      242.3516845703125
+    ],
+    "signed_volume_cm3": 289.9162756630561,
+    "wire_edges": 0,
+    "loose_vertices": 0,
+    "sdf_rebuilt": false
+  },
+  "construction": {
+    "method": "Convex reference envelope sampled on a regular quad skin; smooth 3 iterations; subdivision 1; smooth radial match to original collar; inward Solidify 3.2 mm; original interface CSG",
+    "outer_skin_object": "Rounded quad skin matched to original seam",
+    "vent_count": 52,
+    "neck_finish_z_mm": -84,
+    "new_body_cut_q": -14.5,
+    "original_collar_cut_q": -16,
+    "curve_crop_z_step_mm": 0.5,
+    "cleanup_distance_mm": 0.001
+  },
+  "headform_testing_performed": false,
+  "passed": true,
+  "acceptance": "Build receipt only. Separate matching quality, hinge, latch and STL receipts required."
+}

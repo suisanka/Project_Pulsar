@@ -6,7 +6,7 @@
 
 日常操作请看 [中文使用手册](docs/USER_GUIDE.zh-CN.md)，包含参数说明、检查视图、STL 导出步骤和常见问题。
 
-**2026-10-24 当前后壳方案：** 按用户更正，直接采用提供的 `后半头壳-全头.stl` 原始数据，不使用头模测试来决定后壳形状。后壳不放大、不变形、不改壁厚、通风孔或原有接口，交付 STL 与输入文件逐字节一致。见[后壳原样采用方案与工程](docs/REFERENCE_REAR_EXACT.zh-CN.md)。先前后移 40 mm、圆角 0.055 的 ReferenceFit 方案已弃用，旧文件仅作历史记录。
+**2026-10-24 当前适配方案：** 根据最新要求，以用户后壳轮廓重建连续圆润曲面，沿用原版对接分缝、铰链和锁扣安装位，删除下方两处废弃凸块；搭配现有 Front3mm 前脸。没有使用头模。独立工程与打印文件见[圆润后壳版本说明](docs/REFERENCE_REAR_ROUNDED.zh-CN.md)。`dbc034d` 对应的[后壳原样采用版本](docs/REFERENCE_REAR_EXACT.zh-CN.md)及输入 STL 保持不变，作为来源基准。
 
 ## 文件
 
@@ -38,7 +38,7 @@
 - Base 已隐藏黑色 `睫毛` 和 `眼线配置`，眉形开孔保留；隐藏状态不改变壳体几何。
 - 回归检查验证的是数字网格和导出文件，不代替打印材料、支撑、切片、铰链装配和佩戴适配验证。
 
-当前打印文件在 **`exports/2026-10-21-closure-v4/`**：
+原版 Closure v4 打印文件在 **`exports/2026-10-21-closure-v4/`**；本次圆润后壳使用 `exports/2026-10-24-reference-rear-rounded/`。以下为原版文件名：
 
 - `ProjectPulsar_Front_Closure_v4.stl`、`ProjectPulsar_Rear_Closure_v4.stl`：整套前后壳，各一件。
 - `ProjectPulsar_Hinge_Spacer_1p4.stl`：顶部轴向垫套，一件，已平放。
@@ -122,7 +122,7 @@ python3 tools/dimension_vertical_section.py --sections /tmp/pulsar-sections.json
 
 完整检查包括 45 组锁类型、前后基准值、圆角位置组合，以及默认导出、视孔正反向的三组瞳距、眼线布尔和刻字，再加上三种睫毛在两种睁眼状态下的检查，共 61 个场景。去掉 `--matrix` 可运行 16 个重点场景。检查不会保存或改写工程。
 
-本次合并改造后在 Blender 5.2.2 LTS 上实测 **61/61 通过**，结果见[当前回归记录](docs/top-hinge-regression-2026-10-21.json)，内含当前源工程 SHA-256。默认配置另有前述机械装配检查；参数矩阵中的其他配置只接受拓扑与导出检查，未逐一进行运动学验收。修改头型、分界、锁深度等参数后需要重新核对机械装配。
+原版 Closure v4 合并改造后在 Blender 5.2.2 LTS 上实测 **61/61 通过**，结果见[原版回归记录](docs/top-hinge-regression-2026-10-21.json)，内含当前源工程 SHA-256。默认配置另有前述机械装配检查；参数矩阵中的其他配置只接受拓扑与导出检查，未逐一进行运动学验收。修改头型、分界、锁深度等参数后需要重新核对机械装配。
 
 [第五轮验证](docs/validation-2026-10-21.json)、[曲面距离检查](docs/surface-comparison-2026-10-21.json)、[旧隐藏状态检查](docs/print-visibility-verification-2026-10-21.json)等仍保留为历史记录；它们的 SHA 不代表本次修改后的工程。当前黑色睫毛／眼线仍隐藏，眉形开孔仍保留。
 

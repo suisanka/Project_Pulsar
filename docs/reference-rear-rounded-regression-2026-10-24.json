@@ -1,0 +1,109 @@
+{
+  "blender": "5.2.2 LTS",
+  "blend_sha256": "77cf0c391d0f7286ec1f29e661b904bf8e0c6acc7e14ce71867395641d787d9f",
+  "degenerate_area_threshold_mm2": 1e-12,
+  "near_zero_area_reporting_threshold_mm2": 1e-08,
+  "cases": [
+    {
+      "name": "current",
+      "inputs": [
+        [
+          "前壳配置",
+          "是否布尔",
+          true
+        ],
+        [
+          "前壳配置",
+          "锁类型",
+          1
+        ],
+        [
+          "前壳配置",
+          "前后基准值",
+          0.7799999713897705
+        ],
+        [
+          "视孔",
+          "生成",
+          false
+        ],
+        [
+          "视孔",
+          "反向",
+          false
+        ],
+        [
+          "视孔",
+          "瞳距",
+          6.03000020980835
+        ],
+        [
+          "睫毛",
+          "睫毛类型",
+          0
+        ],
+        [
+          "眼线配置",
+          "是否布尔",
+          false
+        ],
+        [
+          "眼线配置",
+          "是否刻字",
+          false
+        ],
+        [
+          "头壳",
+          "睁眼大小",
+          0.0
+        ]
+      ],
+      "meshes": {
+        "前壳配置": {
+          "vertices": 267459,
+          "triangles": 534938,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 2,
+          "min_triangle_area_mm2": 7.805539354925538e-09,
+          "dimensions_mm": [
+            252.9455108642578,
+            162.16473388671875,
+            270.85498046875
+          ],
+          "signed_volume_cm3": 296.204496235678,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        },
+        "后壳配置": {
+          "vertices": 71815,
+          "triangles": 143854,
+          "boundary_edges": 0,
+          "multi_face_edges": 0,
+          "inconsistent_edges": 0,
+          "duplicate_triangles": 0,
+          "degenerate_triangles": 0,
+          "near_zero_triangles": 0,
+          "min_triangle_area_mm2": 1.1558687691911199e-08,
+          "dimensions_mm": [
+            236.55227661132812,
+            188.66094970703125,
+            242.3516845703125
+          ],
+          "signed_volume_cm3": 289.9162756630561,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "sdf_rebuilt": false
+        }
+      },
+      "errors": [],
+      "seconds": 11.119
+    }
+  ],
+  "rear_mode": "fixed_reference_hardware",
+  "passed": true
+}

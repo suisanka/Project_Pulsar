@@ -34,6 +34,19 @@ DEFAULTS = (
 )
 
 
+def fixed_reference_rear():
+    """A rebuilt STL rear has no legacy Boolean/rounding controls to sweep."""
+    revision = bpy.context.scene.get("pulsar_reference_hardware_revision")
+    if revision is None:
+        return False
+    rear = bpy.data.objects["后壳配置"]
+    if revision != 1 or rear.get("pulsar_print_role") != "reference_rear_hardware":
+        raise ValueError("Unknown reference-hardware rear configuration")
+    if rear.type != "MESH" or len(rear.modifiers):
+        raise ValueError("Reference-hardware rear must be the frozen accepted mesh")
+    return True
+
+
 def set_input(object_name, input_name, value):
     obj = bpy.data.objects[object_name]
     for modifier in obj.modifiers:
@@ -225,12 +238,18 @@ def main():
     parser.add_argument("--case", action="append", help="Run only matching case names (glob)")
     args = parser.parse_args(sys.argv[sys.argv.index("--") + 1 :] if "--" in sys.argv else [])
     base_inputs = (*DEFAULTS, ("头壳", "睁眼大小", get_input("头壳", "睁眼大小")))
+    fixed_rear = fixed_reference_rear()
+    if fixed_rear:
+        if not args.current:
+            raise ValueError("Fixed reference rear requires --current; legacy rear controls do not apply")
+        base_inputs = tuple(item for item in base_inputs if item[0] != "后壳配置")
     receipt = {
         "blender": bpy.app.version_string,
         "blend_sha256": hashlib.sha256(Path(bpy.data.filepath).read_bytes()).hexdigest(),
         "degenerate_area_threshold_mm2": 1e-12,
         "near_zero_area_reporting_threshold_mm2": 1e-8,
         "cases": [],
+        "rear_mode": "fixed_reference_hardware" if fixed_rear else "parametric",
     }
     args.output.parent.mkdir(parents=True, exist_ok=True)
     if args.exports:
@@ -286,6 +305,8 @@ def main():
         )
     if args.current:
         for name in SHELLS:
+            if name == "后壳配置" and fixed_rear:
+                continue
             if not get_input(name, "是否布尔"):
                 raise ValueError(f"{name}: enable 是否布尔 before validating print output")
         names = list(SHELLS)
